@@ -227,7 +227,7 @@ body::before { content:''; position:fixed; inset:0; background-image:url("data:i
 
   <div class="sidebar-sources collapsed" id="sidebar-sources">
     <div class="sources-label">
-      <span>Mənbələr (20)</span>
+      <span>Mənbələr (19)</span>
       <button class="sources-toggle" id="sources-toggle" onclick="toggleSources()">Göstər</button>
     </div>
     <div class="source-item" onclick="setSourceFilter('bina', this)"><div class="source-dot" style="background:#5D9EE8"></div>Bina.az<span class="source-count" id="cnt-bina">—</span></div>
@@ -249,7 +249,6 @@ body::before { content:''; position:fixed; inset:0; background-image:url("data:i
     <div class="source-item" onclick="setSourceFilter('yekemlak', this)"><div class="source-dot" style="background:#E8A85D"></div>YekEmlak.az<span class="source-count" id="cnt-yekemlak">—</span></div>
     <div class="source-item" onclick="setSourceFilter('rns', this)"><div class="source-dot" style="background:#5D5DE8"></div>RNS.az<span class="source-count" id="cnt-rns">—</span></div>
     <div class="source-item" onclick="setSourceFilter('etagi', this)"><div class="source-dot" style="background:#E85DC4"></div>Etagi.com<span class="source-count" id="cnt-etagi">—</span></div>
-    <div class="source-item" onclick="setSourceFilter('emlak_gov', this)"><div class="source-dot" style="background:#5DE8A8"></div>Emlak.gov.az<span class="source-count" id="cnt-emlak_gov">—</span></div>
   </div>
 </aside>
 
@@ -314,7 +313,7 @@ body::before { content:''; position:fixed; inset:0; background-image:url("data:i
     <div class="stat-cell">
       <div class="stat-label">Son yenilənmə</div>
       <div class="stat-value" style="font-size:16px;padding-top:2px"><span id="s-time">—</span></div>
-      <div class="stat-sub" id="s-sources">20 mənbə</div>
+      <div class="stat-sub" id="s-sources">19 mənbə</div>
     </div>
   </div>
 
@@ -353,7 +352,6 @@ const SOURCES = {
   yekemlak:    { name:'YekEmlak.az',    color:'#E8A85D', bg:'rgba(232,168,93,0.15)' },
   rns:         { name:'RNS.az',         color:'#5D5DE8', bg:'rgba(93,93,232,0.15)' },
   etagi:       { name:'Etagi.com',      color:'#E85DC4', bg:'rgba(232,93,196,0.15)' },
-  emlak_gov:   { name:'Emlak.gov.az',   color:'#5DE8A8', bg:'rgba(93,232,168,0.15)' },
 };
 
 const PROP_NAMES = {
@@ -565,7 +563,7 @@ function updateStats(stats) {
     try { document.getElementById('s-time').textContent = new Date(scanTime).toLocaleTimeString('az-AZ', {hour:'2-digit', minute:'2-digit'}); } catch(e) {}
   } else if (stats.last_updated) { document.getElementById('s-time').textContent = stats.last_updated; }
   const activeSources = Object.keys(stats.by_source || {}).filter(k => (stats.by_source[k] || 0) > 0).length;
-  document.getElementById('s-sources').textContent = `${activeSources} aktiv / 20 mənbə`;
+  document.getElementById('s-sources').textContent = `${activeSources} aktiv / 19 mənbə`;
   document.getElementById('s-sub').textContent = `${allListings.filter(l=>l.is_new).length} yeni`;
   Object.keys(SOURCES).forEach(src => {
     const el = document.getElementById('cnt-' + src);
@@ -688,7 +686,7 @@ function toggleSources() {
 // ─── Init ───────────────────────────────────────────────────────────────────
 loadAll();
 setInterval(loadAll, 30000);
-setTimeout(() => showToast('🏠', 'EvTap başladıldı', '20 mənbədən məlumat yüklənir...'), 500);
+setTimeout(() => showToast('🏠', 'EvTap başladıldı', '19 mənbədən məlumat yüklənir...'), 500);
 </script>
 </body>
 </html>

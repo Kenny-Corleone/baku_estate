@@ -22,7 +22,6 @@ from parsers.binatap import parse_binatap
 from parsers.yekemlak import parse_yekemlak
 from parsers.rns import parse_rns
 from parsers.etagi import parse_etagi
-from parsers.emlak_gov import parse_emlak_gov
 
 PARSERS = {
     'bina': parse_bina,
@@ -41,7 +40,6 @@ PARSERS = {
     'yekemlak': parse_yekemlak,
     'rns': parse_rns,
     'etagi': parse_etagi,
-    'emlak_gov': parse_emlak_gov,
 }
 
 if __name__ == '__main__':

@@ -1,6 +1,6 @@
 """
 EvTap — Lokal inkişaf serveri
-20 parser + statik frontend
+Real estate parsers + statik frontend
 """
 
 from flask import Flask, jsonify, send_from_directory, request as freq, Response
@@ -23,7 +23,6 @@ from parsers.binatap import parse_binatap
 from parsers.yekemlak import parse_yekemlak
 from parsers.rns import parse_rns
 from parsers.etagi import parse_etagi
-from parsers.emlak_gov import parse_emlak_gov
 import threading
 import time
 import json
@@ -106,7 +105,6 @@ PARSERS = {
     'yekemlak': parse_yekemlak,
     'rns': parse_rns,
     'etagi': parse_etagi,
-    'emlak_gov': parse_emlak_gov,
 }
 
 REFRESH_INTERVAL = 270  # 4.5 dəqiqə

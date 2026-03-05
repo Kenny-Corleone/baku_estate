@@ -1,6 +1,6 @@
 """
 EvTap — Scrape Pipeline (Paralel)
-20 parseri paralel işə salır → data/listings.json
+Real estate parsers → data/listings.json
 """
 
 import json
@@ -78,7 +78,6 @@ from parsers.binatap import parse_binatap
 from parsers.yekemlak import parse_yekemlak
 from parsers.rns import parse_rns
 from parsers.etagi import parse_etagi
-from parsers.emlak_gov import parse_emlak_gov
 
 PARSERS = {
     'bina': parse_bina, 'tap': parse_tap, 'lalafo': parse_lalafo,
@@ -88,7 +87,6 @@ PARSERS = {
     'binalar': parse_binalar, 'villa': parse_villa, 'vipemlak': parse_vipemlak,
     'rahatemlak': parse_rahatemlak, 'binatap': parse_binatap,
     'yekemlak': parse_yekemlak, 'rns': parse_rns, 'etagi': parse_etagi,
-    'emlak_gov': parse_emlak_gov,
 }
 
 OUTPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data')
