@@ -21,8 +21,18 @@ def parse_rns(pages=2):
         if not soup:
             continue
 
-        cards = (soup.select('.item') or soup.select('.property') or
-                 soup.select('article'))
+        candidates = []
+        for a in soup.select('a[href]'):
+            href = a.get('href', '')
+            if '/property/' in href and '/agent/' not in href:
+                parent = a.find_parent(['article', 'div', 'li'])
+                candidates.append(parent or a)
+        seen = set()
+        cards = []
+        for c in candidates:
+            if id(c) not in seen:
+                seen.add(id(c))
+                cards.append(c)
         print(f"  RNS kartoçka: {len(cards)}")
 
         for card in cards:
@@ -43,17 +53,29 @@ def _parse_card(card):
     href = link_el.get('href', '')
     if not href:
         return None
+    if '/property/' not in href or '/agent/' in href:
+        return None
     link = href if href.startswith('http') else BASE_URL + href
+
+    full_text = card.get_text(' ', strip=True)
+    low = full_text.lower()
+    if any(w in low for w in ['лучшие предложения', 'последние обновления', 'read more', 'blog']):
+        return None
 
     m = re.search(r'/(\d{4,})', href)
     raw_id = m.group(1) if m else str(abs(hash(href)) % 10**10)
 
-    full_text = card.get_text(' ', strip=True)
     price_el = card.select_one('.price') or card.select_one('[class*="price"]')
     price = clean_price(price_el.get_text()) if price_el else None
 
     title_el = card.select_one('h2') or card.select_one('h3') or card.select_one('.title')
     title = clean_text(title_el.get_text() if title_el else '')
+    if not title:
+        title = clean_text(link_el.get_text(' ', strip=True))
+    # Clean common non-title prefixes
+    if title:
+        title = re.sub(r'^(vip\s+)?(лучшие предложения|последние обновления)\s*', '', title, flags=re.IGNORECASE).strip()
+        title = title[:80]
     district = detect_district(full_text)
     deal_type = 'kiraye' if any(w in full_text.lower() for w in ['kirayə', 'icarə', 'rent']) else 'satis'
 

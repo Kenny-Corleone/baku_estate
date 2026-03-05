@@ -36,6 +36,39 @@ log = logging.getLogger(__name__)
 
 app = Flask(__name__, static_folder='static')
 
+
+def _is_probably_listing(item: dict) -> bool:
+    if not item or not isinstance(item, dict):
+        return False
+    if not item.get('id'):
+        return False
+    link = str(item.get('link') or '')
+    if not link.startswith('http'):
+        return False
+    title = str(item.get('title') or '')
+    district = str(item.get('district') or '')
+    text = (title + ' ' + district).lower()
+    bad_words = [
+        'статья', 'новости', 'xəbər', 'xəbərlər', 'blog', 'read more',
+        'fact-checked', 'trusted authors', 'terms', 'qaydalar',
+        'лучшие предложения',
+    ]
+    if any(w in text for w in bad_words):
+        return False
+
+    if len(title) > 140 or len(district) > 140:
+        return False
+
+    source = str(item.get('source') or '')
+    has_signal = bool(item.get('price')) or bool(item.get('rooms')) or bool(item.get('area'))
+    if not has_signal:
+        if source in {'emlak_gov'}:
+            return True
+        if any(p in link for p in ['/items/', '/posting/', '/property/', '/elan/', 'elan-item.php?elan=']):
+            return True
+        return False
+    return True
+
 # ─── Yaddaşda saxlama ────────────────────────────────────────────────────────
 listings_db = {}
 seen_ids = set()
@@ -141,7 +174,7 @@ def manual_refresh():
 
 
 def run_all_parsers():
-    log.info("🔄 20 mənbənin parserlənməsi başlanır...")
+    log.info("20 mənbənin parserlənməsi başlanır...")
     with lock:
         listings_db.clear()
         seen_ids.clear()
@@ -149,11 +182,13 @@ def run_all_parsers():
 
     for source_name, parse_fn in PARSERS.items():
         try:
-            log.info(f"  📡 {source_name} parserlənir...")
+            log.info(f"  {source_name} parserlənir...")
             results = parse_fn()
             new_count = 0
             with lock:
                 for item in results:
+                    if not _is_probably_listing(item):
+                        continue
                     uid = item.get('id')
                     if uid and uid not in seen_ids:
                         seen_ids.add(uid)
@@ -161,12 +196,12 @@ def run_all_parsers():
                         item['is_new'] = True
                         listings_db[uid] = item
                         new_count += 1
-            log.info(f"  ✅ {source_name}: +{new_count} yeni")
+            log.info(f"  OK {source_name}: +{new_count} yeni")
             total_new += new_count
         except Exception as e:
-            log.error(f"  ❌ {source_name} xətası: {e}")
+            log.error(f"  ERROR {source_name} xətası: {e}")
 
-    log.info(f"✨ Tamamlandı. Cəmi yeni: {total_new}, bazada: {len(listings_db)}")
+    log.info(f"Tamamlandı. Cəmi yeni: {total_new}, bazada: {len(listings_db)}")
 
     try:
         data_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data')
@@ -188,13 +223,13 @@ def run_all_parsers():
 def background_loop():
     while True:
         run_all_parsers()
-        log.info(f"💤 Növbəti yeniləmə {REFRESH_INTERVAL // 60} dəq. sonra.")
+        log.info(f"Növbəti yeniləmə {REFRESH_INTERVAL // 60} dəq. sonra.")
         time.sleep(REFRESH_INTERVAL)
 
 
 if __name__ == '__main__':
-    log.info("🏠 EvTap serveri başladılır... (20 mənbə)")
+    log.info("EvTap serveri başladılır... (20 mənbə)")
     t = threading.Thread(target=background_loop, daemon=True)
     t.start()
-    log.info("🌐 Server əlçatandır: http://localhost:5000")
+    log.info("Server əlçatandır: http://localhost:5000")
     app.run(host='0.0.0.0', port=5000, debug=False)

@@ -17,6 +17,41 @@ if sys.stdout.encoding.lower() != 'utf-8':
 if sys.stderr.encoding.lower() != 'utf-8':
     sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
 
+
+def _is_probably_listing(item: dict) -> bool:
+    if not item or not isinstance(item, dict):
+        return False
+    if not item.get('id'):
+        return False
+    link = str(item.get('link') or '')
+    if not link.startswith('http'):
+        return False
+    title = str(item.get('title') or '')
+    district = str(item.get('district') or '')
+    text = (title + ' ' + district).lower()
+    bad_words = [
+        'статья', 'новости', 'xəbər', 'xəbərlər', 'blog', 'read more',
+        'fact-checked', 'trusted authors', 'terms', 'qaydalar',
+        'лучшие предложения',
+    ]
+    if any(w in text for w in bad_words):
+        return False
+
+    if len(title) > 140 or len(district) > 140:
+        return False
+
+    source = str(item.get('source') or '')
+    has_signal = bool(item.get('price')) or bool(item.get('rooms')) or bool(item.get('area'))
+    if not has_signal:
+        # Some sources may omit these fields; allow if link pattern looks like a listing.
+        if source in {'emlak_gov'}:
+            return True
+        if any(p in link for p in ['/items/', '/posting/', '/property/', '/elan/', 'elan-item.php?elan=']):
+            return True
+        return False
+
+    return True
+
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s] %(levelname)s — %(message)s', datefmt='%H:%M:%S')
 log = logging.getLogger(__name__)
 
@@ -61,7 +96,7 @@ def _run_parser(name, fn, pages=1):
     try:
         log.info(f"  {name} parserlənir...")
         results = fn(pages=pages)
-        valid = [r for r in results if r and r.get('id')]
+        valid = [r for r in results if _is_probably_listing(r)]
         seen = set()
         unique = []
         for item in valid:
