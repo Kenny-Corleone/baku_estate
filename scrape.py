@@ -114,7 +114,7 @@ def _run_parser(name, fn, pages=1):
 
 
 def run_all_parsers():
-    log.info("20 mənbənin paralel parserlənməsi başlanır...")
+    log.info("Real estate mənbələrinin paralel parserlənməsi başlanır...")
     start = time.time()
     all_listings = []
     source_stats = {}
@@ -131,6 +131,35 @@ def run_all_parsers():
             all_listings.extend(items)
 
     elapsed = round(time.time() - start, 1)
+
+    total_listings = len(all_listings)
+    if total_listings == 0:
+        log.error("Heç bir elan tapılmadı — data/listings.json yenilənmir, köhnə fayl saxlanılır.")
+        # Əgər əvvəlki fayl varsa, onu saxla və onu nəticə kimi qaytar
+        if os.path.exists(OUTPUT_FILE):
+            try:
+                with open(OUTPUT_FILE, 'r', encoding='utf-8') as f:
+                    previous = json.load(f)
+                    prev_total = previous.get('stats', {}).get('total', 0)
+                    log.info(f"Mövcud listings.json saxlanıldı (total={prev_total}).")
+                    return previous
+            except Exception as e:
+                log.error(f"Köhnə listings.json oxunmadı: {e}")
+
+        # Əgər köhnə fayl da yoxdursa, sadə boş struktur qaytar
+        return {
+            'listings': [],
+            'stats': {
+                'total': 0,
+                'avg_price': 0,
+                'by_source': source_stats,
+                'by_rooms': {},
+                'by_property_type': {},
+                'by_deal_type': {},
+            },
+            'scan_time': datetime.now(timezone.utc).isoformat(),
+            'scan_timestamp': time.time(),
+        }
 
     prices = [l['price'] for l in all_listings if l.get('price')]
     avg_price = round(sum(prices) / len(prices)) if prices else 0
