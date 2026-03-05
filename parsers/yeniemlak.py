@@ -15,11 +15,13 @@ ALT_BASE_URL = 'https://yeniemlak.az'
 def parse_yeniemlak(pages=2):
     results = []
     for page in range(1, pages + 1):
-        url = f'{BASE_URL}/?page={page}'
+        base_url = BASE_URL
+        url = f'{base_url}/?page={page}'
         print(f"  Yüklənir: {url}")
         soup = fetch(url)
         if not soup:
-            url = f'{ALT_BASE_URL}/?page={page}'
+            base_url = ALT_BASE_URL
+            url = f'{base_url}/?page={page}'
             print(f"  Yüklənir: {url}")
             soup = fetch(url)
         if not soup:
@@ -46,7 +48,7 @@ def parse_yeniemlak(pages=2):
 
         for card in cards:
             try:
-                r = _parse_card(card)
+                r = _parse_card(card, base_url)
                 if r:
                     results.append(r)
             except Exception as e:
@@ -56,14 +58,14 @@ def parse_yeniemlak(pages=2):
     return results
 
 
-def _parse_card(card):
+def _parse_card(card, base_url):
     link_el = card if getattr(card, 'name', None) == 'a' else card.select_one('a[href]')
     if not link_el:
         return None
     href = link_el.get('href', '')
     if not href:
         return None
-    link = href if href.startswith('http') else BASE_URL + href
+    link = href if href.startswith('http') else base_url + href
 
     m = re.search(r'-(\d{4,})$', href)
     if not m:
@@ -96,7 +98,7 @@ def _parse_card(card):
     if img_el:
         photo = img_el.get('data-src') or img_el.get('src') or ''
         if photo and not photo.startswith('http'):
-            photo = BASE_URL + (photo if photo.startswith('/') else '/' + photo)
+            photo = base_url + (photo if photo.startswith('/') else '/' + photo)
 
     rooms = extract_rooms(full_text)
     area = extract_area(full_text)

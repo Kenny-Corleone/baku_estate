@@ -5,7 +5,7 @@ API və HTML-dən elanları çıxarır
 import requests, random, re, time, json
 from bs4 import BeautifulSoup
 from .base import (make_id, clean_price, clean_text, extract_rooms,
-                   extract_area, extract_floor, detect_property_type, detect_deal_type, make_listing, fetch_rendered)
+                   extract_area, extract_floor, detect_property_type, detect_deal_type, make_listing, fetch)
 
 SOURCE = 'tap'
 SOURCE_NAME = 'Tap.az'
@@ -45,16 +45,11 @@ def parse_tap(pages=2):
 
 
 def _fetch_html(page, deal_type):
-    """Fetch from rendered HTML page (Playwright)"""
+    """Fetch HTML page using requests (no JS rendering)"""
     url = HTML_URLS.get(deal_type, HTML_URLS['kiraye']).format(page=page)
     try:
-        soup = fetch_rendered(url, timeout=45, wait_until='domcontentloaded')
+        soup = fetch(url, timeout=30)
         if not soup:
-            return []
-
-        html_text = str(soup).lower()
-        if any(x in html_text for x in ['cloudflare', 'captcha', 'cf-chl', 'turnstile']):
-            print('    Tap: blocked by Cloudflare/captcha')
             return []
 
         # Find listing cards
@@ -63,9 +58,12 @@ def _fetch_html(page, deal_type):
                  soup.select('article') or
                  soup.select('[data-item-id]'))
         if not cards:
-            # fallback: any anchor with /elanlar/<id>
-            cards = [a.find_parent(['div', 'li', 'article']) for a in soup.select('a[href]')
-                     if re.search(r'/elanlar/\d+', a.get('href', ''))]
+            # fallback: any anchor with /elanlar/ in URL
+            cards = [
+                a.find_parent(['div', 'li', 'article'])
+                for a in soup.select('a[href]')
+                if '/elanlar/' in (a.get('href') or '')
+            ]
             cards = [c for c in cards if c]
 
         items = []
