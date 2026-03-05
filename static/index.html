@@ -5,20 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EvTap — Bakı Daşınmaz Əmlak Axtarışı</title>
 <meta name="description" content="Bakıda mənzil, ev, villa, ofis kirayə və satış elanları. 20 saytdan avtomatik yığılır.">
+<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval' data: blob:;">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root {
-  --gold: #C9A96E; --gold-light: #E8D5B0; --gold-dim: #8B6E3E;
-  --bg-deep: #08080D; --bg-card: #0F0F16; --bg-surface: #15151E; --bg-hover: #1C1C28;
-  --border: rgba(201,169,110,0.12); --border-bright: rgba(201,169,110,0.35);
-  --text-primary: #F0EDE6; --text-secondary: #8A8599; --text-muted: #4A4760;
-  --green: #4CAF7D; --red: #E85D5D; --blue: #5D9EE8; --purple: #A85DE8; --orange: #E8835D;
-  --radius: 10px; --radius-sm: 6px; --radius-lg: 14px;
+  --gold: #B8860B; --gold-light: #F3E5AB; --gold-dim: #D4AF37;
+  --bg-deep: #F4F7F6; --bg-card: #FFFFFF; --bg-surface: #F8F9FA; --bg-hover: #EDF2F4;
+  --border: rgba(0,0,0,0.08); --border-bright: rgba(184,134,11,0.4);
+  --text-primary: #2C3E50; --text-secondary: #5D6D7E; --text-muted: #95A5A6;
+  --green: #27AE60; --red: #E74C3C; --blue: #3498DB; --purple: #9B59B6; --orange: #E67E22;
+  --radius: 12px; --radius-sm: 8px; --radius-lg: 16px;
 }
 * { margin:0; padding:0; box-sizing:border-box; }
 body { font-family:'Inter',system-ui,sans-serif; background:var(--bg-deep); color:var(--text-primary); min-height:100vh; overflow-x:hidden; }
-body::before { content:''; position:fixed; inset:0; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E"); pointer-events:none; z-index:0; opacity:0.5; }
+body::before { content:''; position:fixed; inset:0; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E"); pointer-events:none; z-index:0; opacity:0.8; }
 ::-webkit-scrollbar { width:5px; }
 ::-webkit-scrollbar-track { background:transparent; }
 ::-webkit-scrollbar-thumb { background:var(--border); border-radius:3px; }
@@ -102,17 +103,17 @@ body::before { content:''; position:fixed; inset:0; background-image:url("data:i
 .sort-select { background:var(--bg-surface); border:1px solid var(--border); color:var(--text-secondary); padding:4px 8px; border-radius:var(--radius-sm); font-size:11px; font-family:'Inter',sans-serif; cursor:pointer; outline:none; }
 
 .listings-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:12px; }
-.listing-card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; cursor:pointer; transition:all .22s; animation:slideIn .35s ease forwards; opacity:0; transform:translateY(10px); }
+.listing-card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; cursor:pointer; transition:all .22s; animation:slideIn .35s ease forwards; opacity:0; transform:translateY(10px); box-shadow:0 2px 8px rgba(0,0,0,0.04); }
 @keyframes slideIn { to { opacity:1; transform:translateY(0); } }
-.listing-card:hover { border-color:var(--border-bright); transform:translateY(-2px); box-shadow:0 8px 28px rgba(0,0,0,.4); }
+.listing-card:hover { border-color:var(--border-bright); transform:translateY(-3px); box-shadow:0 12px 24px rgba(0,0,0,0.08); }
 .listing-card.is-new { border-color:rgba(76,175,125,.35); box-shadow:0 0 0 1px rgba(76,175,125,.12); }
 .card-img-wrap { width:100%; height:160px; position:relative; overflow:hidden; background:var(--bg-surface); display:flex; align-items:center; justify-content:center; }
 .card-img-wrap img { width:100%; height:100%; object-fit:cover; transition:transform .3s; }
 .listing-card:hover .card-img-wrap img { transform:scale(1.03); }
 .card-img-placeholder { font-size:40px; z-index:1; }
-.card-img-wrap::after { content:''; position:absolute; inset:0; background:linear-gradient(to bottom,transparent 40%,rgba(8,8,13,.8)); pointer-events:none; }
-.source-tag { position:absolute; top:6px; left:6px; padding:2px 6px; border-radius:4px; font-size:9px; font-weight:600; letter-spacing:.3px; z-index:2; backdrop-filter:blur(8px); }
-.new-tag { position:absolute; top:6px; right:6px; background:var(--green); color:var(--bg-deep); padding:2px 6px; border-radius:4px; font-size:8px; font-weight:700; letter-spacing:1px; text-transform:uppercase; z-index:2; animation:blink 1.5s ease infinite; }
+.card-img-wrap::after { content:''; position:absolute; inset:0; background:linear-gradient(to bottom,transparent 50%,rgba(0,0,0,0.4)); pointer-events:none; }
+.source-tag { position:absolute; top:8px; left:8px; padding:3px 8px; border-radius:6px; font-size:10px; font-weight:600; letter-spacing:.3px; z-index:2; backdrop-filter:blur(8px); background:rgba(255,255,255,0.9); }
+.new-tag { position:absolute; top:8px; right:8px; background:var(--green); color:#FFF; padding:3px 8px; border-radius:6px; font-size:9px; font-weight:700; letter-spacing:1px; text-transform:uppercase; z-index:2; animation:blink 1.5s ease infinite; box-shadow:0 2px 4px rgba(0,0,0,0.2); }
 @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.6} }
 .deal-tag { position:absolute; bottom:6px; left:6px; padding:2px 6px; border-radius:4px; font-size:8.5px; font-weight:600; z-index:2; backdrop-filter:blur(8px); }
 .deal-tag.kiraye { background:rgba(93,158,232,0.2); color:#7BB8F0; border:1px solid rgba(93,158,232,0.3); }
