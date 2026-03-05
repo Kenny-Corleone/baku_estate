@@ -12,27 +12,8 @@ BASE_URL = 'https://yekemlak.az'
 
 
 def parse_yekemlak(pages=2):
-    results = []
-    for page in range(1, pages + 1):
-        url = f'{BASE_URL}/page/{page}/' if page > 1 else f'{BASE_URL}/'
-        print(f"  Yüklənir: {url}")
-        soup = fetch(url)
-        if not soup:
-            continue
-
-        cards = (soup.select('article') or soup.select('.post') or
-                 soup.select('.listing-item'))
-        print(f"  YekEmlak kartoçka: {len(cards)}")
-
-        for card in cards:
-            try:
-                r = _parse_card(card)
-                if r:
-                    results.append(r)
-            except Exception as e:
-                print(f"  ⚠️ {e}")
-    print(f"  YekEmlak cəmi: {len(results)}")
-    return results
+    # Domain currently serves parked/irrelevant content; return empty.
+    return []
 
 
 def _parse_card(card):

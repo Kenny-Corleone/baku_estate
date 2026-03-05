@@ -1,9 +1,11 @@
 """
 EvTap — Bina.az parser
-__NEXT_DATA__ apolloState-dən elanları çıxarır
+HTML və __NEXT_DATA__-dan elanları çıxarır
 """
 import requests, random, re, time, json
-from .base import make_id, clean_price, clean_text, detect_property_type, detect_deal_type, make_listing
+from bs4 import BeautifulSoup
+from .base import (make_id, clean_price, clean_text, detect_property_type, 
+                   detect_deal_type, make_listing, extract_rooms, extract_area, extract_floor, fetch_rendered)
 
 SOURCE = 'bina'
 SOURCE_NAME = 'Bina.az'
@@ -23,7 +25,7 @@ def parse_bina(pages=2):
         for page in range(1, pages + 1):
             url = url_template.format(page=page)
             print(f"  Yüklənir: {url}")
-            items = _fetch_nextdata(url, deal_type)
+            items = _fetch_listings(url, deal_type)
             print(f"  Bina [{deal_type}] səhifə {page}: {len(items)} elan")
             results.extend(items)
             time.sleep(random.uniform(1.5, 2.5))
@@ -31,143 +33,151 @@ def parse_bina(pages=2):
     return results
 
 
-def _fetch_nextdata(url, deal_type='kiraye'):
+def _fetch_listings(url, deal_type='kiraye'):
+    """Fetch listings from rendered HTML page (Playwright)"""
     try:
-        s = requests.Session()
-        s.headers.update({
-            'User-Agent': UA,
-            'Accept': 'text/html,*/*',
-            'Accept-Language': 'az,ru;q=0.9',
-        })
-        resp = s.get(url, timeout=20)
-        if resp.status_code != 200:
-            return []
-        resp.encoding = resp.apparent_encoding or 'utf-8'
-        text = resp.text
-
-        m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', text, re.DOTALL)
-        if not m:
-            print(f"  ❌ __NEXT_DATA__ tapılmadı")
+        soup = fetch_rendered(url, timeout=45, wait_until='domcontentloaded', wait_for_selector='.item-card')
+        if not soup:
             return []
 
-        data = json.loads(m.group(1))
-
-        apollo = data.get('props', {}).get('initialState', {}).get('apolloState', {})
-        if not apollo:
-            apollo = data.get('apolloState', {})
+        cards = soup.select('.item-card')
+        if not cards:
+            cards = (soup.select('[class*="items-i"]') or
+                     soup.select('[class*="item-"]') or
+                     soup.select('article') or
+                     soup.select('[data-item-id]'))
 
         items = []
-        for key, val in apollo.items():
-            if not (key.startswith('Item:') and re.match(r'Item:\d+', key)):
-                continue
-            if not isinstance(val, dict):
-                continue
-            if not val.get('price'):
-                continue
-
-            raw_id = key.replace('Item:', '')
-            price = clean_price(str(val.get('price', '') or val.get('price_value', '')))
-
-            # Foto
-            photo = ''
-            photos = val.get('photos', [])
-            if photos and isinstance(photos, list):
-                p = photos[0]
-                if isinstance(p, dict):
-                    photo = p.get('url', '') or p.get('thumbnail', '')
-                else:
-                    photo = str(p)
-
-            # Parametrlər
-            rooms = None
-            area = None
-            floor = None
-            total_floors = None
-            params = val.get('params', []) or []
-            for p in params:
-                if not isinstance(p, dict):
-                    continue
-                pid = str(p.get('id', ''))
-                pval = str(p.get('value', ''))
-                if pid in ('1', 'room', 'rooms'):
-                    try:
-                        rooms = int(re.sub(r'[^\d]', '', pval))
-                    except:
-                        pass
-                elif pid in ('2', 'area', 'sahə'):
-                    try:
-                        area = float(re.sub(r'[^\d.]', '', pval))
-                    except:
-                        pass
-                elif pid in ('4', 'floor', 'mərtəbə'):
-                    fm = re.search(r'(\d+)\s*/\s*(\d+)', pval)
-                    if fm:
-                        floor, total_floors = int(fm.group(1)), int(fm.group(2))
-
-            # Rayon
-            city_ref = val.get('city', {})
-            if isinstance(city_ref, dict):
-                district = city_ref.get('name', 'Bakı')
-            else:
-                district = str(city_ref) if city_ref else 'Bakı'
-
-            district2 = val.get('district', {})
-            if isinstance(district2, dict) and district2.get('name'):
-                district = district2['name']
-
-            title = val.get('title', '') or (f"{rooms}-otaqlı mənzil" if rooms else 'Mənzil')
-            slug = val.get('url', '') or val.get('slug', '')
-            link = f"{BASE_URL}/{slug}" if slug and not str(slug).startswith('http') else str(slug) or f"{BASE_URL}/items/{raw_id}"
-
-            prop_type = detect_property_type(str(title) + ' ' + str(val.get('category', '')))
-
-            items.append(make_listing(
-                SOURCE, SOURCE_NAME, raw_id,
-                link=link, price=price, title=str(title)[:80],
-                district=str(district)[:50] or 'Bakı',
-                rooms=rooms, area=area, floor=floor, total_floors=total_floors,
-                photo=photo, property_type=prop_type, deal_type=deal_type,
-            ))
-
-        # apolloState-dən heç nə tapılmadısa — pageProps-a bax
-        if not items:
-            page_props = data.get('props', {}).get('initialProps', {}).get('pageProps', {})
-            for key in ['items', 'listings', 'data', 'ads']:
-                lst = page_props.get(key, [])
-                if lst and isinstance(lst, list):
-                    print(f"  pageProps.{key}-da tapıldı: {len(lst)}")
-                    for item in lst:
-                        r = _map_item(item, deal_type)
-                        if r:
-                            items.append(r)
-                    break
+        for card in cards:
+            try:
+                item = _parse_html_card(card, deal_type)
+                if item:
+                    items.append(item)
+            except Exception:
+                pass
 
         return items
-
     except Exception as e:
         print(f"  ❌ Bina xəta: {e}")
-        import traceback
-        traceback.print_exc()
         return []
 
 
-def _map_item(item, deal_type='kiraye'):
-    if not isinstance(item, dict):
+def _parse_html_card(card, deal_type='kiraye'):
+    """Parse a single listing card from HTML"""
+    # Get link
+    link_el = card.select_one('a[href]')
+    if not link_el:
         return None
-    raw_id = str(item.get('id', ''))
-    if not raw_id:
+    href = link_el.get('href', '')
+    if not href:
         return None
-    price = clean_price(str(item.get('price', '') or ''))
+    link = href if href.startswith('http') else BASE_URL + href
+    
+    # Extract ID
+    m = re.search(r'/items/(\d+)', href)
+    if not m:
+        m = re.search(r'[-_](\d{4,})', href)
+    raw_id = m.group(1) if m else str(abs(hash(href)) % 10**10)
+    
+    full_text = card.get_text(' ', strip=True)
+    
+    # Price
+    price_el = (card.select_one('[class*="price"]') or
+                card.select_one('.price-val') or
+                card.select_one('.price'))
+    price = clean_price(price_el.get_text()) if price_el else None
+
+    # Title
+    title_el = (card.select_one('[class*="title"]') or
+                card.select_one('.card-title') or
+                card.select_one('h2') or card.select_one('h3'))
+    title = clean_text(title_el.get_text() if title_el else '')
+    if not title:
+        title = clean_text(full_text)
+    
+    # Photo
+    img_el = card.select_one('img')
     photo = ''
-    photos = item.get('photos', [])
-    if photos and isinstance(photos, list):
-        p = photos[0]
-        photo = p.get('url', '') if isinstance(p, dict) else str(p)
+    if img_el:
+        photo = img_el.get('data-src') or img_el.get('src') or ''
+        if photo and not photo.startswith('http'):
+            photo = BASE_URL + photo
+    
+    # Extract details
+    rooms = extract_rooms(full_text)
+    area = extract_area(full_text)
+    floor, total_floors = extract_floor(full_text)
+    
     return make_listing(
         SOURCE, SOURCE_NAME, raw_id,
-        link=f"{BASE_URL}/items/{raw_id}", price=price,
-        title=item.get('title', 'Mənzil')[:80], district='Bakı',
-        rooms=item.get('rooms'), area=item.get('area'),
-        property_type=detect_property_type(item.get('title', '')),
-        deal_type=deal_type, photo=photo,
+        link=link, price=price, title=title or 'Mənzil',
+        district='Bakı', rooms=rooms, area=area,
+        floor=floor, total_floors=total_floors, photo=photo,
+        property_type=detect_property_type(title),
+        deal_type=deal_type,
     )
+
+
+def _try_nextdata(html_text, deal_type='kiraye'):
+    """Try to extract from __NEXT_DATA__ if available"""
+    try:
+        m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', html_text, re.DOTALL)
+        if not m:
+            return []
+        
+        data = json.loads(m.group(1))
+        
+        # Search for items in various locations
+        def find_items(obj, depth=0):
+            if depth > 8:
+                return []
+            if isinstance(obj, dict):
+                # Check for item arrays
+                for key in ['items', 'ads', 'listings', 'data', 'results']:
+                    if key in obj and isinstance(obj[key], list) and len(obj[key]) > 0:
+                        return obj[key]
+                # Recurse
+                for v in obj.values():
+                    result = find_items(v, depth + 1)
+                    if result:
+                        return result
+            elif isinstance(obj, list) and len(obj) > 0:
+                if isinstance(obj[0], dict) and 'id' in obj[0]:
+                    return obj
+            return []
+        
+        items_data = find_items(data)
+        if not items_data:
+            return []
+        
+        items = []
+        for item in items_data[:50]:
+            if not isinstance(item, dict) or not item.get('id'):
+                continue
+            
+            raw_id = str(item.get('id', ''))
+            price = clean_price(str(item.get('price', '') or item.get('price_value', '')))
+            title = item.get('title', '') or 'Mənzil'
+            
+            # Photo
+            photos = item.get('photos', [])
+            photo = ''
+            if photos and isinstance(photos, list):
+                p = photos[0]
+                photo = (p.get('url', '') if isinstance(p, dict) else str(p))
+            
+            # Link
+            slug = item.get('url', '') or item.get('slug', '')
+            link = f"{BASE_URL}/{slug}" if slug and not str(slug).startswith('http') else str(slug) or f"{BASE_URL}/items/{raw_id}"
+            
+            items.append(make_listing(
+                SOURCE, SOURCE_NAME, raw_id,
+                link=link, price=price, title=str(title)[:80],
+                district='Bakı', rooms=item.get('rooms'), area=item.get('area'),
+                photo=photo, property_type=detect_property_type(title),
+                deal_type=deal_type,
+            ))
+        
+        return items
+    except Exception as e:
+        return []

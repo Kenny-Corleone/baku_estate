@@ -22,6 +22,21 @@ def parse_yeniemlak(pages=2):
 
         cards = (soup.select('.item') or soup.select('.ad') or
                  soup.select('.listing') or soup.select('article'))
+        if not cards:
+            candidates = []
+            for a in soup.select('a[href]'):
+                href = a.get('href', '')
+                if not href:
+                    continue
+                if href.startswith('/elan/'):
+                    parent = a.find_parent(['div', 'li', 'article'])
+                    candidates.append(parent or a)
+            seen = set()
+            cards = []
+            for c in candidates:
+                if id(c) not in seen:
+                    seen.add(id(c))
+                    cards.append(c)
         print(f"  YeniEmlak kartoçka: {len(cards)}")
 
         for card in cards:
@@ -31,12 +46,13 @@ def parse_yeniemlak(pages=2):
                     results.append(r)
             except Exception as e:
                 print(f"  ⚠️ {e}")
+
     print(f"  YeniEmlak cəmi: {len(results)}")
     return results
 
 
 def _parse_card(card):
-    link_el = card.select_one('a[href]')
+    link_el = card if getattr(card, 'name', None) == 'a' else card.select_one('a[href]')
     if not link_el:
         return None
     href = link_el.get('href', '')
@@ -44,12 +60,16 @@ def _parse_card(card):
         return None
     link = href if href.startswith('http') else BASE_URL + href
 
-    m = re.search(r'/(\d{4,})', href)
+    m = re.search(r'-(\d{4,})$', href)
+    if not m:
+        m = re.search(r'/(\d{4,})', href)
     raw_id = m.group(1) if m else str(abs(hash(href)) % 10**10)
 
     full_text = card.get_text(' ', strip=True)
+    price = None
     price_el = card.select_one('.price') or card.select_one('[class*="price"]')
-    price = clean_price(price_el.get_text()) if price_el else None
+    if price_el:
+        price = clean_price(price_el.get_text())
     if not price:
         pm = re.search(r'(\d[\d\s.,]{0,10})\s*(?:AZN|₼|manat)', full_text, re.IGNORECASE)
         if pm:
@@ -57,15 +77,21 @@ def _parse_card(card):
 
     title_el = card.select_one('h2') or card.select_one('h3') or card.select_one('.title')
     title = clean_text(title_el.get_text() if title_el else '')
-    district = detect_district(full_text)
-    deal_type = 'satis' if any(w in full_text.lower() for w in ['satış', 'satılır', 'sale']) else 'kiraye'
+    if not title and getattr(link_el, 'get_text', None):
+        title = clean_text(link_el.get_text(' ', strip=True))
+    if title:
+        title = re.sub(r'^\s*\d[\d\s.,]*\s*(?:AZN|₼)\s*/?\s*', '', title, flags=re.IGNORECASE)
+        title = title[:80]
+
+    district = detect_district(title + ' ' + full_text)
+    deal_type = 'satis' if any(w in (title + ' ' + full_text).lower() for w in ['satış', 'satılır', 'sale']) else 'kiraye'
 
     img_el = card.select_one('img')
     photo = ''
     if img_el:
         photo = img_el.get('data-src') or img_el.get('src') or ''
         if photo and not photo.startswith('http'):
-            photo = BASE_URL + photo
+            photo = BASE_URL + (photo if photo.startswith('/') else '/' + photo)
 
     rooms = extract_rooms(full_text)
     area = extract_area(full_text)

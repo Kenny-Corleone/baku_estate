@@ -6,9 +6,16 @@ EvTap — Scrape Pipeline (Paralel)
 import json
 import time
 import os
+import sys
+import io
 import logging
 from datetime import datetime, timezone
 from concurrent.futures import ThreadPoolExecutor, as_completed
+
+if sys.stdout.encoding.lower() != 'utf-8':
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+if sys.stderr.encoding.lower() != 'utf-8':
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
 
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s] %(levelname)s — %(message)s', datefmt='%H:%M:%S')
 log = logging.getLogger(__name__)
@@ -52,7 +59,7 @@ OUTPUT_FILE = os.path.join(OUTPUT_DIR, 'listings.json')
 def _run_parser(name, fn, pages=1):
     """Bir parseri işə sal, nəticədə (ad, elanlar) qaytar."""
     try:
-        log.info(f"  📡 {name} parserlənir...")
+        log.info(f"  {name} parserlənir...")
         results = fn(pages=pages)
         valid = [r for r in results if r and r.get('id')]
         seen = set()
@@ -62,15 +69,15 @@ def _run_parser(name, fn, pages=1):
                 seen.add(item['id'])
                 item['timestamp'] = time.time()
                 unique.append(item)
-        log.info(f"  ✅ {name}: {len(unique)} elan")
+        log.info(f"  OK {name}: {len(unique)} elan")
         return name, unique
     except Exception as e:
-        log.error(f"  ❌ {name} xətası: {e}")
+        log.error(f"  ERROR {name} xətası: {e}")
         return name, []
 
 
 def run_all_parsers():
-    log.info("🔄 20 mənbənin PARalel parserlənməsi başlanır...")
+    log.info("20 mənbənin paralel parserlənməsi başlanır...")
     start = time.time()
     all_listings = []
     source_stats = {}
@@ -118,8 +125,8 @@ def run_all_parsers():
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
-    log.info(f"✨ Tamamlandı {elapsed} san-da. Cəmi: {len(all_listings)} elan")
-    log.info(f"📊 Mənbələr: {source_stats}")
+    log.info(f"Tamamlandı {elapsed} san-da. Cəmi: {len(all_listings)} elan")
+    log.info(f"Mənbələr: {source_stats}")
     return output
 
 

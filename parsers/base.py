@@ -8,6 +8,11 @@ import re
 import time
 import random
 
+try:
+    from playwright.sync_api import sync_playwright
+except Exception:
+    sync_playwright = None
+
 USER_AGENTS = [
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0',
@@ -71,15 +76,18 @@ def fetch(url: str, timeout: int = 20, retries: int = 3):
                 else:
                     print(f"    ⚠️  Cavab HTML deyil (ilk 100 bayt): {repr(text[:100])}")
                     return None
+
             elif resp.status_code in (301, 302):
                 new_url = resp.headers.get('Location', '')
                 print(f"    ↩️  Yönləndirmə: {new_url}")
                 if new_url:
                     url = new_url
                     continue
+
             elif resp.status_code == 403:
                 print(f"    ❌ 403 Bloklanıb — cəhd {attempt+1}/{retries}")
                 time.sleep(5 * (attempt + 1))
+
             else:
                 print(f"    ❌ HTTP {resp.status_code}")
                 return None
@@ -87,6 +95,42 @@ def fetch(url: str, timeout: int = 20, retries: int = 3):
             print(f"    ❌ Xəta: {e}")
             time.sleep(3)
     return None
+
+
+def fetch_rendered(
+    url: str,
+    timeout: int = 30,
+    wait_until: str = 'networkidle',
+    wait_for_selector: str | None = None,
+):
+    """Fetch HTML using a headless browser (Playwright) for JS-rendered pages."""
+    if sync_playwright is None:
+        raise RuntimeError('Playwright is not installed. Install it and run: playwright install')
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch(
+            headless=True,
+            args=[
+                '--disable-blink-features=AutomationControlled',
+            ],
+        )
+        try:
+            context = browser.new_context(
+                user_agent=random.choice(USER_AGENTS),
+                locale='az-AZ',
+                extra_http_headers={
+                    'Accept-Language': 'az-AZ,az;q=0.9,ru;q=0.8,en;q=0.7',
+                },
+            )
+            page = context.new_page()
+            page.set_default_timeout(timeout * 1000)
+            page.goto(url, wait_until=wait_until)
+            if wait_for_selector:
+                page.wait_for_selector(wait_for_selector)
+            html = page.content()
+            return BeautifulSoup(html, 'html.parser')
+        finally:
+            browser.close()
 
 
 def fetch_json(url: str, timeout: int = 15, headers: dict = None):

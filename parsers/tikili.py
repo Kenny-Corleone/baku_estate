@@ -3,7 +3,7 @@ EvTap — Tikili.az parser
 """
 from .base import (fetch, clean_price, clean_text,
                    extract_rooms, extract_area, extract_floor,
-                   detect_property_type, detect_district, make_listing)
+                   detect_property_type, detect_district, make_listing, fetch_rendered)
 import re
 
 SOURCE = 'tikili'
@@ -11,8 +11,8 @@ SOURCE_NAME = 'Tikili.az'
 BASE_URL = 'https://tikili.az'
 
 URLS = {
-    'satis': 'https://tikili.az/ru/sale?page={page}',
-    'kiraye': 'https://tikili.az/ru/rent?page={page}',
+    'satis': 'https://tikili.az/?page={page}',
+    'kiraye': 'https://tikili.az/?page={page}',
 }
 
 
@@ -22,7 +22,7 @@ def parse_tikili(pages=2):
         for page in range(1, pages + 1):
             url = url_template.format(page=page)
             print(f"  Yüklənir: {url}")
-            soup = fetch(url)
+            soup = fetch_rendered(url, timeout=60, wait_until='domcontentloaded')
             if not soup:
                 continue
 
@@ -30,6 +30,21 @@ def parse_tikili(pages=2):
                      soup.select('article.property-card') or
                      soup.select('.listing-item') or
                      soup.select('.item'))
+            if not cards:
+                candidates = []
+                for a in soup.select('a[href]'):
+                    href = a.get('href', '')
+                    if not href:
+                        continue
+                    if 'elan-item.php?elan=' in href:
+                        parent = a.find_parent(['div', 'li', 'article'])
+                        candidates.append(parent or a)
+                seen = set()
+                cards = []
+                for c in candidates:
+                    if id(c) not in seen:
+                        seen.add(id(c))
+                        cards.append(c)
             print(f"  Tikili [{deal_type}] kartoçka: {len(cards)}")
 
             for card in cards:
@@ -44,15 +59,20 @@ def parse_tikili(pages=2):
 
 
 def _parse_card(card, deal_type='satis'):
-    link_el = card.select_one('a[href]')
+    link_el = card if getattr(card, 'name', None) == 'a' else card.select_one('a[href]')
     if not link_el:
         return None
     href = link_el.get('href', '')
     if not href:
         return None
-    link = href if href.startswith('http') else BASE_URL + href
+    if href.startswith('http'):
+        link = href
+    else:
+        link = BASE_URL + (href if href.startswith('/') else '/' + href)
 
-    m = re.search(r'/(\d{4,})', href)
+    m = re.search(r'elan=(\d+)', href)
+    if not m:
+        m = re.search(r'/(\d{4,})', href)
     if not m:
         m = re.search(r'[-_](\d{4,})', href)
     raw_id = m.group(1) if m else str(abs(hash(href)) % 10**10)
@@ -77,7 +97,7 @@ def _parse_card(card, deal_type='satis'):
     if img_el:
         photo = img_el.get('data-src') or img_el.get('src') or ''
         if photo and not photo.startswith('http'):
-            photo = BASE_URL + photo
+            photo = BASE_URL + (photo if photo.startswith('/') else '/' + photo)
 
     rooms = extract_rooms(full_text)
     area = extract_area(full_text)

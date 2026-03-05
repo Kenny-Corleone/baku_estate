@@ -3,7 +3,7 @@ EvTap — Ev10.az parser
 """
 from .base import (fetch, make_id, clean_price, clean_text,
                    extract_rooms, extract_area, extract_floor,
-                   detect_property_type, detect_district, make_listing)
+                   detect_property_type, detect_district, make_listing, fetch_rendered)
 import re
 
 SOURCE = 'ev10'
@@ -11,8 +11,8 @@ SOURCE_NAME = 'Ev10.az'
 BASE_URL = 'https://ev10.az'
 
 URLS = {
-    'satis': 'https://ev10.az/elanlar/dasinmaz-emlak/menzil-satilir?page={page}',
-    'kiraye': 'https://ev10.az/elanlar/dasinmaz-emlak/menzil-kiraye?page={page}',
+    'satis': 'https://ev10.az/alqi-satqi/menzil?page_number={page}&location=Bakı-seher',
+    'kiraye': 'https://ev10.az/kiraye?page_number={page}&location=Bakı-seher',
 }
 
 
@@ -22,11 +22,25 @@ def parse_ev10(pages=2):
         for page in range(1, pages + 1):
             url = url_template.format(page=page)
             print(f"  Yüklənir: {url}")
-            soup = fetch(url)
+            soup = fetch_rendered(url, timeout=60, wait_until='domcontentloaded')
             if not soup:
                 continue
 
-            cards = soup.select('.products_item') or soup.select('.item') or soup.select('[class*="card"]')
+            # Prefer real listing cards derived from /posting/<id> links
+            candidates = []
+            for a in soup.select('a[href]'):
+                href = a.get('href', '')
+                if re.search(r'/posting/\d+', href):
+                    parent = a.find_parent(['div', 'li', 'article'])
+                    candidates.append(parent or a)
+            seen = set()
+            cards = []
+            for c in candidates:
+                if id(c) not in seen:
+                    seen.add(id(c))
+                    cards.append(c)
+            if not cards:
+                cards = soup.select('.products_item') or soup.select('.item') or soup.select('[class*="card"]')
             print(f"  Ev10 [{deal_type}] kartoçka: {len(cards)}")
 
             for card in cards:

@@ -20,7 +20,9 @@ def parse_vipemlak(pages=2):
         if not soup:
             continue
 
-        cards = (soup.select('.item') or soup.select('.ad') or
+        cards = (soup.select('.prodbig') or
+                 soup.select('.pranto') or
+                 soup.select('.item') or soup.select('.ad') or
                  soup.select('article') or soup.select('.listing'))
         print(f"  VipEmlak kartoçka: {len(cards)}")
 
@@ -44,15 +46,25 @@ def _parse_card(card):
         return None
     link = href if href.startswith('http') else BASE_URL + href
 
-    m = re.search(r'/(\d{4,})', href)
+    m = re.search(r'-(\d{4,})\.html', href)
+    if not m:
+        m = re.search(r'/(\d{4,})\.html', href)
     raw_id = m.group(1) if m else str(abs(hash(href)) % 10**10)
 
     full_text = card.get_text(' ', strip=True)
+    price = None
     price_el = card.select_one('.price') or card.select_one('[class*="price"]')
-    price = clean_price(price_el.get_text()) if price_el else None
+    if price_el:
+        price = clean_price(price_el.get_text())
+    if not price:
+        pm = re.search(r'(\d[\d\s.,]{0,12})\s*(?:AZN|₼|manat|Azn)', full_text, re.IGNORECASE)
+        if pm:
+            price = clean_price(pm.group(1))
 
     title_el = card.select_one('h2') or card.select_one('h3') or card.select_one('.title')
     title = clean_text(title_el.get_text() if title_el else '')
+    if not title:
+        title = clean_text(full_text)[:80]
     district = detect_district(full_text)
     deal_type = 'kiraye' if any(w in full_text.lower() for w in ['kirayə', 'icarə', 'rent']) else 'satis'
 

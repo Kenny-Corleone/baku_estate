@@ -58,20 +58,39 @@ def _parse_card(card, full_soup):
     link = BASE_URL + href if href.startswith('/') else href
 
     m = re.search(r'/(\d{4,})', href)
-    if not m:
-        return None
-    raw_id = m.group(1)
+    raw_id = m.group(1) if m else str(abs(hash(href)) % 10**10)
 
-    # Qiymət — HTML-də şərhlərdə gizlənib
+    full_text = card.get_text(' ', strip=True)
+    
+    # Qiymət — HTML-də şərhlərdə və ya mətnlərdə
     price = None
-    card_html = str(card)
-    price_m = re.search(r"elan_price['\">]+\s*>?\s*(\d[\d\s]*)\s*AZN", card_html, re.IGNORECASE)
-    if price_m:
-        price = clean_price(price_m.group(1))
+    
+    # Try visible price elements first
+    for price_cls in ['.elan_price', '[class*="price"]', '.price', '[class*="qiymet"]']:
+        price_el = card.select_one(price_cls)
+        if price_el:
+            price_text = price_el.get_text()
+            price = clean_price(price_text)
+            if price:
+                break
+    
+    # Try from full text
+    if not price:
+        price_m = re.search(r'(\d[\d\s]{2,})\s*(?:AZN|₼|manat)', full_text, re.IGNORECASE)
+        if price_m:
+            price = clean_price(price_m.group(1))
+    
+    # Try HTML source
+    if not price:
+        card_html = str(card)
+        price_m = re.search(r"(?:elan_price|price|qiymet)['\">]*\s*>?\s*(\d[\d\s]*)\s*(?:AZN|₼)", card_html, re.IGNORECASE)
+        if price_m:
+            price = clean_price(price_m.group(1))
 
+    # Try comments
     if not price:
         for comment in card.find_all(string=lambda t: isinstance(t, Comment)):
-            cm = re.search(r'(\d[\d\s]+)\s*AZN', str(comment), re.IGNORECASE)
+            cm = re.search(r'(\d[\d\s]+)\s*(?:AZN|₼)', str(comment), re.IGNORECASE)
             if cm:
                 price = clean_price(cm.group(1))
                 break
@@ -82,10 +101,14 @@ def _parse_card(card, full_soup):
                 card.select_one('h2') or card.select_one('h3'))
     title = clean_text(title_el.get_text() if title_el else '')
 
-    full_text = card.get_text(' ', strip=True)
-
     # Rayon
-    district = detect_district(full_text)
+    district_el = card.select_one('[class*="location"]') or card.select_one('[class*="address"]')
+    if district_el:
+        from .base import detect_district
+        district = detect_district(district_el.get_text())
+    else:
+        from .base import detect_district
+        district = detect_district(full_text)
 
     # Foto
     img_el = card.select_one('img')
@@ -95,7 +118,7 @@ def _parse_card(card, full_soup):
         if photo and not photo.startswith('http'):
             photo = BASE_URL + photo
 
-    rooms = extract_rooms(full_text)
+    rooms = extract_rooms(full_text + ' ' + title)
     area = extract_area(full_text)
     floor, total = extract_floor(full_text)
 

@@ -20,7 +20,8 @@ def parse_etagi(pages=2):
         if not soup:
             continue
 
-        cards = (soup.select('[class*="OfferItem"]') or
+        cards = (soup.select('.templates-object-card') or
+                 soup.select('[class*="OfferItem"]') or
                  soup.select('[class*="property-card"]') or
                  soup.select('article') or soup.select('.item'))
         print(f"  Etagi kartoçka: {len(cards)}")
@@ -45,15 +46,25 @@ def _parse_card(card):
         return None
     link = href if href.startswith('http') else BASE_URL + href
 
-    m = re.search(r'/(\d{4,})', href)
+    m = re.search(r'/realty/(\d+)/', href)
+    if not m:
+        m = re.search(r'/(\d{4,})', href)
     raw_id = m.group(1) if m else str(abs(hash(href)) % 10**10)
 
     full_text = card.get_text(' ', strip=True)
+    price = None
     price_el = card.select_one('[class*="price"]') or card.select_one('.price')
-    price = clean_price(price_el.get_text()) if price_el else None
+    if price_el:
+        price = clean_price(price_el.get_text())
+    if not price:
+        pm = re.search(r'(\d[\d\s.,]{0,12})\s*(?:AZN|₼|\$|€)', full_text)
+        if pm:
+            price = clean_price(pm.group(1))
 
     title_el = card.select_one('h2') or card.select_one('h3') or card.select_one('[class*="title"]')
     title = clean_text(title_el.get_text() if title_el else '')
+    if not title:
+        title = clean_text(full_text)[:80]
     district = detect_district(full_text)
     deal_type = 'kiraye' if any(w in full_text.lower() for w in ['аренда', 'kirayə', 'rent']) else 'satis'
 

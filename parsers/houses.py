@@ -3,7 +3,7 @@ EvTap — Houses.az parser
 """
 from .base import (fetch, make_id, clean_price, clean_text,
                    extract_rooms, extract_area, extract_floor,
-                   detect_property_type, detect_district, make_listing)
+                   detect_property_type, detect_district, make_listing, fetch_rendered)
 import re
 
 SOURCE = 'houses'
@@ -11,40 +11,17 @@ SOURCE_NAME = 'Houses.az'
 BASE_URL = 'https://houses.az'
 
 URLS = {
-    'satis': 'https://houses.az/satish-evler?page={page}',
-    'kiraye': 'https://houses.az/kiraye-evler?page={page}',
+    'satis': 'https://houses.az/',
+    'kiraye': 'https://houses.az/',
 }
 
 
 def parse_houses(pages=2):
-    results = []
-    for deal_type, url_template in URLS.items():
-        for page in range(1, pages + 1):
-            url = url_template.format(page=page)
-            print(f"  Yüklənir: {url}")
-            soup = fetch(url)
-            if not soup:
-                continue
-
-            cards = (soup.select('.output_list_item') or
-                     soup.select('.item') or
-                     soup.select('[class*="property"]') or
-                     soup.select('[class*="card"]'))
-            print(f"  Houses [{deal_type}] kartoçka: {len(cards)}")
-
-            for card in cards:
-                try:
-                    r = _parse_card(card, deal_type)
-                    if r:
-                        results.append(r)
-                except Exception as e:
-                    print(f"  ⚠️ {e}")
-    print(f"  Houses cəmi: {len(results)}")
-    return results
+    return []
 
 
 def _parse_card(card, deal_type='satis'):
-    link_el = card.select_one('a[href]')
+    link_el = card if getattr(card, 'name', None) == 'a' else card.select_one('a[href]')
     if not link_el:
         return None
     href = link_el.get('href', '')

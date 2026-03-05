@@ -1,7 +1,7 @@
 """
 EvTap — EmlakBazari.az parser
 """
-from .base import (fetch, make_id, clean_price, clean_text,
+from .base import (fetch, fetch_rendered, make_id, clean_price, clean_text,
                    extract_rooms, extract_area, extract_floor,
                    detect_property_type, detect_district, make_listing)
 import re
@@ -22,7 +22,8 @@ def parse_emlakbazari(pages=2):
         for page in range(1, pages + 1):
             url = url_template.format(page=page)
             print(f"  Yüklənir: {url}")
-            soup = fetch(url)
+            # Many pages are JS-rendered; use Playwright.
+            soup = fetch_rendered(url, timeout=60, wait_until='domcontentloaded')
             if not soup:
                 continue
 
@@ -30,6 +31,40 @@ def parse_emlakbazari(pages=2):
                      soup.select('.elan') or
                      soup.select('[class*="item"]') or
                      soup.select('[class*="listing"]'))
+            if not cards:
+                candidates = []
+                for a in soup.select('a[href]'):
+                    href = a.get('href', '')
+                    if not href:
+                        continue
+                    if '/property/' in href:
+                        parent = a.find_parent(['div', 'li', 'article'])
+                        candidates.append(parent or a)
+                seen = set()
+                cards = []
+                for c in candidates:
+                    if id(c) not in seen:
+                        seen.add(id(c))
+                        cards.append(c)
+
+            # Fallback: some category pages return empty; use homepage to at least collect listings.
+            if not cards:
+                soup2 = fetch_rendered(BASE_URL + '/', timeout=60, wait_until='domcontentloaded')
+                if soup2:
+                    candidates = []
+                    for a in soup2.select('a[href]'):
+                        href = a.get('href', '')
+                        if not href:
+                            continue
+                        if '/property/' in href:
+                            parent = a.find_parent(['div', 'li', 'article'])
+                            candidates.append(parent or a)
+                    seen = set()
+                    cards = []
+                    for c in candidates:
+                        if id(c) not in seen:
+                            seen.add(id(c))
+                            cards.append(c)
             print(f"  EmlakBazarı [{deal_type}] kartoçka: {len(cards)}")
 
             for card in cards:
@@ -44,7 +79,7 @@ def parse_emlakbazari(pages=2):
 
 
 def _parse_card(card, deal_type='satis'):
-    link_el = card.select_one('a[href]')
+    link_el = card if getattr(card, 'name', None) == 'a' else card.select_one('a[href]')
     if not link_el:
         return None
     href = link_el.get('href', '')
@@ -52,7 +87,9 @@ def _parse_card(card, deal_type='satis'):
         return None
     link = href if href.startswith('http') else BASE_URL + href
 
-    m = re.search(r'/(\d{4,})', href)
+    m = re.search(r'/property/(\d+)-', href)
+    if not m:
+        m = re.search(r'/(\d{4,})', href)
     if not m:
         m = re.search(r'[-_](\d{4,})', href)
     if not m:

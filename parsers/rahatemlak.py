@@ -20,7 +20,8 @@ def parse_rahatemlak(pages=2):
         if not soup:
             continue
 
-        cards = (soup.select('.item') or soup.select('.ad-item') or
+        cards = (soup.select('.property-card') or
+                 soup.select('.item') or soup.select('.ad-item') or
                  soup.select('.listing') or soup.select('article'))
         print(f"  RahatEmlak kartoçka: {len(cards)}")
 
@@ -36,30 +37,50 @@ def parse_rahatemlak(pages=2):
 
 
 def _parse_card(card):
-    link_el = card.select_one('a[href]')
-    if not link_el:
-        return None
-    href = link_el.get('href', '')
-    if not href:
-        return None
-    link = href if href.startswith('http') else BASE_URL + href
+    # RahatEmlak list cards often do not contain an <a>; use image path to derive id.
+    raw_id = None
+    link = ''
 
-    m = re.search(r'/(\d{4,})', href)
-    raw_id = m.group(1) if m else str(abs(hash(href)) % 10**10)
+    img_el = card.select_one('img')
+    img_url = ''
+    if img_el:
+        img_url = img_el.get('data-src') or img_el.get('src') or ''
+        m = re.search(r'/images/property/(\d+)/', img_url)
+        if m:
+            raw_id = m.group(1)
+
+    if raw_id:
+        link = f'{BASE_URL}/elan/{raw_id}'
+    else:
+        # fallback id
+        raw_id = str(abs(hash(card.get_text(' ', strip=True))) % 10**10)
+        link = BASE_URL
 
     full_text = card.get_text(' ', strip=True)
-    price_el = card.select_one('.price') or card.select_one('[class*="price"]')
-    price = clean_price(price_el.get_text()) if price_el else None
 
+    price = None
+    price_el = card.select_one('.price') or card.select_one('[class*="price"]')
+    if price_el:
+        price = clean_price(price_el.get_text())
+    if not price:
+        pm = re.search(r'(\d[\d\s.,]{0,12})\s*(?:AZN|₼|manat)', full_text, re.IGNORECASE)
+        if pm:
+            price = clean_price(pm.group(1))
+
+    title = ''
     title_el = card.select_one('h2') or card.select_one('h3') or card.select_one('.title')
-    title = clean_text(title_el.get_text() if title_el else '')
+    if title_el:
+        title = clean_text(title_el.get_text())
+    if not title and img_el and img_el.get('alt'):
+        title = clean_text(img_el.get('alt'))
+    if not title:
+        title = clean_text(full_text)[:80]
     district = detect_district(full_text)
     deal_type = 'kiraye' if any(w in full_text.lower() for w in ['kirayə', 'icarə', 'rent']) else 'satis'
 
-    img_el = card.select_one('img')
     photo = ''
-    if img_el:
-        photo = img_el.get('data-src') or img_el.get('src') or ''
+    if img_url:
+        photo = img_url
         if photo and not photo.startswith('http'):
             photo = BASE_URL + photo
 
