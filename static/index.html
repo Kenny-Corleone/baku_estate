@@ -24,7 +24,7 @@ body::before { content:''; position:fixed; inset:0; background-image:url("data:i
 ::-webkit-scrollbar-track { background:transparent; }
 ::-webkit-scrollbar-thumb { background:var(--border); border-radius:3px; }
 
-.sidebar { position:fixed; left:0; top:0; bottom:0; width:260px; background:var(--bg-card); border-right:1px solid var(--border); display:none; flex-direction:column; z-index:10; overflow-y:auto; }
+.sidebar { position:fixed; left:0; top:0; bottom:0; width:260px; background:var(--bg-card); border-right:1px solid var(--border); display:flex; flex-direction:column; z-index:10; overflow-y:auto; }
 .logo-area { padding:16px 18px 12px; border-bottom:1px solid var(--border); }
 .logo-mark { font-family:'DM Serif Display',serif; font-size:22px; color:var(--gold); letter-spacing:-0.5px; display:flex; align-items:center; gap:8px; }
 .logo-icon { font-size:26px; }
@@ -61,7 +61,10 @@ body::before { content:''; position:fixed; inset:0; background-image:url("data:i
 .nav-badge.green { background:var(--green); }
 
 .sidebar-sources { padding:4px 8px 10px; border-top:1px solid var(--border); flex-shrink:0; }
-.sources-label { font-size:8.5px; letter-spacing:1.5px; text-transform:uppercase; color:var(--text-muted); padding:6px 10px 4px; }
+.sidebar-sources.collapsed .source-item { display:none; }
+.sources-label { font-size:8.5px; letter-spacing:1.5px; text-transform:uppercase; color:var(--text-muted); padding:6px 10px 4px; display:flex; align-items:center; justify-content:space-between; gap:6px; }
+.sources-toggle { border:none; background:rgba(255,255,255,0.04); color:var(--text-secondary); font-size:9px; padding:2px 6px; border-radius:10px; cursor:pointer; }
+.sources-toggle:hover { background:var(--bg-hover); color:var(--text-primary); }
 .source-item { display:flex; align-items:center; gap:6px; padding:4px 10px; border-radius:var(--radius-sm); font-size:11px; color:var(--text-secondary); cursor:pointer; transition:all .15s; }
 .source-item:hover { background:var(--bg-hover); color:var(--text-primary); }
 .source-item.active-src { background:rgba(201,169,110,0.06); color:var(--text-primary); }
@@ -97,6 +100,8 @@ body::before { content:''; position:fixed; inset:0; background-image:url("data:i
 .stat-sub { font-size:10px; color:var(--green); margin-top:2px; }
 
 .content { padding:16px 24px; }
+.listings-sections { display:flex; flex-direction:column; gap:18px; }
+.listings-section-title { font-size:11px; letter-spacing:1px; text-transform:uppercase; color:var(--text-muted); margin-bottom:4px; }
 .section-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:14px; }
 .section-title { font-family:'DM Serif Display',serif; font-size:15px; display:flex; align-items:center; gap:8px; }
 .new-badge { background:rgba(76,175,125,0.15); border:1px solid rgba(76,175,125,0.3); color:var(--green); font-size:9.5px; font-family:'Inter',sans-serif; font-weight:600; padding:2px 7px; border-radius:20px; }
@@ -220,8 +225,11 @@ body::before { content:''; position:fixed; inset:0; background-image:url("data:i
     <div class="nav-item" onclick="setPropFilter('kommersiya', this)"><span>🏪</span> Kommersiya</div>
   </nav>
 
-  <div class="sidebar-sources">
-    <div class="sources-label">Mənbələr (20)</div>
+  <div class="sidebar-sources collapsed" id="sidebar-sources">
+    <div class="sources-label">
+      <span>Mənbələr (20)</span>
+      <button class="sources-toggle" id="sources-toggle" onclick="toggleSources()">Göstər</button>
+    </div>
     <div class="source-item" onclick="setSourceFilter('bina', this)"><div class="source-dot" style="background:#5D9EE8"></div>Bina.az<span class="source-count" id="cnt-bina">—</span></div>
     <div class="source-item" onclick="setSourceFilter('tap', this)"><div class="source-dot" style="background:#E8835D"></div>Tap.az<span class="source-count" id="cnt-tap">—</span></div>
     <div class="source-item" onclick="setSourceFilter('lalafo', this)"><div class="source-dot" style="background:#A85DE8"></div>Lalafo.az<span class="source-count" id="cnt-lalafo">—</span></div>
@@ -314,7 +322,7 @@ body::before { content:''; position:fixed; inset:0; background-image:url("data:i
     <div class="section-header">
       <div class="section-title">Elanlar <span class="new-badge" id="new-count-label">—</span></div>
     </div>
-    <div id="listings-grid" class="listings-grid"></div>
+    <div id="listings-grid" class="listings-sections"></div>
   </div>
 </main>
 
@@ -486,12 +494,12 @@ function renderCard(l, delay) {
 }
 
 function renderGrid() {
-  const grid = document.getElementById('listings-grid');
+  const container = document.getElementById('listings-grid');
   const lst = getFiltered();
   if (lst.length === 0) {
     if (allListings.length === 0) {
       if (IS_FILE) {
-        grid.innerHTML = `<div class="state-box" style="grid-column:1/-1">
+        container.innerHTML = `<div class="state-box" style="grid-column:1/-1">
           <div class="icon">⚠️</div>
           <h3>Fayl rejimi — Serverdən istifadə edin</h3>
           <p>HTML faylını birbaşa brauzerdə açmaq CORS xətası yaradır.<br><br>
@@ -502,18 +510,47 @@ function renderGrid() {
           GitHub Pages-də elanlar avtomatik yüklənəcək.</p>
         </div>`;
       } else {
-        grid.innerHTML = `<div class="state-box" style="grid-column:1/-1">
+        container.innerHTML = `<div class="state-box" style="grid-column:1/-1">
           <div class="spinner"></div><h3>Elanlar parserlənir...</h3>
           <p>20 saytdan məlumat toplanılır. Təxminən 30 saniyə gözləyin.</p></div>`;
       }
     } else {
-      grid.innerHTML = `<div class="state-box" style="grid-column:1/-1">
+      container.innerHTML = `<div class="state-box" style="grid-column:1/-1">
         <div class="icon">🔍</div><h3>Elan tapılmadı</h3><p>Filterləri dəyişməyə cəhd edin</p></div>`;
     }
     return;
   }
-  grid.innerHTML = lst.map((l, i) => renderCard(l, i * 25)).join('');
-  const newCount = lst.filter(l => l.is_new).length;
+
+  // Верхний блок: до 8 самых новых объявлений
+  const sortedByTime = [...lst].sort((a, b) => (b.timestamp || 0) - (a.timestamp || 0));
+  const topNew = sortedByTime.slice(0, 8);
+  const topIds = new Set(topNew.map(l => l.id));
+  const rest = lst.filter(l => !topIds.has(l.id));
+
+  let html = '';
+  if (topNew.length) {
+    html += `
+      <div class="listings-section">
+        <div class="listings-section-title">Yeni elanlar</div>
+        <div class="listings-grid">
+          ${topNew.map((l, i) => renderCard(l, i * 25)).join('')}
+        </div>
+      </div>
+    `;
+  }
+  if (rest.length) {
+    html += `
+      <div class="listings-section">
+        <div class="listings-section-title">Bütün elanlar</div>
+        <div class="listings-grid">
+          ${rest.map((l, i) => renderCard(l, i * 25)).join('')}
+        </div>
+      </div>
+    `;
+  }
+  container.innerHTML = html;
+
+  const newCount = topNew.length;
   document.getElementById('new-count-label').textContent = newCount > 0 ? `${newCount} yeni` : `${lst.length} elan`;
 }
 
@@ -638,6 +675,14 @@ function subscribeNowPlaying() {
       } catch(e) {}
     });
   } catch(e) {}
+}
+
+function toggleSources() {
+  const box = document.getElementById('sidebar-sources');
+  const btn = document.getElementById('sources-toggle');
+  if (!box || !btn) return;
+  const collapsed = box.classList.toggle('collapsed');
+  btn.textContent = collapsed ? 'Göstər' : 'Gizlət';
 }
 
 // ─── Init ───────────────────────────────────────────────────────────────────
