@@ -28,8 +28,16 @@ import threading
 import time
 import json
 import os
+import sys
+import io
 import logging
 import requests as req
+from concurrent.futures import ThreadPoolExecutor, as_completed
+
+if sys.stdout and getattr(sys.stdout, "encoding", None) and sys.stdout.encoding.lower() != 'utf-8':
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+if sys.stderr and getattr(sys.stderr, "encoding", None) and sys.stderr.encoding.lower() != 'utf-8':
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
 
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s] %(levelname)s — %(message)s', datefmt='%H:%M:%S')
 log = logging.getLogger(__name__)
@@ -42,8 +50,13 @@ def _is_probably_listing(item: dict) -> bool:
         return False
     if not item.get('id'):
         return False
+    source = str(item.get('source') or '')
+    if source in {'houses', 'yekemlak'}:
+        return False
     link = str(item.get('link') or '')
     if not link.startswith('http'):
+        return False
+    if '/agent/' in link:
         return False
     title = str(item.get('title') or '')
     district = str(item.get('district') or '')
@@ -59,14 +72,13 @@ def _is_probably_listing(item: dict) -> bool:
     if len(title) > 140 or len(district) > 140:
         return False
 
-    source = str(item.get('source') or '')
-    has_signal = bool(item.get('price')) or bool(item.get('rooms')) or bool(item.get('area'))
-    if not has_signal:
-        if source in {'emlak_gov'}:
-            return True
-        if any(p in link for p in ['/items/', '/posting/', '/property/', '/elan/', 'elan-item.php?elan=']):
-            return True
+    has_any = bool(title.strip()) or bool(district.strip()) or bool(item.get('price')) or bool(item.get('rooms')) or bool(item.get('area'))
+    if not has_any:
         return False
+
+    if source == 'rns' and '/property/' not in link:
+        return False
+
     return True
 
 # ─── Yaddaşda saxlama ────────────────────────────────────────────────────────
@@ -176,32 +188,55 @@ def manual_refresh():
 def run_all_parsers():
     log.info("20 mənbənin parserlənməsi başlanır...")
     with lock:
-        listings_db.clear()
-        seen_ids.clear()
-    total_new = 0
+        prev_seen = set(seen_ids)
 
-    for source_name, parse_fn in PARSERS.items():
+    new_db = {}
+    new_seen = set()
+    source_new_counts = {}
+
+    def _run_one(source_name, parse_fn):
         try:
             log.info(f"  {source_name} parserlənir...")
-            results = parse_fn()
-            new_count = 0
-            with lock:
-                for item in results:
-                    if not _is_probably_listing(item):
-                        continue
-                    uid = item.get('id')
-                    if uid and uid not in seen_ids:
-                        seen_ids.add(uid)
-                        item['timestamp'] = time.time()
-                        item['is_new'] = True
-                        listings_db[uid] = item
-                        new_count += 1
-            log.info(f"  OK {source_name}: +{new_count} yeni")
-            total_new += new_count
+            return source_name, parse_fn(), None
         except Exception as e:
-            log.error(f"  ERROR {source_name} xətası: {e}")
+            return source_name, [], e
 
-    log.info(f"Tamamlandı. Cəmi yeni: {total_new}, bazada: {len(listings_db)}")
+    with ThreadPoolExecutor(max_workers=5) as pool:
+        futures = {pool.submit(_run_one, name, fn): name for name, fn in PARSERS.items()}
+        for fut in as_completed(futures):
+            source_name, results, err = fut.result()
+            if err:
+                log.error(f"  ERROR {source_name} xətası: {err}")
+                source_new_counts[source_name] = 0
+                continue
+
+            new_count = 0
+            for item in results or []:
+                if not _is_probably_listing(item):
+                    continue
+                uid = item.get('id')
+                if not uid:
+                    continue
+                if uid in new_seen:
+                    continue
+                new_seen.add(uid)
+                item['timestamp'] = time.time()
+                item['is_new'] = uid not in prev_seen
+                new_db[uid] = item
+                if uid not in prev_seen:
+                    new_count += 1
+
+            source_new_counts[source_name] = new_count
+            log.info(f"  OK {source_name}: +{new_count} yeni")
+
+    with lock:
+        listings_db.clear()
+        listings_db.update(new_db)
+        seen_ids.clear()
+        seen_ids.update(new_seen)
+
+    total_new = sum(source_new_counts.values())
+    log.info(f"Tamamlandı. Cəmi yeni: {total_new}, bazada: {len(new_db)}")
 
     try:
         data_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data')

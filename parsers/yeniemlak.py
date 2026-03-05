@@ -8,7 +8,8 @@ import re
 
 SOURCE = 'yeniemlak'
 SOURCE_NAME = 'YeniEmlak.az'
-BASE_URL = 'https://yeniemlak.az'
+BASE_URL = 'https://www.yeniemlak.az'
+ALT_BASE_URL = 'https://yeniemlak.az'
 
 
 def parse_yeniemlak(pages=2):
@@ -17,6 +18,10 @@ def parse_yeniemlak(pages=2):
         url = f'{BASE_URL}/?page={page}'
         print(f"  Yüklənir: {url}")
         soup = fetch(url)
+        if not soup:
+            url = f'{ALT_BASE_URL}/?page={page}'
+            print(f"  Yüklənir: {url}")
+            soup = fetch(url)
         if not soup:
             continue
 

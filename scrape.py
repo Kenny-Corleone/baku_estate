@@ -23,8 +23,13 @@ def _is_probably_listing(item: dict) -> bool:
         return False
     if not item.get('id'):
         return False
+    source = str(item.get('source') or '')
+    if source in {'houses', 'yekemlak'}:
+        return False
     link = str(item.get('link') or '')
     if not link.startswith('http'):
+        return False
+    if '/agent/' in link:
         return False
     title = str(item.get('title') or '')
     district = str(item.get('district') or '')
@@ -40,14 +45,13 @@ def _is_probably_listing(item: dict) -> bool:
     if len(title) > 140 or len(district) > 140:
         return False
 
-    source = str(item.get('source') or '')
-    has_signal = bool(item.get('price')) or bool(item.get('rooms')) or bool(item.get('area'))
-    if not has_signal:
-        # Some sources may omit these fields; allow if link pattern looks like a listing.
-        if source in {'emlak_gov'}:
-            return True
-        if any(p in link for p in ['/items/', '/posting/', '/property/', '/elan/', 'elan-item.php?elan=']):
-            return True
+    # If everything is empty, likely not a listing.
+    has_any = bool(title.strip()) or bool(district.strip()) or bool(item.get('price')) or bool(item.get('rooms')) or bool(item.get('area'))
+    if not has_any:
+        return False
+
+    # Source-specific sanity
+    if source == 'rns' and '/property/' not in link:
         return False
 
     return True

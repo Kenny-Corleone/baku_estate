@@ -79,12 +79,7 @@ def _parse_card(card):
     district = detect_district(full_text)
     deal_type = 'kiraye' if any(w in full_text.lower() for w in ['kirayə', 'icarə', 'rent']) else 'satis'
 
-    img_el = card.select_one('img')
     photo = ''
-    if img_el:
-        photo = img_el.get('data-src') or img_el.get('src') or ''
-        if photo and not photo.startswith('http'):
-            photo = BASE_URL + photo
 
     return make_listing(
         SOURCE, SOURCE_NAME, raw_id,
