@@ -1,0 +1,39 @@
+name: 🔄 Elanları Parserləmək (Scrape)
+
+on:
+  schedule:
+    # Hər 5 dəqiqədən bir işə sal
+    - cron: "*/5 * * * *"
+  workflow_dispatch: # Əllə başlatmaq üçün
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: 📥 Checkout
+        uses: actions/checkout@v4
+
+      - name: 🐍 Python quraşdır
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: 📦 Asılılıqları quraşdır
+        run: pip install -r requirements.txt
+
+      - name: 🔄 Parserləri işə sal
+        run: python scrape.py
+
+      - name: 📤 Nəticələri commit et
+        run: |
+          git config user.name "EvTap Bot"
+          git config user.email "bot@evtap.az"
+          git add data/listings.json
+          git diff --cached --quiet || git commit -m "🔄 Elanlar yeniləndi — $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push

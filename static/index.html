@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EvTap — Bakı Daşınmaz Əmlak Axtarışı</title>
+<meta name="description" content="Bakıda mənzil, ev, villa, ofis kirayə və satış elanları. 20 saytdan avtomatik yığılır.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --gold: #C9A96E; --gold-light: #E8D5B0; --gold-dim: #8B6E3E;
+  --bg-deep: #08080D; --bg-card: #0F0F16; --bg-surface: #15151E; --bg-hover: #1C1C28;
+  --border: rgba(201,169,110,0.12); --border-bright: rgba(201,169,110,0.35);
+  --text-primary: #F0EDE6; --text-secondary: #8A8599; --text-muted: #4A4760;
+  --green: #4CAF7D; --red: #E85D5D; --blue: #5D9EE8; --purple: #A85DE8; --orange: #E8835D;
+  --radius: 10px; --radius-sm: 6px; --radius-lg: 14px;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Inter',system-ui,sans-serif; background:var(--bg-deep); color:var(--text-primary); min-height:100vh; overflow-x:hidden; }
+body::before { content:''; position:fixed; inset:0; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E"); pointer-events:none; z-index:0; opacity:0.5; }
+::-webkit-scrollbar { width:5px; }
+::-webkit-scrollbar-track { background:transparent; }
+::-webkit-scrollbar-thumb { background:var(--border); border-radius:3px; }
+
+.sidebar { position:fixed; left:0; top:0; bottom:0; width:260px; background:var(--bg-card); border-right:1px solid var(--border); display:flex; flex-direction:column; z-index:10; overflow-y:auto; }
+.logo-area { padding:16px 18px 12px; border-bottom:1px solid var(--border); }
+.logo-mark { font-family:'DM Serif Display',serif; font-size:22px; color:var(--gold); letter-spacing:-0.5px; display:flex; align-items:center; gap:8px; }
+.logo-icon { font-size:26px; }
+.logo-sub { font-size:9px; color:var(--text-muted); letter-spacing:2.5px; text-transform:uppercase; margin-top:2px; }
+
+.widget-area { padding:10px; border-bottom:1px solid var(--border); display:flex; flex-direction:column; gap:6px; }
+.widget-box { background:var(--bg-surface); border:1px solid var(--border); border-radius:var(--radius-sm); padding:8px 10px; }
+.widget-label { font-size:8.5px; letter-spacing:1.5px; text-transform:uppercase; color:var(--text-muted); margin-bottom:3px; }
+.widget-value { font-family:'DM Serif Display',serif; font-size:17px; color:var(--text-primary); line-height:1.2; }
+.widget-sub { font-size:10px; color:var(--text-secondary); margin-top:1px; }
+.weather-row { display:flex; align-items:center; gap:8px; }
+.weather-icon { font-size:22px; }
+.weather-temp { font-family:'DM Serif Display',serif; font-size:20px; color:var(--gold); }
+.weather-desc { font-size:10.5px; color:var(--text-secondary); }
+.radio-widget { display:flex; align-items:center; gap:8px; }
+.radio-btn { width:30px; height:30px; border-radius:50%; background:linear-gradient(135deg,var(--gold-dim),var(--gold)); border:none; color:var(--bg-deep); font-size:13px; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:all .2s; flex-shrink:0; }
+.radio-btn:hover { transform:scale(1.1); box-shadow:0 0 12px rgba(201,169,110,0.4); }
+.radio-btn.playing { background:linear-gradient(135deg,var(--green),#6BD4A0); animation:pulse-radio 2s infinite; }
+@keyframes pulse-radio { 0%,100%{box-shadow:0 0 0 0 rgba(76,175,125,.3)} 50%{box-shadow:0 0 0 6px rgba(76,175,125,0)} }
+.radio-info { flex:1; min-width:0; }
+.radio-name { font-size:11px; font-weight:600; color:var(--text-primary); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.radio-now { font-size:9.5px; color:var(--text-muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.radio-vol { display:flex; align-items:center; gap:4px; margin-top:4px; }
+.radio-vol input[type=range] { -webkit-appearance:none; appearance:none; width:100%; height:3px; border-radius:2px; background:var(--border); outline:none; }
+.radio-vol input[type=range]::-webkit-slider-thumb { -webkit-appearance:none; appearance:none; width:10px; height:10px; border-radius:50%; background:var(--gold); cursor:pointer; }
+.radio-vol-icon { font-size:10px; color:var(--text-muted); }
+
+.nav { padding:8px 8px 4px; display:flex; flex-direction:column; gap:2px; }
+.nav-section { font-size:8.5px; letter-spacing:1.5px; text-transform:uppercase; color:var(--text-muted); padding:8px 10px 3px; }
+.nav-item { display:flex; align-items:center; gap:8px; padding:7px 10px; border-radius:var(--radius-sm); cursor:pointer; font-size:12px; color:var(--text-secondary); transition:all .15s; border:1px solid transparent; }
+.nav-item:hover { background:var(--bg-hover); color:var(--text-primary); }
+.nav-item.active { background:rgba(201,169,110,0.08); color:var(--gold); border-color:var(--border); }
+.nav-badge { margin-left:auto; background:var(--gold); color:var(--bg-deep); font-size:9px; font-weight:700; padding:1px 6px; border-radius:20px; min-width:18px; text-align:center; }
+.nav-badge.green { background:var(--green); }
+
+.sidebar-sources { padding:4px 8px 10px; border-top:1px solid var(--border); flex-shrink:0; }
+.sources-label { font-size:8.5px; letter-spacing:1.5px; text-transform:uppercase; color:var(--text-muted); padding:6px 10px 4px; }
+.source-item { display:flex; align-items:center; gap:6px; padding:4px 10px; border-radius:var(--radius-sm); font-size:11px; color:var(--text-secondary); cursor:pointer; transition:all .15s; }
+.source-item:hover { background:var(--bg-hover); color:var(--text-primary); }
+.source-item.active-src { background:rgba(201,169,110,0.06); color:var(--text-primary); }
+.source-dot { width:5px; height:5px; border-radius:50%; flex-shrink:0; }
+.source-count { margin-left:auto; font-size:10px; color:var(--text-muted); }
+
+.main { margin-left:260px; min-height:100vh; position:relative; z-index:1; }
+.header { position:sticky; top:0; background:rgba(8,8,13,0.92); backdrop-filter:blur(16px); border-bottom:1px solid var(--border); padding:0 24px; height:52px; display:flex; align-items:center; gap:10px; z-index:5; }
+.header-title { font-family:'DM Serif Display',serif; font-size:16px; flex-shrink:0; }
+.live-indicator { display:flex; align-items:center; gap:5px; font-size:11px; color:var(--green); font-weight:500; }
+.live-dot { width:6px; height:6px; background:var(--green); border-radius:50%; animation:pulse 2s infinite; }
+@keyframes pulse { 0%,100%{opacity:1;transform:scale(1);box-shadow:0 0 0 0 rgba(76,175,125,.4)} 50%{opacity:.8;transform:scale(1.1);box-shadow:0 0 0 4px rgba(76,175,125,0)} }
+.header-spacer { flex:1; }
+.countdown { display:flex; align-items:center; gap:4px; font-size:11px; color:var(--text-secondary); background:var(--bg-surface); padding:4px 10px; border-radius:20px; border:1px solid var(--border); }
+.countdown-num { font-weight:600; color:var(--gold); min-width:26px; text-align:center; }
+.refresh-btn { background:rgba(201,169,110,0.08); border:1px solid var(--border-bright); color:var(--gold); padding:5px 12px; border-radius:var(--radius-sm); font-size:11px; font-family:'Inter',sans-serif; cursor:pointer; transition:all .2s; font-weight:500; }
+.refresh-btn:hover { background:rgba(201,169,110,0.18); }
+.refresh-btn:disabled { opacity:.5; cursor:not-allowed; }
+
+.filter-strip { display:flex; gap:5px; flex-wrap:wrap; padding:10px 24px; border-bottom:1px solid var(--border); background:rgba(8,8,13,0.6); }
+.filter-group { display:flex; gap:3px; align-items:center; }
+.filter-group-label { font-size:9.5px; letter-spacing:1px; text-transform:uppercase; color:var(--text-muted); margin-right:3px; white-space:nowrap; }
+.filter-sep { width:1px; height:20px; background:var(--border); margin:0 5px; }
+.filter-btn { padding:4px 10px; border-radius:20px; border:1px solid var(--border); background:transparent; color:var(--text-secondary); font-size:11px; font-family:'Inter',sans-serif; cursor:pointer; transition:all .15s; white-space:nowrap; }
+.filter-btn:hover { border-color:var(--border-bright); color:var(--text-primary); }
+.filter-btn.active { background:rgba(201,169,110,0.1); border-color:var(--border-bright); color:var(--gold); }
+
+.stats-bar { display:grid; grid-template-columns:repeat(5,1fr); gap:1px; background:var(--border); border-bottom:1px solid var(--border); }
+.stat-cell { background:var(--bg-deep); padding:12px 16px; }
+.stat-label { font-size:9px; letter-spacing:1px; text-transform:uppercase; color:var(--text-muted); margin-bottom:2px; }
+.stat-value { font-family:'DM Serif Display',serif; font-size:22px; color:var(--text-primary); line-height:1; }
+.stat-value span { color:var(--gold); }
+.stat-sub { font-size:10px; color:var(--green); margin-top:2px; }
+
+.content { padding:16px 24px; }
+.section-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:14px; }
+.section-title { font-family:'DM Serif Display',serif; font-size:15px; display:flex; align-items:center; gap:8px; }
+.new-badge { background:rgba(76,175,125,0.15); border:1px solid rgba(76,175,125,0.3); color:var(--green); font-size:9.5px; font-family:'Inter',sans-serif; font-weight:600; padding:2px 7px; border-radius:20px; }
+.sort-select { background:var(--bg-surface); border:1px solid var(--border); color:var(--text-secondary); padding:4px 8px; border-radius:var(--radius-sm); font-size:11px; font-family:'Inter',sans-serif; cursor:pointer; outline:none; }
+
+.listings-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:12px; }
+.listing-card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; cursor:pointer; transition:all .22s; animation:slideIn .35s ease forwards; opacity:0; transform:translateY(10px); }
+@keyframes slideIn { to { opacity:1; transform:translateY(0); } }
+.listing-card:hover { border-color:var(--border-bright); transform:translateY(-2px); box-shadow:0 8px 28px rgba(0,0,0,.4); }
+.listing-card.is-new { border-color:rgba(76,175,125,.35); box-shadow:0 0 0 1px rgba(76,175,125,.12); }
+.card-img-wrap { width:100%; height:160px; position:relative; overflow:hidden; background:var(--bg-surface); display:flex; align-items:center; justify-content:center; }
+.card-img-wrap img { width:100%; height:100%; object-fit:cover; transition:transform .3s; }
+.listing-card:hover .card-img-wrap img { transform:scale(1.03); }
+.card-img-placeholder { font-size:40px; z-index:1; }
+.card-img-wrap::after { content:''; position:absolute; inset:0; background:linear-gradient(to bottom,transparent 40%,rgba(8,8,13,.8)); pointer-events:none; }
+.source-tag { position:absolute; top:6px; left:6px; padding:2px 6px; border-radius:4px; font-size:9px; font-weight:600; letter-spacing:.3px; z-index:2; backdrop-filter:blur(8px); }
+.new-tag { position:absolute; top:6px; right:6px; background:var(--green); color:var(--bg-deep); padding:2px 6px; border-radius:4px; font-size:8px; font-weight:700; letter-spacing:1px; text-transform:uppercase; z-index:2; animation:blink 1.5s ease infinite; }
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:.6} }
+.deal-tag { position:absolute; bottom:6px; left:6px; padding:2px 6px; border-radius:4px; font-size:8.5px; font-weight:600; z-index:2; backdrop-filter:blur(8px); }
+.deal-tag.kiraye { background:rgba(93,158,232,0.2); color:#7BB8F0; border:1px solid rgba(93,158,232,0.3); }
+.deal-tag.satis { background:rgba(232,93,93,0.2); color:#F07B7B; border:1px solid rgba(232,93,93,0.3); }
+.prop-tag { position:absolute; bottom:6px; right:6px; padding:2px 6px; border-radius:4px; font-size:8.5px; font-weight:600; z-index:2; background:rgba(168,93,232,0.15); color:#C49EF0; border:1px solid rgba(168,93,232,0.25); backdrop-filter:blur(8px); }
+.card-body { padding:12px; }
+.card-price { font-family:'DM Serif Display',serif; font-size:18px; color:var(--gold); margin-bottom:4px; }
+.card-price span { font-family:'Inter',sans-serif; font-size:11px; color:var(--text-muted); font-weight:400; }
+.card-address { font-size:12px; color:var(--text-secondary); margin-bottom:7px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.card-meta { display:flex; gap:5px; flex-wrap:wrap; margin-bottom:8px; }
+.meta-chip { display:flex; align-items:center; gap:3px; font-size:10.5px; color:var(--text-secondary); background:var(--bg-surface); padding:2px 6px; border-radius:4px; border:1px solid var(--border); }
+.card-divider { height:1px; background:var(--border); margin-bottom:8px; }
+.card-footer { display:flex; align-items:center; justify-content:space-between; }
+.card-source-info { display:flex; align-items:center; gap:5px; }
+.card-source-dot { width:5px; height:5px; border-radius:50%; }
+.card-source-name { font-size:10px; color:var(--text-muted); }
+.card-time { font-size:9.5px; color:var(--text-muted); }
+.open-link { color:var(--gold); font-size:10.5px; text-decoration:none; padding:2px 7px; border:1px solid var(--border); border-radius:4px; transition:all .15s; }
+.open-link:hover { background:rgba(201,169,110,0.1); border-color:var(--border-bright); }
+
+.state-box { text-align:center; padding:50px 30px; color:var(--text-secondary); }
+.state-box .icon { font-size:40px; margin-bottom:10px; }
+.state-box h3 { font-family:'DM Serif Display',serif; font-size:17px; color:var(--text-primary); margin-bottom:5px; }
+.state-box p { font-size:12px; line-height:1.6; max-width:340px; margin:0 auto; }
+.spinner { width:26px; height:26px; border:3px solid var(--border); border-top-color:var(--gold); border-radius:50%; animation:spin 0.8s linear infinite; margin:0 auto 10px; }
+@keyframes spin { to { transform:rotate(360deg); } }
+
+.toast-container { position:fixed; bottom:16px; right:16px; z-index:100; display:flex; flex-direction:column; gap:6px; pointer-events:none; }
+.toast { background:var(--bg-card); border:1px solid rgba(76,175,125,.35); border-radius:var(--radius); padding:10px 14px; display:flex; align-items:center; gap:8px; max-width:280px; box-shadow:0 8px 28px rgba(0,0,0,.5); animation:toastIn .3s cubic-bezier(.34,1.56,.64,1) forwards; pointer-events:all; }
+@keyframes toastIn { from{opacity:0;transform:translateX(20px) scale(.96)} to{opacity:1;transform:translateX(0) scale(1)} }
+.toast.out { animation:toastOut .2s ease forwards; }
+@keyframes toastOut { to{opacity:0;transform:translateX(20px)} }
+.toast-icon { font-size:18px; }
+.toast-title { font-size:12px; font-weight:600; color:var(--text-primary); }
+.toast-desc { font-size:10.5px; color:var(--text-secondary); margin-top:1px; }
+
+@media (max-width:900px) {
+  .sidebar { display:none; }
+  .main { margin-left:0; }
+  .stats-bar { grid-template-columns:repeat(2,1fr); }
+  .content { padding:12px; }
+  .header { padding:0 12px; gap:5px; }
+  .filter-strip { padding:8px 12px; }
+}
+@media (max-width:600px) {
+  .stats-bar { grid-template-columns:1fr 1fr; }
+  .listings-grid { grid-template-columns:1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+  <div class="logo-area">
+    <div class="logo-mark"><span class="logo-icon">🏠</span> EvTap</div>
+    <div class="logo-sub">Bakı Daşınmaz Əmlak · 20 mənbə</div>
+  </div>
+
+  <div class="widget-area">
+    <div class="widget-box">
+      <div class="widget-label">Tarix və Saat</div>
+      <div class="widget-value" id="w-time">--:--</div>
+      <div class="widget-sub" id="w-date">--</div>
+    </div>
+    <div class="widget-box">
+      <div class="widget-label">Bakı Havası</div>
+      <div class="weather-row">
+        <span class="weather-icon" id="w-weather-icon">🌤</span>
+        <span class="weather-temp" id="w-weather-temp">--°C</span>
+      </div>
+      <div class="weather-desc" id="w-weather-desc">Yüklənir...</div>
+    </div>
+    <div class="widget-box">
+      <div class="widget-label">📻 Radio</div>
+      <div class="radio-widget">
+        <button class="radio-btn" id="radio-toggle" onclick="toggleRadio()" title="Oynat / Dayandır">▶</button>
+        <div class="radio-info">
+          <div class="radio-name" id="radio-name">AzerbaiJazz Radio</div>
+          <div class="radio-now" id="radio-now">Dayandırılıb</div>
+        </div>
+      </div>
+      <div class="radio-vol">
+        <span class="radio-vol-icon">🔈</span>
+        <input type="range" min="0" max="100" value="60" id="radio-volume" oninput="setRadioVolume(this.value)">
+        <span class="radio-vol-icon">🔊</span>
+      </div>
+    </div>
+  </div>
+
+  <nav class="nav">
+    <div class="nav-section">Naviqasiya</div>
+    <div class="nav-item active" id="nav-all" onclick="setView('all', this)">
+      <span>🏠</span> Bütün elanlar <span class="nav-badge" id="badge-total">—</span>
+    </div>
+    <div class="nav-item" id="nav-new" onclick="setView('new', this)">
+      <span>✨</span> Yeni elanlar <span class="nav-badge green" id="badge-new">—</span>
+    </div>
+    <div class="nav-section">Əmlak növü</div>
+    <div class="nav-item" onclick="setPropFilter('menzil', this)"><span>🏢</span> Mənzil</div>
+    <div class="nav-item" onclick="setPropFilter('ev_villa', this)"><span>🏡</span> Ev / Villa</div>
+    <div class="nav-item" onclick="setPropFilter('ofis', this)"><span>🏛️</span> Ofis</div>
+    <div class="nav-item" onclick="setPropFilter('torpaq', this)"><span>🌍</span> Torpaq</div>
+    <div class="nav-item" onclick="setPropFilter('kommersiya', this)"><span>🏪</span> Kommersiya</div>
+  </nav>
+
+  <div class="sidebar-sources">
+    <div class="sources-label">Mənbələr (20)</div>
+    <div class="source-item" onclick="setSourceFilter('bina', this)"><div class="source-dot" style="background:#5D9EE8"></div>Bina.az<span class="source-count" id="cnt-bina">—</span></div>
+    <div class="source-item" onclick="setSourceFilter('tap', this)"><div class="source-dot" style="background:#E8835D"></div>Tap.az<span class="source-count" id="cnt-tap">—</span></div>
+    <div class="source-item" onclick="setSourceFilter('lalafo', this)"><div class="source-dot" style="background:#A85DE8"></div>Lalafo.az<span class="source-count" id="cnt-lalafo">—</span></div>
+    <div class="source-item" onclick="setSourceFilter('arenda', this)"><div class="source-dot" style="background:#4CAF7D"></div>Arenda.az<span class="source-count" id="cnt-arenda">—</span></div>
+    <div class="source-item" onclick="setSourceFilter('emlak', this)"><div class="source-dot" style="background:#E8D55D"></div>Emlak.az<span class="source-count" id="cnt-emlak">—</span></div>
+    <div class="source-item" onclick="setSourceFilter('ev10', this)"><div class="source-dot" style="background:#5DE8C4"></div>Ev10.az<span class="source-count" id="cnt-ev10">—</span></div>
+    <div class="source-item" onclick="setSourceFilter('houses', this)"><div class="source-dot" style="background:#E85DA8"></div>Houses.az<span class="source-count" id="cnt-houses">—</span></div>
+    <div class="source-item" onclick="setSourceFilter('emlakbazari', this)"><div class="source-dot" style="background:#8DE85D"></div>EmlakBazarı.az<span class="source-count" id="cnt-emlakbazari">—</span></div>
+    <div class="source-item" onclick="setSourceFilter('tikili', this)"><div class="source-dot" style="background:#5DB8E8"></div>Tikili.az<span class="source-count" id="cnt-tikili">—</span></div>
+    <div class="source-item" onclick="setSourceFilter('kub', this)"><div class="source-dot" style="background:#E8C85D"></div>Kub.az<span class="source-count" id="cnt-kub">—</span></div>
+    <div class="source-item" onclick="setSourceFilter('yeniemlak', this)"><div class="source-dot" style="background:#5DE88D"></div>YeniEmlak.az<span class="source-count" id="cnt-yeniemlak">—</span></div>
+    <div class="source-item" onclick="setSourceFilter('binalar', this)"><div class="source-dot" style="background:#E85D5D"></div>Binalar.az<span class="source-count" id="cnt-binalar">—</span></div>
+    <div class="source-item" onclick="setSourceFilter('villa', this)"><div class="source-dot" style="background:#B85DE8"></div>Villa.az<span class="source-count" id="cnt-villa">—</span></div>
+    <div class="source-item" onclick="setSourceFilter('vipemlak', this)"><div class="source-dot" style="background:#E85D6F"></div>VipEmlak.az<span class="source-count" id="cnt-vipemlak">—</span></div>
+    <div class="source-item" onclick="setSourceFilter('rahatemlak', this)"><div class="source-dot" style="background:#5DE8E8"></div>RahatEmlak.az<span class="source-count" id="cnt-rahatemlak">—</span></div>
+    <div class="source-item" onclick="setSourceFilter('binatap', this)"><div class="source-dot" style="background:#C4E85D"></div>BinaTap.az<span class="source-count" id="cnt-binatap">—</span></div>
+    <div class="source-item" onclick="setSourceFilter('yekemlak', this)"><div class="source-dot" style="background:#E8A85D"></div>YekEmlak.az<span class="source-count" id="cnt-yekemlak">—</span></div>
+    <div class="source-item" onclick="setSourceFilter('rns', this)"><div class="source-dot" style="background:#5D5DE8"></div>RNS.az<span class="source-count" id="cnt-rns">—</span></div>
+    <div class="source-item" onclick="setSourceFilter('etagi', this)"><div class="source-dot" style="background:#E85DC4"></div>Etagi.com<span class="source-count" id="cnt-etagi">—</span></div>
+    <div class="source-item" onclick="setSourceFilter('emlak_gov', this)"><div class="source-dot" style="background:#5DE8A8"></div>Emlak.gov.az<span class="source-count" id="cnt-emlak_gov">—</span></div>
+  </div>
+</aside>
+
+<!-- MAIN -->
+<main class="main">
+  <header class="header">
+    <div class="header-title">Elanlar</div>
+    <div class="live-indicator"><div class="live-dot"></div> Canlı</div>
+    <div class="header-spacer"></div>
+    <div class="countdown">⏱ Yeniləmə: <span class="countdown-num" id="countdown">4:30</span></div>
+    <button class="refresh-btn" id="refresh-btn" onclick="manualRefresh()">🔄 Yenilə</button>
+  </header>
+
+  <div class="filter-strip">
+    <div class="filter-group">
+      <span class="filter-group-label">Sövdələşmə:</span>
+      <button class="filter-btn active" onclick="setDeal('all',this)">Hamısı</button>
+      <button class="filter-btn" onclick="setDeal('kiraye',this)">Kirayə</button>
+      <button class="filter-btn" onclick="setDeal('satis',this)">Satış</button>
+    </div>
+    <div class="filter-sep"></div>
+    <div class="filter-group">
+      <span class="filter-group-label">Otaq:</span>
+      <button class="filter-btn active" onclick="setRooms('all',this)">Hamısı</button>
+      <button class="filter-btn" onclick="setRooms('1',this)">1</button>
+      <button class="filter-btn" onclick="setRooms('2',this)">2</button>
+      <button class="filter-btn" onclick="setRooms('3',this)">3</button>
+      <button class="filter-btn" onclick="setRooms('4',this)">4+</button>
+    </div>
+    <div class="filter-sep"></div>
+    <div class="filter-group">
+      <span class="filter-group-label">Sırala:</span>
+      <select class="sort-select" id="sort-select" onchange="setSortMode(this.value)">
+        <option value="newest">Ən yeni</option>
+        <option value="cheapest">Ucuzdan bahaya</option>
+        <option value="expensive">Bahadan ucuza</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="stats-bar">
+    <div class="stat-cell">
+      <div class="stat-label">Cəmi elan</div>
+      <div class="stat-value"><span id="s-total">—</span></div>
+      <div class="stat-sub" id="s-sub">yüklənir...</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-label">Orta qiymət</div>
+      <div class="stat-value"><span id="s-avg">—</span></div>
+      <div class="stat-sub">₼</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-label">Kirayə</div>
+      <div class="stat-value"><span id="s-rent">—</span></div>
+      <div class="stat-sub">elan</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-label">Satış</div>
+      <div class="stat-value"><span id="s-sale">—</span></div>
+      <div class="stat-sub">elan</div>
+    </div>
+    <div class="stat-cell">
+      <div class="stat-label">Son yenilənmə</div>
+      <div class="stat-value" style="font-size:16px;padding-top:2px"><span id="s-time">—</span></div>
+      <div class="stat-sub" id="s-sources">20 mənbə</div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="section-header">
+      <div class="section-title">Elanlar <span class="new-badge" id="new-count-label">—</span></div>
+    </div>
+    <div id="listings-grid" class="listings-grid"></div>
+  </div>
+</main>
+
+<div class="toast-container" id="toast-container"></div>
+
+<script>
+// ─── Config ──────────────────────────────────────────────────────────────────
+const OPENWEATHER_API_KEY = '91b705287b193e8debf755a8ff4cb0c7';
+const DEFAULT_CITY = 'Baku';
+
+const SOURCES = {
+  bina:        { name:'Bina.az',        color:'#5D9EE8', bg:'rgba(93,158,232,0.15)' },
+  tap:         { name:'Tap.az',         color:'#E8835D', bg:'rgba(232,131,93,0.15)' },
+  lalafo:      { name:'Lalafo.az',      color:'#A85DE8', bg:'rgba(168,93,232,0.15)' },
+  arenda:      { name:'Arenda.az',      color:'#4CAF7D', bg:'rgba(76,175,125,0.15)' },
+  emlak:       { name:'Emlak.az',       color:'#E8D55D', bg:'rgba(232,213,93,0.15)' },
+  ev10:        { name:'Ev10.az',        color:'#5DE8C4', bg:'rgba(93,232,196,0.15)' },
+  houses:      { name:'Houses.az',      color:'#E85DA8', bg:'rgba(232,93,168,0.15)' },
+  emlakbazari: { name:'EmlakBazarı.az', color:'#8DE85D', bg:'rgba(141,232,93,0.15)' },
+  tikili:      { name:'Tikili.az',      color:'#5DB8E8', bg:'rgba(93,184,232,0.15)' },
+  kub:         { name:'Kub.az',         color:'#E8C85D', bg:'rgba(232,200,93,0.15)' },
+  yeniemlak:   { name:'YeniEmlak.az',   color:'#5DE88D', bg:'rgba(93,232,141,0.15)' },
+  binalar:     { name:'Binalar.az',     color:'#E85D5D', bg:'rgba(232,93,93,0.15)' },
+  villa:       { name:'Villa.az',       color:'#B85DE8', bg:'rgba(184,93,232,0.15)' },
+  vipemlak:    { name:'VipEmlak.az',    color:'#E85D6F', bg:'rgba(232,93,111,0.15)' },
+  rahatemlak:  { name:'RahatEmlak.az',  color:'#5DE8E8', bg:'rgba(93,232,232,0.15)' },
+  binatap:     { name:'BinaTap.az',     color:'#C4E85D', bg:'rgba(196,232,93,0.15)' },
+  yekemlak:    { name:'YekEmlak.az',    color:'#E8A85D', bg:'rgba(232,168,93,0.15)' },
+  rns:         { name:'RNS.az',         color:'#5D5DE8', bg:'rgba(93,93,232,0.15)' },
+  etagi:       { name:'Etagi.com',      color:'#E85DC4', bg:'rgba(232,93,196,0.15)' },
+  emlak_gov:   { name:'Emlak.gov.az',   color:'#5DE8A8', bg:'rgba(93,232,168,0.15)' },
+};
+
+const PROP_NAMES = {
+  menzil:'Mənzil', ev_villa:'Ev / Villa', ofis:'Ofis',
+  torpaq:'Torpaq', kommersiya:'Kommersiya', qaraj:'Qaraj', diger:'Digər',
+};
+const DEAL_NAMES = { kiraye:'Kirayə', satis:'Satış' };
+const EMOJIS = ['🏢','🏠','🏗️','🏬','🏛️','🏡','🏘️'];
+
+// ─── State ──────────────────────────────────────────────────────────────────
+let allListings = [];
+let filterRoom = 'all', filterSrc = null, filterProp = null, filterDeal = 'all';
+let sortMode = 'newest', viewMode = 'all';
+let remaining = 270, knownIds = new Set(), scanTime = null;
+
+const IS_FILE = location.protocol === 'file:';
+const IS_LOCAL = !IS_FILE && (location.hostname === 'localhost' || location.hostname === '127.0.0.1');
+const IS_DEPLOYED = !IS_FILE && !IS_LOCAL;
+
+function getDataUrl() {
+  const path = location.pathname;
+  if (path.endsWith('/') || path.endsWith('.html')) {
+    return path.substring(0, path.lastIndexOf('/') + 1) + 'data/listings.json';
+  }
+  return 'data/listings.json';
+}
+
+// ─── Fetch ──────────────────────────────────────────────────────────────────
+async function fetchListings() {
+  if (IS_FILE) {
+    return { listings: [], stats: null, scan_time: null, fileMode: true };
+  }
+  try {
+    const url = IS_LOCAL ? '/api/listings' : (getDataUrl() + '?t=' + Date.now());
+    const res = await fetch(url);
+    const data = await res.json();
+    if (IS_LOCAL) return { listings: data.listings || [], stats: null, scan_time: null };
+    return { listings: data.listings || [], stats: data.stats || null, scan_time: data.scan_time || null };
+  } catch(e) { return { listings: [], stats: null, scan_time: null }; }
+}
+
+async function fetchStats() {
+  if (!IS_LOCAL) return null;
+  try { const r = await fetch('/api/stats'); return await r.json(); } catch(e) { return null; }
+}
+
+async function loadAll() {
+  const result = await fetchListings();
+  if (result.fileMode) { renderGrid(); return; }
+  const listings = result.listings;
+  const stats = IS_LOCAL ? (await fetchStats()) : result.stats;
+  scanTime = result.scan_time;
+  const fresh = listings.filter(l => !knownIds.has(l.id));
+  if (knownIds.size > 0 && fresh.length > 0) {
+    showToast('✨', `${fresh.length} yeni elan`, 'Yeni elanlar tapıldı');
+  }
+  listings.forEach(l => knownIds.add(l.id));
+  allListings = listings;
+  renderGrid();
+  if (stats) updateStats(stats);
+}
+
+async function manualRefresh() {
+  const btn = document.getElementById('refresh-btn');
+  btn.disabled = true; btn.textContent = '⏳ Yüklənir...';
+  if (IS_LOCAL) {
+    try {
+      await fetch('/api/refresh', { method:'POST' });
+      showToast('🔄', 'Yenilənmə başladı', '20 mənbə yoxlanılır...');
+      setTimeout(async () => { await loadAll(); btn.disabled = false; btn.textContent = '🔄 Yenilə'; remaining = 270; }, 15000);
+    } catch(e) { btn.disabled = false; btn.textContent = '🔄 Yenilə'; showToast('❌', 'Xəta', 'Serverə qoşulmaq mümkün deyil'); }
+  } else {
+    await loadAll(); btn.disabled = false; btn.textContent = '🔄 Yenilə'; remaining = 270;
+  }
+}
+
+// ─── Render ─────────────────────────────────────────────────────────────────
+function getFiltered() {
+  let lst = [...allListings];
+  if (viewMode === 'new') lst = lst.filter(l => l.is_new);
+  if (filterSrc) lst = lst.filter(l => l.source === filterSrc);
+  if (filterProp) lst = lst.filter(l => l.property_type === filterProp);
+  if (filterDeal !== 'all') lst = lst.filter(l => l.deal_type === filterDeal);
+  if (filterRoom !== 'all') {
+    const r = parseInt(filterRoom);
+    lst = r >= 4 ? lst.filter(l => l.rooms >= 4) : lst.filter(l => l.rooms === r);
+  }
+  if (sortMode === 'cheapest') lst.sort((a,b) => (a.price||0)-(b.price||0));
+  else if (sortMode === 'expensive') lst.sort((a,b) => (b.price||0)-(a.price||0));
+  else lst.sort((a,b) => (b.timestamp||0)-(a.timestamp||0));
+  return lst;
+}
+
+function timeAgo(ts) {
+  if (!ts) return '';
+  const diff = Math.floor((Date.now()/1000 - ts) / 60);
+  if (diff < 1) return 'indicə';
+  if (diff < 60) return `${diff} dəq. əvvəl`;
+  const h = Math.floor(diff/60);
+  if (h < 24) return `${h} saat əvvəl`;
+  return `${Math.floor(h/24)} gün əvvəl`;
+}
+
+function renderCard(l, delay) {
+  const src = SOURCES[l.source] || { name: l.source, color:'#888', bg:'rgba(136,136,136,0.15)' };
+  const emoji = EMOJIS[(l.id?.charCodeAt(l.id.length-1) || 0) % EMOJIS.length];
+  const photoUrl = l.photo ? (IS_LOCAL ? `/api/proxy-image?url=${encodeURIComponent(l.photo)}` : l.photo) : '';
+  const imgHtml = photoUrl
+    ? `<img src="${photoUrl}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" loading="lazy"><div class="card-img-placeholder" style="display:none">${emoji}</div>`
+    : `<div class="card-img-placeholder">${emoji}</div>`;
+  const dealLabel = DEAL_NAMES[l.deal_type] || 'Kirayə';
+  const dealClass = l.deal_type === 'satis' ? 'satis' : 'kiraye';
+  const propLabel = PROP_NAMES[l.property_type] || 'Mənzil';
+  const priceUnit = l.deal_type === 'satis' ? '' : ' <span>₼/ay</span>';
+  return `<div class="listing-card${l.is_new?' is-new':''}" style="animation-delay:${delay}ms" onclick="window.open('${l.link||'#'}','_blank')">
+    <div class="card-img-wrap">${imgHtml}
+      <div class="source-tag" style="background:${src.bg};color:${src.color};border:1px solid ${src.color}40">${src.name}</div>
+      ${l.is_new ? '<div class="new-tag">YENİ</div>' : ''}
+      <div class="deal-tag ${dealClass}">${dealLabel}</div>
+      <div class="prop-tag">${propLabel}</div>
+    </div>
+    <div class="card-body">
+      <div class="card-price">${l.price ? l.price.toLocaleString('az-AZ') + priceUnit : '<span style="font-size:12px">Qiymət göstərilməyib</span>'}</div>
+      <div class="card-address">📍 ${l.district || 'Bakı'}${l.title ? ' · '+l.title.substring(0,35) : ''}</div>
+      <div class="card-meta">
+        ${l.rooms ? `<div class="meta-chip">🛏 ${l.rooms} otaq</div>` : ''}
+        ${l.area ? `<div class="meta-chip">📐 ${l.area} m²</div>` : ''}
+        ${l.floor ? `<div class="meta-chip">🏢 ${l.floor}${l.total_floors ? '/'+l.total_floors : ''} mərt.</div>` : ''}
+      </div>
+      <div class="card-divider"></div>
+      <div class="card-footer">
+        <div class="card-source-info"><div class="card-source-dot" style="background:${src.color}"></div><span class="card-source-name">${src.name}</span></div>
+        <span class="card-time">🕐 ${timeAgo(l.timestamp)}</span>
+        <a class="open-link" href="${l.link||'#'}" target="_blank" onclick="event.stopPropagation()">↗ Bax</a>
+      </div>
+    </div>
+  </div>`;
+}
+
+function renderGrid() {
+  const grid = document.getElementById('listings-grid');
+  const lst = getFiltered();
+  if (lst.length === 0) {
+    if (allListings.length === 0) {
+      if (IS_FILE) {
+        grid.innerHTML = `<div class="state-box" style="grid-column:1/-1">
+          <div class="icon">⚠️</div>
+          <h3>Fayl rejimi — Serverdən istifadə edin</h3>
+          <p>HTML faylını birbaşa brauzerdə açmaq CORS xətası yaradır.<br><br>
+          <b>Lokal test üçün:</b><br>
+          <code style="background:var(--bg-surface);padding:8px 14px;border-radius:6px;display:inline-block;margin:8px 0;border:1px solid var(--border);color:var(--gold);font-size:13px">python server.py</code><br>
+          Sonra <a href="http://localhost:5000" style="color:var(--gold)">http://localhost:5000</a> açın<br><br>
+          <b>Və ya GitHub-a push edin:</b><br>
+          GitHub Pages-də elanlar avtomatik yüklənəcək.</p>
+        </div>`;
+      } else {
+        grid.innerHTML = `<div class="state-box" style="grid-column:1/-1">
+          <div class="spinner"></div><h3>Elanlar parserlənir...</h3>
+          <p>20 saytdan məlumat toplanılır. Təxminən 30 saniyə gözləyin.</p></div>`;
+      }
+    } else {
+      grid.innerHTML = `<div class="state-box" style="grid-column:1/-1">
+        <div class="icon">🔍</div><h3>Elan tapılmadı</h3><p>Filterləri dəyişməyə cəhd edin</p></div>`;
+    }
+    return;
+  }
+  grid.innerHTML = lst.map((l, i) => renderCard(l, i * 25)).join('');
+  const newCount = lst.filter(l => l.is_new).length;
+  document.getElementById('new-count-label').textContent = newCount > 0 ? `${newCount} yeni` : `${lst.length} elan`;
+}
+
+function updateStats(stats) {
+  document.getElementById('s-total').textContent = stats.total || '—';
+  document.getElementById('s-avg').textContent = stats.avg_price ? stats.avg_price.toLocaleString('az-AZ') + '₼' : '—';
+  document.getElementById('badge-total').textContent = stats.total || 0;
+  document.getElementById('badge-new').textContent = allListings.filter(l => l.is_new).length;
+  document.getElementById('s-rent').textContent = (stats.by_deal_type || {}).kiraye || '—';
+  document.getElementById('s-sale').textContent = (stats.by_deal_type || {}).satis || '—';
+  if (scanTime) {
+    try { document.getElementById('s-time').textContent = new Date(scanTime).toLocaleTimeString('az-AZ', {hour:'2-digit', minute:'2-digit'}); } catch(e) {}
+  } else if (stats.last_updated) { document.getElementById('s-time').textContent = stats.last_updated; }
+  const activeSources = Object.keys(stats.by_source || {}).filter(k => (stats.by_source[k] || 0) > 0).length;
+  document.getElementById('s-sources').textContent = `${activeSources} aktiv / 20 mənbə`;
+  document.getElementById('s-sub').textContent = `${allListings.filter(l=>l.is_new).length} yeni`;
+  Object.keys(SOURCES).forEach(src => {
+    const el = document.getElementById('cnt-' + src);
+    if (el) el.textContent = (stats.by_source || {})[src] || 0;
+  });
+}
+
+// ─── Filters ────────────────────────────────────────────────────────────────
+function clearNavActive() {
+  document.querySelectorAll('.nav-item').forEach(e => e.classList.remove('active'));
+  document.querySelectorAll('.source-item').forEach(e => e.classList.remove('active-src'));
+}
+function setView(mode, el) { viewMode = mode; filterSrc = null; filterProp = null; clearNavActive(); if (el) el.classList.add('active'); renderGrid(); }
+function setSourceFilter(src, el) { viewMode = 'all'; filterProp = null; filterSrc = (filterSrc === src) ? null : src; clearNavActive(); if (filterSrc && el) el.classList.add('active-src'); else document.getElementById('nav-all').classList.add('active'); renderGrid(); }
+function setPropFilter(prop, el) { viewMode = 'all'; filterSrc = null; filterProp = (filterProp === prop) ? null : prop; clearNavActive(); if (filterProp && el) el.classList.add('active'); else document.getElementById('nav-all').classList.add('active'); renderGrid(); }
+function setDeal(v, btn) { filterDeal = v; btn.parentElement.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active')); btn.classList.add('active'); renderGrid(); }
+function setRooms(v, btn) { filterRoom = v; btn.parentElement.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active')); btn.classList.add('active'); renderGrid(); }
+function setSortMode(v) { sortMode = v; renderGrid(); }
+
+// ─── Toast ──────────────────────────────────────────────────────────────────
+function showToast(icon, title, desc) {
+  const c = document.getElementById('toast-container');
+  const el = document.createElement('div'); el.className = 'toast';
+  el.innerHTML = `<div class="toast-icon">${icon}</div><div><div class="toast-title">${title}</div><div class="toast-desc">${desc}</div></div>`;
+  c.appendChild(el);
+  setTimeout(() => { el.classList.add('out'); setTimeout(() => el.remove(), 250); }, 4000);
+}
+
+// ─── Countdown ──────────────────────────────────────────────────────────────
+setInterval(() => {
+  remaining--;
+  if (remaining <= 0) { remaining = 270; loadAll(); }
+  document.getElementById('countdown').textContent = `${Math.floor(remaining / 60)}:${(remaining % 60).toString().padStart(2, '0')}`;
+}, 1000);
+
+// ─── Date/Time ──────────────────────────────────────────────────────────────
+const AZ_MONTHS = ['Yanvar','Fevral','Mart','Aprel','May','İyun','İyul','Avqust','Sentyabr','Oktyabr','Noyabr','Dekabr'];
+const AZ_DAYS = ['Bazar','Bazar ertəsi','Çərşənbə axşamı','Çərşənbə','Cümə axşamı','Cümə','Şənbə'];
+function updateClock() {
+  const now = new Date();
+  document.getElementById('w-time').textContent = now.toLocaleTimeString('az-AZ', {hour:'2-digit', minute:'2-digit', second:'2-digit'});
+  document.getElementById('w-date').textContent = `${AZ_DAYS[now.getDay()]}, ${now.getDate()} ${AZ_MONTHS[now.getMonth()]} ${now.getFullYear()}`;
+}
+updateClock(); setInterval(updateClock, 1000);
+
+// ─── Weather (OpenWeather API) ──────────────────────────────────────────────
+const WEATHER_ICONS = {
+  '01d':'☀️','01n':'🌙','02d':'⛅','02n':'☁️','03d':'☁️','03n':'☁️',
+  '04d':'☁️','04n':'☁️','09d':'🌧','09n':'🌧','10d':'🌦','10n':'🌧',
+  '11d':'⛈','11n':'⛈','13d':'❄️','13n':'❄️','50d':'🌫','50n':'🌫',
+};
+const WEATHER_AZ = {
+  'clear sky':'Aydın','few clouds':'Az buludlu','scattered clouds':'Qismən buludlu',
+  'broken clouds':'Buludlu','overcast clouds':'Tutqun','shower rain':'Leysan',
+  'rain':'Yağışlı','light rain':'Yüngül yağış','moderate rain':'Orta yağış',
+  'heavy intensity rain':'Güclü yağış','thunderstorm':'Tufan','snow':'Qarlı',
+  'light snow':'Yüngül qar','mist':'Dumanlı','fog':'Duman','haze':'Duman',
+};
+async function loadWeather() {
+  try {
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${DEFAULT_CITY}&appid=${OPENWEATHER_API_KEY}&units=metric&lang=az`;
+    const res = await fetch(url);
+    const data = await res.json();
+    if (data.main) {
+      const temp = Math.round(data.main.temp);
+      const iconCode = data.weather?.[0]?.icon || '01d';
+      const desc = data.weather?.[0]?.description || '';
+      const descAz = WEATHER_AZ[desc.toLowerCase()] || desc.charAt(0).toUpperCase() + desc.slice(1);
+      document.getElementById('w-weather-icon').textContent = WEATHER_ICONS[iconCode] || '🌤';
+      document.getElementById('w-weather-temp').textContent = temp + '°C';
+      document.getElementById('w-weather-desc').textContent = descAz + ` · Hiss: ${Math.round(data.main.feels_like)}°C`;
+    }
+  } catch(e) {
+    document.getElementById('w-weather-desc').textContent = 'Yüklənə bilmədi';
+  }
+}
+loadWeather(); setInterval(loadWeather, 600000);
+
+// ─── Radio ──────────────────────────────────────────────────────────────────
+let radioAudio = null, radioPlaying = false;
+const RADIO_STREAM = 'https://stream.zeno.fm/tjqlpbsxi4ytv';
+const RADIO_MOUNT = 'tjqlpbsxi4ytv';
+function toggleRadio() {
+  if (!radioAudio) {
+    radioAudio = new Audio(RADIO_STREAM);
+    radioAudio.volume = parseInt(document.getElementById('radio-volume').value) / 100;
+    radioAudio.addEventListener('error', () => { document.getElementById('radio-now').textContent = 'Xəta baş verdi'; radioPlaying = false; updateRadioUI(); });
+  }
+  if (radioPlaying) { radioAudio.pause(); radioPlaying = false; }
+  else { radioAudio.play().catch(e => { document.getElementById('radio-now').textContent = 'Oynatmaq mümkün olmadı'; }); radioPlaying = true; subscribeNowPlaying(); }
+  updateRadioUI();
+}
+function updateRadioUI() {
+  const btn = document.getElementById('radio-toggle');
+  if (radioPlaying) { btn.textContent = '⏸'; btn.classList.add('playing'); document.getElementById('radio-now').textContent = '🎵 Canlı yayım...'; }
+  else { btn.textContent = '▶'; btn.classList.remove('playing'); document.getElementById('radio-now').textContent = 'Dayandırılıb'; }
+}
+function setRadioVolume(val) { if (radioAudio) radioAudio.volume = parseInt(val) / 100; }
+function subscribeNowPlaying() {
+  try {
+    const es = new EventSource(`https://api.zeno.fm/mounts/metadata/subscribe/${RADIO_MOUNT}`);
+    es.addEventListener('message', (ev) => {
+      try {
+        let d = ev.data; if (typeof d === 'string' && (d.trim().startsWith('{') || d.trim().startsWith('['))) d = JSON.parse(d);
+        let title = typeof d === 'object' ? (d.streamTitle || d.title || d.currentSong || '') : (typeof d === 'string' ? d : '');
+        if (title && radioPlaying) document.getElementById('radio-now').textContent = '🎵 ' + title;
+      } catch(e) {}
+    });
+  } catch(e) {}
+}
+
+// ─── Init ───────────────────────────────────────────────────────────────────
+loadAll();
+setInterval(loadAll, 30000);
+setTimeout(() => showToast('🏠', 'EvTap başladıldı', '20 mənbədən məlumat yüklənir...'), 500);
+</script>
+</body>
+</html>
