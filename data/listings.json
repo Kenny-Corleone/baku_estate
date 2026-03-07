@@ -1,6 +1,166 @@
 {
   "listings": [
     {
+      "id": "arenda_4726719659",
+      "source": "arenda",
+      "source_name": "Arenda.az",
+      "link": "https://arenda.az/kiraye-gunluk-2-otaqli-kohne-tikili-nesimi-rayonu-28-may-metrosu-azerbaycan-pr-44",
+      "price": 50,
+      "title": "Kirayə (günlük) Köhnə Tikili",
+      "district": "Nəsimi",
+      "rooms": 2,
+      "area": 60.0,
+      "floor": 2,
+      "total_floors": 5,
+      "photo": "https://arenda.az/uploads/emlak/thumbs/homepage/e8bc1c1c29e02cf9a86ddfdb0ad5977d.jpg",
+      "property_type": "menzil",
+      "deal_type": "kiraye",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1772913332.901931
+    },
+    {
+      "id": "arenda_5674998871",
+      "source": "arenda",
+      "source_name": "Arenda.az",
+      "link": "https://arenda.az/kiraye-gunluk-3-otaqli-yeni-tikili-nesimi-rayonu-28-may-metrosu-28-may-metrosu-28-mall-in-arxasi-2",
+      "price": 60,
+      "title": "Kirayə (günlük) Yeni Tikili",
+      "district": "Nəsimi",
+      "rooms": 3,
+      "area": 157.0,
+      "floor": 3,
+      "total_floors": 18,
+      "photo": "https://arenda.az/uploads/emlak/thumbs/homepage/c97394a54950b6701ac93a910bfd6877.jpg",
+      "property_type": "menzil",
+      "deal_type": "kiraye",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1772913332.9019327
+    },
+    {
+      "id": "arenda_8714197735",
+      "source": "arenda",
+      "source_name": "Arenda.az",
+      "link": "https://arenda.az/kiraye-gunluk-2-otaqli-yeni-tikili-yasamal-rayonu-20-yanvar-metrosunun-yani",
+      "price": 40,
+      "title": "Kirayə (günlük) Yeni Tikili",
+      "district": "Yasamal",
+      "rooms": 2,
+      "area": 80.0,
+      "floor": 7,
+      "total_floors": 20,
+      "photo": "https://arenda.az/uploads/emlak/thumbs/homepage/abaa78f922b7a936c9d843ca83b9d33f.jpg",
+      "property_type": "menzil",
+      "deal_type": "kiraye",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1772913332.9019332
+    },
+    {
+      "id": "arenda_8831463055",
+      "source": "arenda",
+      "source_name": "Arenda.az",
+      "link": "https://arenda.az/kiraye-gunluk-3-otaqli-kohne-tikili-sebail-rayonu-iceriseher-metrosu-iceri-seher-metrosu-3",
+      "price": 55,
+      "title": "Kirayə (günlük) Köhnə Tikili",
+      "district": "Səbail",
+      "rooms": 3,
+      "area": 105.0,
+      "floor": 5,
+      "total_floors": 9,
+      "photo": "https://arenda.az/uploads/emlak/thumbs/homepage/82be7aa749bfe3a3637a91859f32756d.jpg",
+      "property_type": "menzil",
+      "deal_type": "kiraye",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1772913332.901936
+    },
+    {
+      "id": "arenda_1984776967",
+      "source": "arenda",
+      "source_name": "Arenda.az",
+      "link": "https://arenda.az/kiraye-gunluk-1-otaqli-kohne-tikili-sebail-rayonu-sahil-metrosu-mirze-ibrahimov-13",
+      "price": 29,
+      "title": "Kirayə (günlük) Köhnə Tikili",
+      "district": "Səbail",
+      "rooms": 1,
+      "area": 29.0,
+      "floor": 1,
+      "total_floors": 2,
+      "photo": "https://arenda.az/uploads/emlak/thumbs/homepage/a19ee97bcb55a8342fd6c95945bd205c.jpeg",
+      "property_type": "menzil",
+      "deal_type": "kiraye",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1772913332.9019375
+    },
+    {
+      "id": "arenda_5534280553",
+      "source": "arenda",
+      "source_name": "Arenda.az",
+      "link": "https://arenda.az/satilir-7-otaqli-bag-evi-bineqedi-rayonu-avtovagzal-metrosu-bileceri-qes-baki-seheri-bineqedi-rayonu",
+      "price": 200000,
+      "title": "Satılır Bağ evi",
+      "district": "Binəqədi",
+      "rooms": 7,
+      "area": null,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://arenda.az/uploads/emlak/thumbs/homepage/23f8d9186c4d4e55d95215f12ac4911f.jpg",
+      "property_type": "ev_villa",
+      "deal_type": "kiraye",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1772913332.901938
+    },
+    {
+      "id": "arenda_8503743075",
+      "source": "arenda",
+      "source_name": "Arenda.az",
+      "link": "https://arenda.az/satilir-3-otaqli-yeni-tikili-yasamal-rayonu-elmler-akademiyasi-metrosu-yasamal-qes-yasamal-qes-z-xelilov-kucesi-musabeyov-parkinin-yaxinligi",
+      "price": 422000,
+      "title": "Satılır Yeni Tikili",
+      "district": "Yasamal",
+      "rooms": 3,
+      "area": 140.0,
+      "floor": 4,
+      "total_floors": 16,
+      "photo": "https://arenda.az/uploads/emlak/thumbs/homepage/d962307fc20617ed0e6c8d529e4bdfc0.jpg",
+      "property_type": "menzil",
+      "deal_type": "kiraye",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1772913332.9019382
+    },
+    {
+      "id": "arenda_8258696952",
+      "source": "arenda",
+      "source_name": "Arenda.az",
+      "link": "https://arenda.az/kiraye-ayliq-2-otaqli-yeni-tikili-nesimi-rayonu-genclik-metrosu-elsad-quliyev-kucesi-1",
+      "price": 1200,
+      "title": "Kirayə (aylıq) Yeni Tikili",
+      "district": "Nəsimi",
+      "rooms": 2,
+      "area": 110.0,
+      "floor": 4,
+      "total_floors": 17,
+      "photo": "https://arenda.az/uploads/emlak/thumbs/homepage/1ee44a96ef1ada6a72a2d90fbcec07eb.jpeg",
+      "property_type": "menzil",
+      "deal_type": "kiraye",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1772913332.9019387
+    },
+    {
       "id": "emlak_1315689",
       "source": "emlak",
       "source_name": "Emlak.az",
@@ -18,7 +178,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.7139113
+      "timestamp": 1772913336.0540848
     },
     {
       "id": "emlak_1315651",
@@ -38,7 +198,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.7139125
+      "timestamp": 1772913336.0540855
     },
     {
       "id": "emlak_1315655",
@@ -58,7 +218,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.7139132
+      "timestamp": 1772913336.054086
     },
     {
       "id": "emlak_1315691",
@@ -78,7 +238,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.7139156
+      "timestamp": 1772913336.054086
     },
     {
       "id": "emlak_1315629",
@@ -98,7 +258,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.7139163
+      "timestamp": 1772913336.0540864
     },
     {
       "id": "emlak_1315683",
@@ -118,7 +278,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.713917
+      "timestamp": 1772913336.054087
     },
     {
       "id": "emlak_1315681",
@@ -138,7 +298,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.7139173
+      "timestamp": 1772913336.0540874
     },
     {
       "id": "emlak_1315676",
@@ -158,7 +318,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.7139175
+      "timestamp": 1772913336.0540874
     },
     {
       "id": "emlak_1315672",
@@ -178,7 +338,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.7139177
+      "timestamp": 1772913336.0540876
     },
     {
       "id": "emlak_1315670",
@@ -198,7 +358,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.713918
+      "timestamp": 1772913336.054088
     },
     {
       "id": "emlak_1315671",
@@ -218,7 +378,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.7139182
+      "timestamp": 1772913336.054088
     },
     {
       "id": "emlak_1315640",
@@ -238,7 +398,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.7139184
+      "timestamp": 1772913336.0540886
     },
     {
       "id": "emlak_1068979",
@@ -258,7 +418,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.7139187
+      "timestamp": 1772913336.054089
     },
     {
       "id": "emlak_1315665",
@@ -278,7 +438,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.713919
+      "timestamp": 1772913336.0540893
     },
     {
       "id": "emlak_1315624",
@@ -298,7 +458,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.7139192
+      "timestamp": 1772913336.0540893
     },
     {
       "id": "emlak_1315626",
@@ -318,7 +478,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.7139196
+      "timestamp": 1772913336.0540895
     },
     {
       "id": "emlak_1315620",
@@ -338,7 +498,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.71392
+      "timestamp": 1772913336.0540898
     },
     {
       "id": "emlak_1183174",
@@ -358,7 +518,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.7139206
+      "timestamp": 1772913336.0540903
     },
     {
       "id": "emlak_1315675",
@@ -378,7 +538,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.7139213
+      "timestamp": 1772913336.054091
     },
     {
       "id": "emlak_1224453",
@@ -398,7 +558,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.7139213
+      "timestamp": 1772913336.0540912
     },
     {
       "id": "emlak_1212955",
@@ -418,7 +578,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.7139215
+      "timestamp": 1772913336.0540915
     },
     {
       "id": "emlak_1317653",
@@ -438,7 +598,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.7139218
+      "timestamp": 1772913336.0540915
     },
     {
       "id": "emlak_1290081",
@@ -458,7 +618,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.7139218
+      "timestamp": 1772913336.0540917
     },
     {
       "id": "emlak_1117630",
@@ -478,7 +638,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.713922
+      "timestamp": 1772913336.054092
     },
     {
       "id": "emlak_1318200",
@@ -498,7 +658,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.7139223
+      "timestamp": 1772913336.0540922
     },
     {
       "id": "emlak_1277078",
@@ -518,7 +678,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.7139227
+      "timestamp": 1772913336.0540926
     },
     {
       "id": "emlak_1325716",
@@ -538,7 +698,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.7139227
+      "timestamp": 1772913336.054093
     },
     {
       "id": "emlak_1323583",
@@ -558,7 +718,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.713923
+      "timestamp": 1772913336.0540931
     },
     {
       "id": "emlak_1323866",
@@ -578,7 +738,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.7139232
+      "timestamp": 1772913336.0540931
     },
     {
       "id": "emlak_1323867",
@@ -598,7 +758,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.7139237
+      "timestamp": 1772913336.0540934
     },
     {
       "id": "emlak_1323870",
@@ -618,7 +778,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.713924
+      "timestamp": 1772913336.0540934
     },
     {
       "id": "emlak_1323872",
@@ -638,7 +798,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.713924
+      "timestamp": 1772913336.0540936
     },
     {
       "id": "emlak_1323873",
@@ -658,7 +818,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.7139242
+      "timestamp": 1772913336.0540938
     },
     {
       "id": "emlak_1323874",
@@ -678,7 +838,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.7139294
+      "timestamp": 1772913336.054094
     },
     {
       "id": "emlak_1323875",
@@ -698,7 +858,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.7139297
+      "timestamp": 1772913336.0540943
     },
     {
       "id": "emlak_1323891",
@@ -718,7 +878,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.71393
+      "timestamp": 1772913336.0540943
     },
     {
       "id": "emlak_1325438",
@@ -738,7 +898,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.7139301
+      "timestamp": 1772913336.0540946
     },
     {
       "id": "emlak_1317153",
@@ -758,7 +918,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.7139306
+      "timestamp": 1772913336.0540948
     },
     {
       "id": "emlak_1326256",
@@ -778,7 +938,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.7139308
+      "timestamp": 1772913336.054095
     },
     {
       "id": "emlak_1179746",
@@ -798,167 +958,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912785.7139308
-    },
-    {
-      "id": "arenda_2098105401",
-      "source": "arenda",
-      "source_name": "Arenda.az",
-      "link": "https://arenda.az/kiraye-gunluk-2-otaqli-kohne-tikili-nesimi-rayonu-28-may-metrosu-azerbaycan-pr-44",
-      "price": 50,
-      "title": "Kirayə (günlük) Köhnə Tikili",
-      "district": "Nəsimi",
-      "rooms": 2,
-      "area": 60.0,
-      "floor": 2,
-      "total_floors": 5,
-      "photo": "https://arenda.az/uploads/emlak/thumbs/homepage/e8bc1c1c29e02cf9a86ddfdb0ad5977d.jpg",
-      "property_type": "menzil",
-      "deal_type": "kiraye",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1772912786.0339925
-    },
-    {
-      "id": "arenda_52657119",
-      "source": "arenda",
-      "source_name": "Arenda.az",
-      "link": "https://arenda.az/kiraye-gunluk-3-otaqli-yeni-tikili-nesimi-rayonu-28-may-metrosu-28-may-metrosu-28-mall-in-arxasi-2",
-      "price": 60,
-      "title": "Kirayə (günlük) Yeni Tikili",
-      "district": "Nəsimi",
-      "rooms": 3,
-      "area": 157.0,
-      "floor": 3,
-      "total_floors": 18,
-      "photo": "https://arenda.az/uploads/emlak/thumbs/homepage/c97394a54950b6701ac93a910bfd6877.jpg",
-      "property_type": "menzil",
-      "deal_type": "kiraye",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1772912786.0339932
-    },
-    {
-      "id": "arenda_3257889296",
-      "source": "arenda",
-      "source_name": "Arenda.az",
-      "link": "https://arenda.az/kiraye-gunluk-2-otaqli-yeni-tikili-yasamal-rayonu-20-yanvar-metrosunun-yani",
-      "price": 40,
-      "title": "Kirayə (günlük) Yeni Tikili",
-      "district": "Yasamal",
-      "rooms": 2,
-      "area": 80.0,
-      "floor": 7,
-      "total_floors": 20,
-      "photo": "https://arenda.az/uploads/emlak/thumbs/homepage/abaa78f922b7a936c9d843ca83b9d33f.jpg",
-      "property_type": "menzil",
-      "deal_type": "kiraye",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1772912786.0339937
-    },
-    {
-      "id": "arenda_8813498818",
-      "source": "arenda",
-      "source_name": "Arenda.az",
-      "link": "https://arenda.az/kiraye-gunluk-3-otaqli-kohne-tikili-sebail-rayonu-iceriseher-metrosu-iceri-seher-metrosu-3",
-      "price": 55,
-      "title": "Kirayə (günlük) Köhnə Tikili",
-      "district": "Səbail",
-      "rooms": 3,
-      "area": 105.0,
-      "floor": 5,
-      "total_floors": 9,
-      "photo": "https://arenda.az/uploads/emlak/thumbs/homepage/82be7aa749bfe3a3637a91859f32756d.jpg",
-      "property_type": "menzil",
-      "deal_type": "kiraye",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1772912786.033994
-    },
-    {
-      "id": "arenda_6346676390",
-      "source": "arenda",
-      "source_name": "Arenda.az",
-      "link": "https://arenda.az/kiraye-gunluk-1-otaqli-kohne-tikili-sebail-rayonu-sahil-metrosu-mirze-ibrahimov-13",
-      "price": 29,
-      "title": "Kirayə (günlük) Köhnə Tikili",
-      "district": "Səbail",
-      "rooms": 1,
-      "area": 29.0,
-      "floor": 1,
-      "total_floors": 2,
-      "photo": "https://arenda.az/uploads/emlak/thumbs/homepage/a19ee97bcb55a8342fd6c95945bd205c.jpeg",
-      "property_type": "menzil",
-      "deal_type": "kiraye",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1772912786.0339947
-    },
-    {
-      "id": "arenda_5645838630",
-      "source": "arenda",
-      "source_name": "Arenda.az",
-      "link": "https://arenda.az/satilir-7-otaqli-bag-evi-bineqedi-rayonu-avtovagzal-metrosu-bileceri-qes-baki-seheri-bineqedi-rayonu",
-      "price": 200000,
-      "title": "Satılır Bağ evi",
-      "district": "Binəqədi",
-      "rooms": 7,
-      "area": null,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://arenda.az/uploads/emlak/thumbs/homepage/23f8d9186c4d4e55d95215f12ac4911f.jpg",
-      "property_type": "ev_villa",
-      "deal_type": "kiraye",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1772912786.033995
-    },
-    {
-      "id": "arenda_9507104740",
-      "source": "arenda",
-      "source_name": "Arenda.az",
-      "link": "https://arenda.az/satilir-3-otaqli-yeni-tikili-yasamal-rayonu-elmler-akademiyasi-metrosu-yasamal-qes-yasamal-qes-z-xelilov-kucesi-musabeyov-parkinin-yaxinligi",
-      "price": 422000,
-      "title": "Satılır Yeni Tikili",
-      "district": "Yasamal",
-      "rooms": 3,
-      "area": 140.0,
-      "floor": 4,
-      "total_floors": 16,
-      "photo": "https://arenda.az/uploads/emlak/thumbs/homepage/d962307fc20617ed0e6c8d529e4bdfc0.jpg",
-      "property_type": "menzil",
-      "deal_type": "kiraye",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1772912786.0339952
-    },
-    {
-      "id": "arenda_2705074119",
-      "source": "arenda",
-      "source_name": "Arenda.az",
-      "link": "https://arenda.az/kiraye-ayliq-2-otaqli-yeni-tikili-nesimi-rayonu-genclik-metrosu-elsad-quliyev-kucesi-1",
-      "price": 1200,
-      "title": "Kirayə (aylıq) Yeni Tikili",
-      "district": "Nəsimi",
-      "rooms": 2,
-      "area": 110.0,
-      "floor": 4,
-      "total_floors": 17,
-      "photo": "https://arenda.az/uploads/emlak/thumbs/homepage/1ee44a96ef1ada6a72a2d90fbcec07eb.jpeg",
-      "property_type": "menzil",
-      "deal_type": "kiraye",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1772912786.0339952
+      "timestamp": 1772913336.054095
     },
     {
       "id": "yeniemlak_921687",
@@ -978,7 +978,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055693
+      "timestamp": 1772913336.1730473
     },
     {
       "id": "yeniemlak_918334",
@@ -998,7 +998,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.70557
+      "timestamp": 1772913336.1730478
     },
     {
       "id": "yeniemlak_871550",
@@ -1018,7 +1018,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055702
+      "timestamp": 1772913336.173048
     },
     {
       "id": "yeniemlak_878667",
@@ -1038,7 +1038,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055705
+      "timestamp": 1772913336.1730483
     },
     {
       "id": "yeniemlak_915353",
@@ -1058,7 +1058,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055712
+      "timestamp": 1772913336.1730487
     },
     {
       "id": "yeniemlak_920693",
@@ -1078,7 +1078,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055714
+      "timestamp": 1772913336.173049
     },
     {
       "id": "yeniemlak_878833",
@@ -1098,7 +1098,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055717
+      "timestamp": 1772913336.1730494
     },
     {
       "id": "yeniemlak_906236",
@@ -1118,7 +1118,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.705572
+      "timestamp": 1772913336.1730497
     },
     {
       "id": "yeniemlak_836881",
@@ -1138,7 +1138,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055721
+      "timestamp": 1772913336.17305
     },
     {
       "id": "yeniemlak_755223",
@@ -1158,7 +1158,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055724
+      "timestamp": 1772913336.1730502
     },
     {
       "id": "yeniemlak_915799",
@@ -1178,7 +1178,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055724
+      "timestamp": 1772913336.1730504
     },
     {
       "id": "yeniemlak_912191",
@@ -1198,7 +1198,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055726
+      "timestamp": 1772913336.1730506
     },
     {
       "id": "yeniemlak_914208",
@@ -1218,7 +1218,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055733
+      "timestamp": 1772913336.1730509
     },
     {
       "id": "yeniemlak_912356",
@@ -1238,7 +1238,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055738
+      "timestamp": 1772913336.173051
     },
     {
       "id": "yeniemlak_910083",
@@ -1258,7 +1258,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055738
+      "timestamp": 1772913336.1730514
     },
     {
       "id": "yeniemlak_894808",
@@ -1278,7 +1278,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.705574
+      "timestamp": 1772913336.1730516
     },
     {
       "id": "yeniemlak_904238",
@@ -1298,7 +1298,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055745
+      "timestamp": 1772913336.1730518
     },
     {
       "id": "yeniemlak_908214",
@@ -1318,7 +1318,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055748
+      "timestamp": 1772913336.173052
     },
     {
       "id": "yeniemlak_909059",
@@ -1338,7 +1338,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055752
+      "timestamp": 1772913336.173053
     },
     {
       "id": "yeniemlak_871586",
@@ -1358,7 +1358,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055755
+      "timestamp": 1772913336.1730533
     },
     {
       "id": "yeniemlak_859846",
@@ -1378,7 +1378,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055755
+      "timestamp": 1772913336.1730535
     },
     {
       "id": "yeniemlak_883251",
@@ -1398,7 +1398,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.705576
+      "timestamp": 1772913336.1730537
     },
     {
       "id": "yeniemlak_906159",
@@ -1418,7 +1418,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.705576
+      "timestamp": 1772913336.1730537
     },
     {
       "id": "yeniemlak_884880",
@@ -1438,7 +1438,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055762
+      "timestamp": 1772913336.173054
     },
     {
       "id": "yeniemlak_905054",
@@ -1458,7 +1458,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055764
+      "timestamp": 1772913336.1730542
     },
     {
       "id": "yeniemlak_881328",
@@ -1478,7 +1478,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055767
+      "timestamp": 1772913336.1730545
     },
     {
       "id": "yeniemlak_842543",
@@ -1498,7 +1498,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.705577
+      "timestamp": 1772913336.1730545
     },
     {
       "id": "yeniemlak_822607",
@@ -1518,7 +1518,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055771
+      "timestamp": 1772913336.1730547
     },
     {
       "id": "yeniemlak_873583",
@@ -1538,7 +1538,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055774
+      "timestamp": 1772913336.173055
     },
     {
       "id": "yeniemlak_898139",
@@ -1558,7 +1558,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055774
+      "timestamp": 1772913336.1730552
     },
     {
       "id": "yeniemlak_897470",
@@ -1578,7 +1578,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055776
+      "timestamp": 1772913336.1730552
     },
     {
       "id": "yeniemlak_887980",
@@ -1598,7 +1598,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055776
+      "timestamp": 1772913336.1730554
     },
     {
       "id": "yeniemlak_869002",
@@ -1618,7 +1618,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.705578
+      "timestamp": 1772913336.1730556
     },
     {
       "id": "yeniemlak_882723",
@@ -1638,7 +1638,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055783
+      "timestamp": 1772913336.173056
     },
     {
       "id": "yeniemlak_821506",
@@ -1658,7 +1658,47 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055786
+      "timestamp": 1772913336.1730564
+    },
+    {
+      "id": "yeniemlak_922541",
+      "source": "yeniemlak",
+      "source_name": "YeniEmlak.az",
+      "link": "https://www.yeniemlak.az/elan/satilir-3-otaqli-bina-evi-menzil-pirallahi-rayonu-pirallahi-qes-meh-28-ev-922541",
+      "price": 73000,
+      "title": "Satılır Bina evi menzil 60 m2 Bakı, PirAllahı rayonu",
+      "district": "Pirallahı",
+      "rooms": null,
+      "area": 60.0,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://www.yeniemlak.az/get-img/07032026W922541.jpeg",
+      "property_type": "menzil",
+      "deal_type": "satis",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1772913336.1730566
+    },
+    {
+      "id": "yeniemlak_922773",
+      "source": "yeniemlak",
+      "source_name": "YeniEmlak.az",
+      "link": "https://www.yeniemlak.az/elan/satilir-3-otaqli-bina-evi-menzil-xirdalan-s-xirdalan-s-922773",
+      "price": 45000,
+      "title": "Satılır Bina evi menzil 45 m2 Xırdalan ş.",
+      "district": "Satılır Bina evi menzil 45 m2 Xırdalan ş. 45000 AZ",
+      "rooms": null,
+      "area": 45.0,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://www.yeniemlak.az/get-img/07032026W922773.jpg",
+      "property_type": "menzil",
+      "deal_type": "satis",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1772913336.1730568
     },
     {
       "id": "yeniemlak_881024",
@@ -1678,7 +1718,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055786
+      "timestamp": 1772913336.1730568
     },
     {
       "id": "yeniemlak_783755",
@@ -1698,7 +1738,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055788
+      "timestamp": 1772913336.173057
     },
     {
       "id": "yeniemlak_902636",
@@ -1718,7 +1758,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.705579
+      "timestamp": 1772913336.1730573
     },
     {
       "id": "yeniemlak_899463",
@@ -1738,7 +1778,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.705579
+      "timestamp": 1772913336.1730573
     },
     {
       "id": "yeniemlak_881028",
@@ -1758,7 +1798,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055793
+      "timestamp": 1772913336.1730576
     },
     {
       "id": "yeniemlak_807091",
@@ -1778,7 +1818,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055795
+      "timestamp": 1772913336.1730578
     },
     {
       "id": "yeniemlak_897865",
@@ -1798,7 +1838,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055798
+      "timestamp": 1772913336.173058
     },
     {
       "id": "yeniemlak_908241",
@@ -1818,47 +1858,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.70558
-    },
-    {
-      "id": "yeniemlak_779094",
-      "source": "yeniemlak",
-      "source_name": "YeniEmlak.az",
-      "link": "https://www.yeniemlak.az/elan/satilir-3-otaqli-bina-evi-menzil-masazir-abseron-rayon-masazir-qesebesi-779094",
-      "price": 82000,
-      "title": "Satılır Bina evi menzil 75 m2 Abşeron, Masazır",
-      "district": "Satılır Bina evi menzil 75 m2 Abşeron, Masazır 820",
-      "rooms": null,
-      "area": 75.0,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://www.yeniemlak.az/get-img/07032026W779094.jpg",
-      "property_type": "menzil",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1772912787.7055802
-    },
-    {
-      "id": "yeniemlak_919899",
-      "source": "yeniemlak",
-      "source_name": "YeniEmlak.az",
-      "link": "https://www.yeniemlak.az/elan/satilir-4-otaqli-heyet-evi-villa-bineqedi-rayonu-bineqedi-qes-bineqedi-rayonu-bineqedi-q-919899",
-      "price": 110000,
-      "title": "Satılır Həyət evi / Villa 130 m2 Bakı, Binəqədi rayonu",
-      "district": "Binəqədi",
-      "rooms": null,
-      "area": 130.0,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://www.yeniemlak.az/get-img/07032026W919899.jpg",
-      "property_type": "ev_villa",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1772912787.7055805
+      "timestamp": 1772913336.173058
     },
     {
       "id": "yeniemlak_888091",
@@ -1878,7 +1878,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055805
+      "timestamp": 1772913336.1730583
     },
     {
       "id": "yeniemlak_922618",
@@ -1898,7 +1898,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055807
+      "timestamp": 1772913336.1730585
     },
     {
       "id": "yeniemlak_922723",
@@ -1918,7 +1918,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.705581
+      "timestamp": 1772913336.1730587
     },
     {
       "id": "yeniemlak_922694",
@@ -1938,7 +1938,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055814
+      "timestamp": 1772913336.1730587
     },
     {
       "id": "yeniemlak_919436",
@@ -1958,7 +1958,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055814
+      "timestamp": 1772913336.173059
     },
     {
       "id": "yeniemlak_917065",
@@ -1978,7 +1978,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055817
+      "timestamp": 1772913336.1730592
     },
     {
       "id": "yeniemlak_922739",
@@ -1998,7 +1998,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.705582
+      "timestamp": 1772913336.1730592
     },
     {
       "id": "yeniemlak_922642",
@@ -2018,7 +2018,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055821
+      "timestamp": 1772913336.1730597
     },
     {
       "id": "yeniemlak_891548",
@@ -2038,7 +2038,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055821
+      "timestamp": 1772913336.17306
     },
     {
       "id": "yeniemlak_922711",
@@ -2058,7 +2058,247 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912787.7055824
+      "timestamp": 1772913336.1730602
+    },
+    {
+      "id": "binalar_351048",
+      "source": "binalar",
+      "source_name": "Binalar.az",
+      "link": "https://binalar.az/4-otaqli-menzil-heyet-evi-villa-kiraye-ayliq-balaxani-sabuncu-351048",
+      "price": 450,
+      "title": "Elan",
+      "district": "Sabunçu",
+      "rooms": 4,
+      "area": 120.0,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://binalar.az/uploads/300x200/thumb14118829.webp",
+      "property_type": "ev_villa",
+      "deal_type": "satis",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1772913338.8691142
+    },
+    {
+      "id": "binalar_351047",
+      "source": "binalar",
+      "source_name": "Binalar.az",
+      "link": "https://binalar.az/34-sot-torpaq-satilir-sumqayit-351047",
+      "price": 5000,
+      "title": "Elan",
+      "district": "Tap.az 5 000 ₼ Sumqayıt / Torpaq 34 sot Təcili sat",
+      "rooms": null,
+      "area": null,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://binalar.az/uploads/300x200/thumb2389290.webp",
+      "property_type": "ev_villa",
+      "deal_type": "satis",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1772913338.8691146
+    },
+    {
+      "id": "binalar_351046",
+      "source": "binalar",
+      "source_name": "Binalar.az",
+      "link": "https://binalar.az/obyekt-ofis-kiraye-ayliq-nerimanov-baki-351046",
+      "price": 1300,
+      "title": "Elan",
+      "district": "Nərimanov",
+      "rooms": null,
+      "area": 50.0,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://binalar.az/uploads/300x200/thumb14118820.webp",
+      "property_type": "ev_villa",
+      "deal_type": "satis",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1772913338.869115
+    },
+    {
+      "id": "binalar_351045",
+      "source": "binalar",
+      "source_name": "Binalar.az",
+      "link": "https://binalar.az/obyekt-ofis-kiraye-ayliq-nerimanov-baki-351045",
+      "price": 1300,
+      "title": "Elan",
+      "district": "Nərimanov",
+      "rooms": null,
+      "area": 50.0,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://binalar.az/uploads/300x200/thumb14118811.webp",
+      "property_type": "ev_villa",
+      "deal_type": "satis",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1772913338.8691154
+    },
+    {
+      "id": "binalar_351044",
+      "source": "binalar",
+      "source_name": "Binalar.az",
+      "link": "https://binalar.az/3-otaqli-menzil-heyet-evi-villa-satilir-qebele-351044",
+      "price": 125000,
+      "title": "Elan",
+      "district": "Tap.az 125 000 ₼ Qəbələ / Həyət evi - Villa 3 otaq",
+      "rooms": 3,
+      "area": 600.0,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://binalar.az/uploads/300x200/thumb14118802.webp",
+      "property_type": "ev_villa",
+      "deal_type": "satis",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1772913338.8691158
+    },
+    {
+      "id": "binalar_351041",
+      "source": "binalar",
+      "source_name": "Binalar.az",
+      "link": "https://binalar.az/obyekt-ofis-satilir-yasamal-yasamal-351041",
+      "price": 290000,
+      "title": "Elan",
+      "district": "Yasamal",
+      "rooms": null,
+      "area": 100.0,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://binalar.az/uploads/300x200/thumb14118775.webp",
+      "property_type": "ofis",
+      "deal_type": "satis",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1772913338.869116
+    },
+    {
+      "id": "binalar_351043",
+      "source": "binalar",
+      "source_name": "Binalar.az",
+      "link": "https://binalar.az/obyekt-ofis-kiraye-ayliq-sumqayit-351043",
+      "price": 500,
+      "title": "Elan",
+      "district": "Tap.az 500 ₼ / ay Sumqayıt / Obyekt - Ofis Salam.Y",
+      "rooms": 1,
+      "area": null,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://binalar.az/uploads/300x200/thumb14118798.webp",
+      "property_type": "ofis",
+      "deal_type": "satis",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1772913338.8691163
+    },
+    {
+      "id": "binalar_351042",
+      "source": "binalar",
+      "source_name": "Binalar.az",
+      "link": "https://binalar.az/obyekt-ofis-satilir-baki-351042",
+      "price": 134000,
+      "title": "Elan",
+      "district": "Köhnə Günəşli",
+      "rooms": 2,
+      "area": 55.0,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://binalar.az/uploads/300x200/thumb14118781.webp",
+      "property_type": "ofis",
+      "deal_type": "satis",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1772913338.8691168
+    },
+    {
+      "id": "binalar_351040",
+      "source": "binalar",
+      "source_name": "Binalar.az",
+      "link": "https://binalar.az/11-sot-torpaq-satilir-quba-351040",
+      "price": 3500,
+      "title": "Elan",
+      "district": "Tap.az 3 500 ₼ Quba / Torpaq 11 sot Salam Quba Ray",
+      "rooms": null,
+      "area": null,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://binalar.az/uploads/300x200/thumb14118767.webp",
+      "property_type": "torpaq",
+      "deal_type": "satis",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1772913338.869117
+    },
+    {
+      "id": "binalar_351039",
+      "source": "binalar",
+      "source_name": "Binalar.az",
+      "link": "https://binalar.az/obyekt-ofis-satilir-baki-351039",
+      "price": 115000,
+      "title": "Elan",
+      "district": "Memar Əcəmi",
+      "rooms": 2,
+      "area": 35.0,
+      "floor": 5,
+      "total_floors": 1,
+      "photo": "https://binalar.az/uploads/300x200/thumb14118757.webp",
+      "property_type": "ev_villa",
+      "deal_type": "satis",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1772913338.8691173
+    },
+    {
+      "id": "binalar_351036",
+      "source": "binalar",
+      "source_name": "Binalar.az",
+      "link": "https://binalar.az/3-otaqli-menzil-heyet-evi-villa-satilir-bine-bineqedi-351036",
+      "price": 90000,
+      "title": "Elan",
+      "district": "Binəqədi",
+      "rooms": 3,
+      "area": 90.0,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://binalar.az/uploads/300x200/thumb14118723.webp",
+      "property_type": "ev_villa",
+      "deal_type": "satis",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1772913338.8691175
+    },
+    {
+      "id": "binalar_351038",
+      "source": "binalar",
+      "source_name": "Binalar.az",
+      "link": "https://binalar.az/3-otaqli-menzil-heyet-evi-villa-satilir-bine-xezer-351038",
+      "price": 65000,
+      "title": "Elan",
+      "district": "Xəzər",
+      "rooms": 3,
+      "area": 110.0,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://binalar.az/uploads/300x200/thumb14118744.webp",
+      "property_type": "ev_villa",
+      "deal_type": "satis",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1772913338.8691177
     },
     {
       "id": "binalar_351037",
@@ -2078,7 +2318,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912789.704784
+      "timestamp": 1772913338.8691177
     },
     {
       "id": "binalar_220914",
@@ -2098,7 +2338,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912789.704785
+      "timestamp": 1772913338.869118
     },
     {
       "id": "binalar_294430",
@@ -2118,7 +2358,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912789.7047856
+      "timestamp": 1772913338.8691182
     },
     {
       "id": "binalar_351035",
@@ -2138,7 +2378,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912789.704786
+      "timestamp": 1772913338.8691185
     },
     {
       "id": "binalar_351033",
@@ -2158,7 +2398,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912789.704787
+      "timestamp": 1772913338.8691185
     },
     {
       "id": "binalar_351032",
@@ -2178,7 +2418,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912789.7047877
+      "timestamp": 1772913338.869119
     },
     {
       "id": "binalar_351034",
@@ -2198,7 +2438,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912789.7047884
+      "timestamp": 1772913338.8691196
     },
     {
       "id": "binalar_351031",
@@ -2218,7 +2458,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912789.704789
+      "timestamp": 1772913338.8691196
     },
     {
       "id": "binalar_351030",
@@ -2238,7 +2478,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912789.7047892
+      "timestamp": 1772913338.86912
     },
     {
       "id": "binalar_351029",
@@ -2258,7 +2498,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912789.7047899
+      "timestamp": 1772913338.8691204
     },
     {
       "id": "binalar_351027",
@@ -2278,7 +2518,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912789.7047904
+      "timestamp": 1772913338.8691206
     },
     {
       "id": "binalar_351028",
@@ -2298,7 +2538,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912789.7047908
+      "timestamp": 1772913338.8691206
     },
     {
       "id": "binalar_351026",
@@ -2318,7 +2558,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912789.704791
+      "timestamp": 1772913338.8691208
     },
     {
       "id": "binalar_351025",
@@ -2338,7 +2578,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912789.7047913
+      "timestamp": 1772913338.869121
     },
     {
       "id": "binalar_351022",
@@ -2358,7 +2598,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912789.7047915
+      "timestamp": 1772913338.8691213
     },
     {
       "id": "binalar_351021",
@@ -2378,7 +2618,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912789.7047918
+      "timestamp": 1772913338.8691213
     },
     {
       "id": "binalar_351020",
@@ -2398,7 +2638,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912789.704792
+      "timestamp": 1772913338.8691216
     },
     {
       "id": "binalar_351019",
@@ -2418,7 +2658,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912789.7047923
+      "timestamp": 1772913338.8691218
     },
     {
       "id": "binalar_351018",
@@ -2438,7 +2678,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912789.7047935
+      "timestamp": 1772913338.8691218
     },
     {
       "id": "binalar_351016",
@@ -2458,247 +2698,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912789.704794
-    },
-    {
-      "id": "binalar_351017",
-      "source": "binalar",
-      "source_name": "Binalar.az",
-      "link": "https://binalar.az/2-otaqli-menzil-heyet-evi-villa-kiraye-ayliq-bayil-sebail-351017",
-      "price": 500,
-      "title": "Elan",
-      "district": "Səbail",
-      "rooms": 2,
-      "area": 48.0,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://binalar.az/uploads/300x200/thumb14118596.webp",
-      "property_type": "ev_villa",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1772912789.7047942
-    },
-    {
-      "id": "binalar_351015",
-      "source": "binalar",
-      "source_name": "Binalar.az",
-      "link": "https://binalar.az/2-otaqli-menzil-kohne-tikili-satilir-xetai-baki-351015",
-      "price": 145000,
-      "title": "Elan",
-      "district": "Xətai",
-      "rooms": 2,
-      "area": 51.0,
-      "floor": 9,
-      "total_floors": 9,
-      "photo": "https://binalar.az/uploads/300x200/thumb14118578.webp",
-      "property_type": "menzil",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1772912789.7047946
-    },
-    {
-      "id": "binalar_351014",
-      "source": "binalar",
-      "source_name": "Binalar.az",
-      "link": "https://binalar.az/1-otaqli-menzil-heyet-evi-villa-kiraye-ayliq-bineqedi-bineqedi-351014",
-      "price": 200,
-      "title": "Elan",
-      "district": "Binəqədi",
-      "rooms": 1,
-      "area": 23.0,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://binalar.az/uploads/300x200/thumb14118555.webp",
-      "property_type": "ev_villa",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1772912789.704795
-    },
-    {
-      "id": "binalar_178196",
-      "source": "binalar",
-      "source_name": "Binalar.az",
-      "link": "https://binalar.az/3-otaqli-menzil-heyet-evi-villa-satilir-baki-178196",
-      "price": 155000,
-      "title": "Elan",
-      "district": "Tap.az 155 000 ₼ Bakı / Həyət evi - Villa 3 otaq 5",
-      "rooms": 3,
-      "area": 52.0,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://binalar.az/uploads/300x200/thumb5361909.webp",
-      "property_type": "ev_villa",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1772912789.7047951
-    },
-    {
-      "id": "binalar_351013",
-      "source": "binalar",
-      "source_name": "Binalar.az",
-      "link": "https://binalar.az/5-otaqli-menzil-heyet-evi-villa-satilir-baki-351013",
-      "price": 185000,
-      "title": "Elan",
-      "district": "Bakıxanov",
-      "rooms": 5,
-      "area": 90.0,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://binalar.az/uploads/300x200/thumb14118545.webp",
-      "property_type": "ev_villa",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1772912789.7047954
-    },
-    {
-      "id": "binalar_351011",
-      "source": "binalar",
-      "source_name": "Binalar.az",
-      "link": "https://binalar.az/obyekt-ofis-satilir-gence-351011",
-      "price": 205000,
-      "title": "Elan",
-      "district": "Tap.az 205 000 ₼ Gəncə / Obyekt - Ofis 3 otaq 110 ",
-      "rooms": 3,
-      "area": 110.0,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://binalar.az/uploads/300x200/thumb13593225.webp",
-      "property_type": "ofis",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1772912789.7047958
-    },
-    {
-      "id": "binalar_351012",
-      "source": "binalar",
-      "source_name": "Binalar.az",
-      "link": "https://binalar.az/1-otaqli-menzil-kohne-tikili-kiraye-ayliq-yeni-yasamal-yasamal-351012",
-      "price": 420,
-      "title": "Elan",
-      "district": "Yasamal",
-      "rooms": 1,
-      "area": 60.0,
-      "floor": 6,
-      "total_floors": 9,
-      "photo": "https://binalar.az/uploads/300x200/thumb14118536.webp",
-      "property_type": "menzil",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1772912789.704796
-    },
-    {
-      "id": "binalar_351010",
-      "source": "binalar",
-      "source_name": "Binalar.az",
-      "link": "https://binalar.az/57-sot-torpaq-satilir-badamdar-sebail-351010",
-      "price": 330000,
-      "title": "Elan",
-      "district": "Səbail",
-      "rooms": null,
-      "area": null,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://binalar.az/uploads/300x200/thumb14118533.webp",
-      "property_type": "torpaq",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1772912789.7047963
-    },
-    {
-      "id": "binalar_351009",
-      "source": "binalar",
-      "source_name": "Binalar.az",
-      "link": "https://binalar.az/2-otaqli-menzil-kohne-tikili-satilir-8-ci-kilometr-nizami-351009",
-      "price": 179500,
-      "title": "Elan",
-      "district": "Nizami",
-      "rooms": 2,
-      "area": 55.0,
-      "floor": 7,
-      "total_floors": 9,
-      "photo": "https://binalar.az/uploads/300x200/thumb14118524.webp",
-      "property_type": "ev_villa",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1772912789.7047968
-    },
-    {
-      "id": "binalar_349165",
-      "source": "binalar",
-      "source_name": "Binalar.az",
-      "link": "https://binalar.az/6-otaqli-menzil-heyet-evi-villa-satilir-sulutepe-bineqedi-349165",
-      "price": 255000,
-      "title": "Elan",
-      "district": "Binəqədi",
-      "rooms": 6,
-      "area": 475.0,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://binalar.az/uploads/300x200/thumb14102135.webp",
-      "property_type": "ev_villa",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1772912789.7047973
-    },
-    {
-      "id": "binalar_351008",
-      "source": "binalar",
-      "source_name": "Binalar.az",
-      "link": "https://binalar.az/2-otaqli-menzil-yeni-tikili-kiraye-ayliq-masazir-abseron-351008",
-      "price": 200,
-      "title": "Elan",
-      "district": "Bina.az 200 ₼ / ay Abşeron / Masazır / Yeni tikili",
-      "rooms": 2,
-      "area": 50.0,
-      "floor": 3,
-      "total_floors": 10,
-      "photo": "https://binalar.az/uploads/300x200/thumb14118520.webp",
-      "property_type": "menzil",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1772912789.7047973
-    },
-    {
-      "id": "binalar_285501",
-      "source": "binalar",
-      "source_name": "Binalar.az",
-      "link": "https://binalar.az/2-otaqli-menzil-heyet-evi-villa-satilir-quba-285501",
-      "price": 44000,
-      "title": "Elan",
-      "district": "Tap.az 44 000 ₼ Quba / Həyət evi - Villa 2 otaq 60",
-      "rooms": 2,
-      "area": 60.0,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://binalar.az/uploads/300x200/thumb12649075.webp",
-      "property_type": "ev_villa",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1772912789.7047977
+      "timestamp": 1772913338.869122
     },
     {
       "id": "vipemlak_783204",
@@ -2718,7 +2718,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5286963
+      "timestamp": 1772913339.3359234
     },
     {
       "id": "vipemlak_774314",
@@ -2738,7 +2738,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.528697
+      "timestamp": 1772913339.3359241
     },
     {
       "id": "vipemlak_775884",
@@ -2758,7 +2758,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5286973
+      "timestamp": 1772913339.3359246
     },
     {
       "id": "vipemlak_774698",
@@ -2778,7 +2778,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5286975
+      "timestamp": 1772913339.335925
     },
     {
       "id": "vipemlak_715776",
@@ -2798,7 +2798,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5286982
+      "timestamp": 1772913339.3359256
     },
     {
       "id": "vipemlak_773827",
@@ -2818,7 +2818,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5286984
+      "timestamp": 1772913339.335926
     },
     {
       "id": "vipemlak_769142",
@@ -2838,7 +2838,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5286987
+      "timestamp": 1772913339.3359263
     },
     {
       "id": "vipemlak_765549",
@@ -2858,7 +2858,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.528699
+      "timestamp": 1772913339.3359265
     },
     {
       "id": "vipemlak_749436",
@@ -2878,7 +2878,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5286992
+      "timestamp": 1772913339.3359265
     },
     {
       "id": "vipemlak_750675",
@@ -2898,7 +2898,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5286992
+      "timestamp": 1772913339.3359268
     },
     {
       "id": "vipemlak_740066",
@@ -2918,7 +2918,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5286994
+      "timestamp": 1772913339.3359272
     },
     {
       "id": "vipemlak_783416",
@@ -2938,7 +2938,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5286996
+      "timestamp": 1772913339.3359272
     },
     {
       "id": "vipemlak_783415",
@@ -2958,7 +2958,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5286999
+      "timestamp": 1772913339.3359275
     },
     {
       "id": "vipemlak_783414",
@@ -2978,7 +2978,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287
+      "timestamp": 1772913339.3359277
     },
     {
       "id": "vipemlak_783413",
@@ -2998,7 +2998,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287
+      "timestamp": 1772913339.335928
     },
     {
       "id": "vipemlak_783412",
@@ -3018,7 +3018,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287004
+      "timestamp": 1772913339.3359282
     },
     {
       "id": "vipemlak_783409",
@@ -3038,7 +3038,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.528701
+      "timestamp": 1772913339.335929
     },
     {
       "id": "vipemlak_783408",
@@ -3058,7 +3058,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287015
+      "timestamp": 1772913339.3359292
     },
     {
       "id": "vipemlak_783407",
@@ -3078,7 +3078,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287023
+      "timestamp": 1772913339.3359299
     },
     {
       "id": "vipemlak_783406",
@@ -3098,7 +3098,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287023
+      "timestamp": 1772913339.3359299
     },
     {
       "id": "vipemlak_783405",
@@ -3118,7 +3118,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287025
+      "timestamp": 1772913339.33593
     },
     {
       "id": "vipemlak_783404",
@@ -3138,7 +3138,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287027
+      "timestamp": 1772913339.3359303
     },
     {
       "id": "vipemlak_783401",
@@ -3158,7 +3158,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.528703
+      "timestamp": 1772913339.3359306
     },
     {
       "id": "vipemlak_783400",
@@ -3178,7 +3178,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287032
+      "timestamp": 1772913339.3359306
     },
     {
       "id": "vipemlak_783397",
@@ -3198,7 +3198,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287032
+      "timestamp": 1772913339.3359308
     },
     {
       "id": "vipemlak_777625",
@@ -3218,7 +3218,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287037
+      "timestamp": 1772913339.335931
     },
     {
       "id": "vipemlak_783402",
@@ -3238,7 +3238,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287037
+      "timestamp": 1772913339.3359313
     },
     {
       "id": "vipemlak_783393",
@@ -3258,7 +3258,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.528704
+      "timestamp": 1772913339.3359315
     },
     {
       "id": "vipemlak_783389",
@@ -3278,7 +3278,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287042
+      "timestamp": 1772913339.335932
     },
     {
       "id": "vipemlak_783388",
@@ -3298,7 +3298,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287044
+      "timestamp": 1772913339.335932
     },
     {
       "id": "vipemlak_783381",
@@ -3318,7 +3318,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.528705
+      "timestamp": 1772913339.3359323
     },
     {
       "id": "vipemlak_783377",
@@ -3338,7 +3338,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.528705
+      "timestamp": 1772913339.3359325
     },
     {
       "id": "vipemlak_783368",
@@ -3358,7 +3358,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287051
+      "timestamp": 1772913339.3359325
     },
     {
       "id": "vipemlak_783365",
@@ -3378,7 +3378,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287054
+      "timestamp": 1772913339.3359327
     },
     {
       "id": "vipemlak_783363",
@@ -3398,7 +3398,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287056
+      "timestamp": 1772913339.335933
     },
     {
       "id": "vipemlak_783362",
@@ -3418,7 +3418,27 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287056
+      "timestamp": 1772913339.3359332
+    },
+    {
+      "id": "vipemlak_783417",
+      "source": "vipemlak",
+      "source_name": "VipEmlak.az",
+      "link": "https://vipemlak.az/unvan-m.e.resulzade-qesebesi-faiq-rustemov-kohne-mesud-davudoglu-kucesi.-orientir-rahat-mark-783417.html",
+      "price": 650000,
+      "title": "Binəqədi rayonu , 6-cı mikrorayon qəs., 4 otaq",
+      "district": "Binəqədi",
+      "rooms": 4,
+      "area": null,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://vipemlak.az/uploads/news/homeobject_783417490350065.jpg",
+      "property_type": "ev_villa",
+      "deal_type": "satis",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1772913339.3359334
     },
     {
       "id": "vipemlak_783411",
@@ -3438,7 +3458,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287058
+      "timestamp": 1772913339.3359337
     },
     {
       "id": "vipemlak_783403",
@@ -3458,7 +3478,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.528706
+      "timestamp": 1772913339.3359337
     },
     {
       "id": "vipemlak_783394",
@@ -3478,7 +3498,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.528706
+      "timestamp": 1772913339.335934
     },
     {
       "id": "vipemlak_783391",
@@ -3498,7 +3518,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287063
+      "timestamp": 1772913339.3359342
     },
     {
       "id": "vipemlak_783385",
@@ -3518,7 +3538,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287066
+      "timestamp": 1772913339.3359344
     },
     {
       "id": "vipemlak_783378",
@@ -3538,7 +3558,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287068
+      "timestamp": 1772913339.3359344
     },
     {
       "id": "vipemlak_783369",
@@ -3558,7 +3578,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287068
+      "timestamp": 1772913339.3359346
     },
     {
       "id": "vipemlak_783367",
@@ -3578,7 +3598,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.528707
+      "timestamp": 1772913339.3359349
     },
     {
       "id": "vipemlak_783358",
@@ -3598,7 +3618,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287073
+      "timestamp": 1772913339.3359349
     },
     {
       "id": "vipemlak_783357",
@@ -3618,7 +3638,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287073
+      "timestamp": 1772913339.335935
     },
     {
       "id": "vipemlak_783355",
@@ -3638,27 +3658,27 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287075
+      "timestamp": 1772913339.3359356
     },
     {
-      "id": "vipemlak_783350",
+      "id": "vipemlak_783418",
       "source": "vipemlak",
       "source_name": "VipEmlak.az",
-      "link": "https://vipemlak.az/bakixanov-qes-783350.html",
-      "price": 1700000,
-      "title": "Sabunçu rayonu , Bakixanov qəs., 10 otaq",
-      "district": "Sabunçu",
-      "rooms": 10,
+      "link": "https://vipemlak.az/azadliq-metrosu-avtobus-dayanacaqlarinin-yani-783418.html",
+      "price": 600,
+      "title": "Binəqədi rayonu , 6-cı mikrorayon qəs., 2 otaq",
+      "district": "Binəqədi",
+      "rooms": 2,
       "area": null,
       "floor": null,
       "total_floors": null,
-      "photo": "https://vipemlak.az/uploads/news/homeobject_7833502890226361.jpg",
-      "property_type": "ev_villa",
-      "deal_type": "satis",
+      "photo": "https://vipemlak.az/uploads/news/homeobject_7834183604271780.jpg",
+      "property_type": "kommersiya",
+      "deal_type": "kiraye",
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287077
+      "timestamp": 1772913339.3359356
     },
     {
       "id": "vipemlak_783398",
@@ -3678,7 +3698,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287077
+      "timestamp": 1772913339.3359358
     },
     {
       "id": "vipemlak_774912",
@@ -3698,7 +3718,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.528708
+      "timestamp": 1772913339.335936
     },
     {
       "id": "vipemlak_783338",
@@ -3718,7 +3738,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287085
+      "timestamp": 1772913339.3359363
     },
     {
       "id": "vipemlak_783305",
@@ -3738,7 +3758,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287087
+      "timestamp": 1772913339.3359363
     },
     {
       "id": "vipemlak_783301",
@@ -3758,7 +3778,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287087
+      "timestamp": 1772913339.3359365
     },
     {
       "id": "vipemlak_783220",
@@ -3778,7 +3798,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.528709
+      "timestamp": 1772913339.3359368
     },
     {
       "id": "vipemlak_762643",
@@ -3798,7 +3818,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287092
+      "timestamp": 1772913339.335937
     },
     {
       "id": "vipemlak_779436",
@@ -3818,7 +3838,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287094
+      "timestamp": 1772913339.335937
     },
     {
       "id": "vipemlak_783207",
@@ -3838,7 +3858,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287094
+      "timestamp": 1772913339.3359373
     },
     {
       "id": "vipemlak_783195",
@@ -3858,7 +3878,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287097
+      "timestamp": 1772913339.3359375
     },
     {
       "id": "vipemlak_783194",
@@ -3878,27 +3898,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.52871
-    },
-    {
-      "id": "vipemlak_783189",
-      "source": "vipemlak",
-      "source_name": "VipEmlak.az",
-      "link": "https://vipemlak.az/7mkr-azadliq-metrosu-783189.html",
-      "price": 1500,
-      "title": "Binəqədi rayonu , 7-ci mikrorayon qəs., 4 otaq",
-      "district": "Binəqədi",
-      "rooms": 4,
-      "area": null,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://vipemlak.az/uploads/news/homeobject_783189213555171.jpg",
-      "property_type": "kommersiya",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1772912790.5287101
+      "timestamp": 1772913339.3359375
     },
     {
       "id": "vipemlak_783346",
@@ -3918,7 +3918,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287101
+      "timestamp": 1772913339.3359377
     },
     {
       "id": "vipemlak_783326",
@@ -3938,7 +3938,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287104
+      "timestamp": 1772913339.335938
     },
     {
       "id": "vipemlak_783318",
@@ -3958,7 +3958,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287106
+      "timestamp": 1772913339.3359382
     },
     {
       "id": "vipemlak_783315",
@@ -3978,7 +3978,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287106
+      "timestamp": 1772913339.3359382
     },
     {
       "id": "vipemlak_783310",
@@ -3998,7 +3998,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287108
+      "timestamp": 1772913339.3359385
     },
     {
       "id": "vipemlak_783281",
@@ -4018,7 +4018,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.528711
+      "timestamp": 1772913339.335939
     },
     {
       "id": "vipemlak_783258",
@@ -4038,7 +4038,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287113
+      "timestamp": 1772913339.3359392
     },
     {
       "id": "vipemlak_783248",
@@ -4058,7 +4058,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287118
+      "timestamp": 1772913339.3359392
     },
     {
       "id": "vipemlak_783244",
@@ -4078,7 +4078,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.528712
+      "timestamp": 1772913339.3359394
     },
     {
       "id": "vipemlak_783223",
@@ -4098,7 +4098,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287123
+      "timestamp": 1772913339.3359396
     },
     {
       "id": "vipemlak_720631",
@@ -4118,7 +4118,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287123
+      "timestamp": 1772913339.3359396
     },
     {
       "id": "vipemlak_783203",
@@ -4138,7 +4138,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912790.5287125
+      "timestamp": 1772913339.33594
     },
     {
       "id": "binatap_78",
@@ -4158,7 +4158,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608378
+      "timestamp": 1772913341.4314113
     },
     {
       "id": "binatap_84",
@@ -4178,7 +4178,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608388
+      "timestamp": 1772913341.4314125
     },
     {
       "id": "binatap_85",
@@ -4198,7 +4198,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608397
+      "timestamp": 1772913341.4314132
     },
     {
       "id": "binatap_87",
@@ -4218,7 +4218,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608402
+      "timestamp": 1772913341.4314137
     },
     {
       "id": "binatap_88",
@@ -4238,7 +4238,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.960841
+      "timestamp": 1772913341.4314146
     },
     {
       "id": "binatap_89",
@@ -4258,7 +4258,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608412
+      "timestamp": 1772913341.431415
     },
     {
       "id": "binatap_90",
@@ -4278,7 +4278,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.960842
+      "timestamp": 1772913341.4314156
     },
     {
       "id": "binatap_91",
@@ -4298,7 +4298,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608421
+      "timestamp": 1772913341.4314158
     },
     {
       "id": "binatap_113",
@@ -4318,7 +4318,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608428
+      "timestamp": 1772913341.4314163
     },
     {
       "id": "binatap_114",
@@ -4338,7 +4338,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.960843
+      "timestamp": 1772913341.4314167
     },
     {
       "id": "binatap_127",
@@ -4358,7 +4358,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608436
+      "timestamp": 1772913341.431417
     },
     {
       "id": "binatap_130",
@@ -4378,7 +4378,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608438
+      "timestamp": 1772913341.4314177
     },
     {
       "id": "binatap_142",
@@ -4398,7 +4398,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.960844
+      "timestamp": 1772913341.4314182
     },
     {
       "id": "binatap_172",
@@ -4418,7 +4418,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608443
+      "timestamp": 1772913341.4314184
     },
     {
       "id": "binatap_193",
@@ -4438,7 +4438,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608445
+      "timestamp": 1772913341.431419
     },
     {
       "id": "binatap_215",
@@ -4458,7 +4458,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.960845
+      "timestamp": 1772913341.4314191
     },
     {
       "id": "binatap_235",
@@ -4478,7 +4478,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608452
+      "timestamp": 1772913341.4314194
     },
     {
       "id": "binatap_236",
@@ -4498,7 +4498,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608457
+      "timestamp": 1772913341.4314196
     },
     {
       "id": "binatap_245",
@@ -4518,7 +4518,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608471
+      "timestamp": 1772913341.431421
     },
     {
       "id": "binatap_255",
@@ -4538,7 +4538,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608474
+      "timestamp": 1772913341.4314213
     },
     {
       "id": "binatap_256",
@@ -4558,7 +4558,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608476
+      "timestamp": 1772913341.4314215
     },
     {
       "id": "binatap_257",
@@ -4578,7 +4578,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608479
+      "timestamp": 1772913341.4314218
     },
     {
       "id": "binatap_258",
@@ -4598,7 +4598,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.960848
+      "timestamp": 1772913341.4314222
     },
     {
       "id": "binatap_264",
@@ -4618,7 +4618,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608486
+      "timestamp": 1772913341.431423
     },
     {
       "id": "binatap_269",
@@ -4638,7 +4638,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608488
+      "timestamp": 1772913341.4314232
     },
     {
       "id": "binatap_277",
@@ -4658,7 +4658,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.960849
+      "timestamp": 1772913341.4314234
     },
     {
       "id": "binatap_302",
@@ -4678,7 +4678,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608498
+      "timestamp": 1772913341.431424
     },
     {
       "id": "binatap_326",
@@ -4698,7 +4698,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.96085
+      "timestamp": 1772913341.4314241
     },
     {
       "id": "binatap_356",
@@ -4718,7 +4718,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608502
+      "timestamp": 1772913341.4314246
     },
     {
       "id": "binatap_373",
@@ -4738,7 +4738,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608505
+      "timestamp": 1772913341.4314249
     },
     {
       "id": "binatap_376",
@@ -4758,7 +4758,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608507
+      "timestamp": 1772913341.431425
     },
     {
       "id": "binatap_377",
@@ -4778,7 +4778,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608512
+      "timestamp": 1772913341.4314256
     },
     {
       "id": "binatap_408",
@@ -4798,7 +4798,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608514
+      "timestamp": 1772913341.4314258
     },
     {
       "id": "binatap_411",
@@ -4818,7 +4818,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608517
+      "timestamp": 1772913341.4314263
     },
     {
       "id": "binatap_412",
@@ -4838,7 +4838,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.960852
+      "timestamp": 1772913341.4314265
     },
     {
       "id": "binatap_492",
@@ -4858,7 +4858,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608521
+      "timestamp": 1772913341.4314268
     },
     {
       "id": "binatap_499",
@@ -4878,7 +4878,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608526
+      "timestamp": 1772913341.431427
     },
     {
       "id": "binatap_562",
@@ -4898,7 +4898,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.960853
+      "timestamp": 1772913341.4314272
     },
     {
       "id": "binatap_692",
@@ -4918,7 +4918,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608533
+      "timestamp": 1772913341.4314275
     },
     {
       "id": "binatap_830",
@@ -4938,7 +4938,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608536
+      "timestamp": 1772913341.431428
     },
     {
       "id": "binatap_909",
@@ -4958,7 +4958,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.960854
+      "timestamp": 1772913341.4314282
     },
     {
       "id": "binatap_1238",
@@ -4978,7 +4978,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608543
+      "timestamp": 1772913341.4314287
     },
     {
       "id": "binatap_1686",
@@ -4998,7 +4998,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608548
+      "timestamp": 1772913341.431429
     },
     {
       "id": "binatap_1689",
@@ -5018,7 +5018,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.960855
+      "timestamp": 1772913341.4314294
     },
     {
       "id": "binatap_1813",
@@ -5038,7 +5038,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608552
+      "timestamp": 1772913341.4314296
     },
     {
       "id": "binatap_1948",
@@ -5058,7 +5058,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608557
+      "timestamp": 1772913341.4314299
     },
     {
       "id": "binatap_2020",
@@ -5078,7 +5078,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.960856
+      "timestamp": 1772913341.4314303
     },
     {
       "id": "binatap_2111",
@@ -5098,7 +5098,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608564
+      "timestamp": 1772913341.4314308
     },
     {
       "id": "binatap_2198",
@@ -5118,7 +5118,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608567
+      "timestamp": 1772913341.431431
     },
     {
       "id": "binatap_2247",
@@ -5138,7 +5138,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.960857
+      "timestamp": 1772913341.4314315
     },
     {
       "id": "binatap_2261",
@@ -5158,7 +5158,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608572
+      "timestamp": 1772913341.4314318
     },
     {
       "id": "binatap_2299",
@@ -5178,7 +5178,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608576
+      "timestamp": 1772913341.4314322
     },
     {
       "id": "binatap_2300",
@@ -5198,7 +5198,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608576
+      "timestamp": 1772913341.4314325
     },
     {
       "id": "binatap_2373",
@@ -5218,7 +5218,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.960858
+      "timestamp": 1772913341.431433
     },
     {
       "id": "binatap_2550",
@@ -5238,7 +5238,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608583
+      "timestamp": 1772913341.4314334
     },
     {
       "id": "binatap_2649",
@@ -5258,7 +5258,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608586
+      "timestamp": 1772913341.4314337
     },
     {
       "id": "binatap_2762",
@@ -5278,7 +5278,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.960859
+      "timestamp": 1772913341.431434
     },
     {
       "id": "binatap_2791",
@@ -5298,7 +5298,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608593
+      "timestamp": 1772913341.4314342
     },
     {
       "id": "binatap_2809",
@@ -5318,7 +5318,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608595
+      "timestamp": 1772913341.4314344
     },
     {
       "id": "binatap_2813",
@@ -5338,7 +5338,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.96086
+      "timestamp": 1772913341.431435
     },
     {
       "id": "binatap_2814",
@@ -5358,7 +5358,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608603
+      "timestamp": 1772913341.4314353
     },
     {
       "id": "binatap_2815",
@@ -5378,7 +5378,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608605
+      "timestamp": 1772913341.4314356
     },
     {
       "id": "binatap_2823",
@@ -5398,7 +5398,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608607
+      "timestamp": 1772913341.4314358
     },
     {
       "id": "binatap_2824",
@@ -5418,7 +5418,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.960861
+      "timestamp": 1772913341.431436
     },
     {
       "id": "binatap_2825",
@@ -5438,7 +5438,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608612
+      "timestamp": 1772913341.4314365
     },
     {
       "id": "binatap_2828",
@@ -5458,7 +5458,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608617
+      "timestamp": 1772913341.4314368
     },
     {
       "id": "binatap_2829",
@@ -5478,7 +5478,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.960862
+      "timestamp": 1772913341.431437
     },
     {
       "id": "binatap_2837",
@@ -5498,7 +5498,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608622
+      "timestamp": 1772913341.4314373
     },
     {
       "id": "binatap_2840",
@@ -5518,7 +5518,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608624
+      "timestamp": 1772913341.4314375
     },
     {
       "id": "binatap_2841",
@@ -5538,7 +5538,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608626
+      "timestamp": 1772913341.431438
     },
     {
       "id": "binatap_2842",
@@ -5558,7 +5558,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.960863
+      "timestamp": 1772913341.4314384
     },
     {
       "id": "binatap_2850",
@@ -5578,7 +5578,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608636
+      "timestamp": 1772913341.4314387
     },
     {
       "id": "binatap_2852",
@@ -5598,7 +5598,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608638
+      "timestamp": 1772913341.431439
     },
     {
       "id": "binatap_2858",
@@ -5618,7 +5618,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.960864
+      "timestamp": 1772913341.4314394
     },
     {
       "id": "binatap_2862",
@@ -5638,7 +5638,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608643
+      "timestamp": 1772913341.4314396
     },
     {
       "id": "binatap_2863",
@@ -5658,7 +5658,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608648
+      "timestamp": 1772913341.4314399
     },
     {
       "id": "binatap_2867",
@@ -5678,7 +5678,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608672
+      "timestamp": 1772913341.4314413
     },
     {
       "id": "binatap_2869",
@@ -5698,7 +5698,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608676
+      "timestamp": 1772913341.431442
     },
     {
       "id": "binatap_2875",
@@ -5718,7 +5718,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.960868
+      "timestamp": 1772913341.4314423
     },
     {
       "id": "binatap_2878",
@@ -5738,7 +5738,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608681
+      "timestamp": 1772913341.4314425
     },
     {
       "id": "binatap_8145",
@@ -5758,7 +5758,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608684
+      "timestamp": 1772913341.431443
     },
     {
       "id": "binatap_8142",
@@ -5778,7 +5778,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608686
+      "timestamp": 1772913341.4314432
     },
     {
       "id": "binatap_8140",
@@ -5798,7 +5798,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.960869
+      "timestamp": 1772913341.4314435
     },
     {
       "id": "binatap_8130",
@@ -5818,7 +5818,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608693
+      "timestamp": 1772913341.4314437
     },
     {
       "id": "binatap_8129",
@@ -5838,7 +5838,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608696
+      "timestamp": 1772913341.431444
     },
     {
       "id": "binatap_8128",
@@ -5858,7 +5858,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608698
+      "timestamp": 1772913341.4314442
     },
     {
       "id": "binatap_8126",
@@ -5878,7 +5878,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.96087
+      "timestamp": 1772913341.4314444
     },
     {
       "id": "binatap_8124",
@@ -5898,7 +5898,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608705
+      "timestamp": 1772913341.4314446
     },
     {
       "id": "binatap_8122",
@@ -5918,7 +5918,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608707
+      "timestamp": 1772913341.431445
     },
     {
       "id": "binatap_8120",
@@ -5938,7 +5938,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.960871
+      "timestamp": 1772913341.4314454
     },
     {
       "id": "binatap_8119",
@@ -5958,7 +5958,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608712
+      "timestamp": 1772913341.4314456
     },
     {
       "id": "binatap_8117",
@@ -5978,7 +5978,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608715
+      "timestamp": 1772913341.4314458
     },
     {
       "id": "binatap_8116",
@@ -5998,7 +5998,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608717
+      "timestamp": 1772913341.431446
     },
     {
       "id": "binatap_8108",
@@ -6018,7 +6018,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608724
+      "timestamp": 1772913341.4314466
     },
     {
       "id": "binatap_8107",
@@ -6038,7 +6038,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608727
+      "timestamp": 1772913341.4314468
     },
     {
       "id": "binatap_8105",
@@ -6058,7 +6058,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.960873
+      "timestamp": 1772913341.431447
     },
     {
       "id": "binatap_8104",
@@ -6078,7 +6078,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608731
+      "timestamp": 1772913341.4314473
     },
     {
       "id": "binatap_8103",
@@ -6098,7 +6098,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608734
+      "timestamp": 1772913341.4314475
     },
     {
       "id": "binatap_8101",
@@ -6118,7 +6118,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608738
+      "timestamp": 1772913341.4314477
     },
     {
       "id": "binatap_8095",
@@ -6138,7 +6138,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.960874
+      "timestamp": 1772913341.4314482
     },
     {
       "id": "binatap_8094",
@@ -6158,7 +6158,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608743
+      "timestamp": 1772913341.4314485
     },
     {
       "id": "binatap_8093",
@@ -6178,7 +6178,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608746
+      "timestamp": 1772913341.431449
     },
     {
       "id": "binatap_8092",
@@ -6198,7 +6198,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608748
+      "timestamp": 1772913341.4314492
     },
     {
       "id": "binatap_8091",
@@ -6218,7 +6218,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.960875
+      "timestamp": 1772913341.4314494
     },
     {
       "id": "binatap_8090",
@@ -6238,7 +6238,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608753
+      "timestamp": 1772913341.4314497
     },
     {
       "id": "binatap_8089",
@@ -6258,7 +6258,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608757
+      "timestamp": 1772913341.43145
     },
     {
       "id": "binatap_8088",
@@ -6278,7 +6278,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.960876
+      "timestamp": 1772913341.4314501
     },
     {
       "id": "binatap_8087",
@@ -6298,7 +6298,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608762
+      "timestamp": 1772913341.4314504
     },
     {
       "id": "binatap_8085",
@@ -6318,7 +6318,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608765
+      "timestamp": 1772913341.4314506
     },
     {
       "id": "binatap_8084",
@@ -6338,7 +6338,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608774
+      "timestamp": 1772913341.431451
     },
     {
       "id": "binatap_8083",
@@ -6358,7 +6358,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608777
+      "timestamp": 1772913341.4314513
     },
     {
       "id": "binatap_8082",
@@ -6378,7 +6378,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.960878
+      "timestamp": 1772913341.4314516
     },
     {
       "id": "binatap_8081",
@@ -6398,7 +6398,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608781
+      "timestamp": 1772913341.4314518
     },
     {
       "id": "binatap_8077",
@@ -6418,7 +6418,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608784
+      "timestamp": 1772913341.4314523
     },
     {
       "id": "binatap_8076",
@@ -6438,7 +6438,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608786
+      "timestamp": 1772913341.4314528
     },
     {
       "id": "binatap_8075",
@@ -6458,7 +6458,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608788
+      "timestamp": 1772913341.431453
     },
     {
       "id": "binatap_8074",
@@ -6478,7 +6478,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.960879
+      "timestamp": 1772913341.4314532
     },
     {
       "id": "binatap_8073",
@@ -6498,7 +6498,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608793
+      "timestamp": 1772913341.4314535
     },
     {
       "id": "binatap_8072",
@@ -6518,7 +6518,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608796
+      "timestamp": 1772913341.4314537
     },
     {
       "id": "binatap_8067",
@@ -6538,7 +6538,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608798
+      "timestamp": 1772913341.431454
     },
     {
       "id": "binatap_8066",
@@ -6558,7 +6558,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.96088
+      "timestamp": 1772913341.4314542
     },
     {
       "id": "binatap_8065",
@@ -6578,7 +6578,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608803
+      "timestamp": 1772913341.4314544
     },
     {
       "id": "binatap_8056",
@@ -6598,7 +6598,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608808
+      "timestamp": 1772913341.4314547
     },
     {
       "id": "binatap_8055",
@@ -6618,7 +6618,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608812
+      "timestamp": 1772913341.431455
     },
     {
       "id": "binatap_8054",
@@ -6638,7 +6638,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608815
+      "timestamp": 1772913341.4314551
     },
     {
       "id": "binatap_8052",
@@ -6658,7 +6658,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608817
+      "timestamp": 1772913341.4314554
     },
     {
       "id": "binatap_8051",
@@ -6678,7 +6678,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.960882
+      "timestamp": 1772913341.4314559
     },
     {
       "id": "binatap_8050",
@@ -6698,7 +6698,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608822
+      "timestamp": 1772913341.4314563
     },
     {
       "id": "binatap_8049",
@@ -6718,7 +6718,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.9608824
+      "timestamp": 1772913341.4314566
     },
     {
       "id": "binatap_8048",
@@ -6738,10 +6738,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912792.960883
+      "timestamp": 1772913341.4314568
     },
     {
-      "id": "rns_3252006039",
+      "id": "rns_6113352539",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/2-h-etazhnaya-dacha-v-poselke-vishnevka/",
@@ -6758,10 +6758,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912794.167662
+      "timestamp": 1772913343.2617323
     },
     {
-      "id": "rns_4971034001",
+      "id": "rns_6635873529",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/dacha-v-myardakyanah/",
@@ -6778,10 +6778,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912794.167663
+      "timestamp": 1772913343.2617333
     },
     {
-      "id": "rns_6685329048",
+      "id": "rns_616019141",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/3-h-komnatnaya-kvartira-ryadom-s-metro-sahil-3/",
@@ -6798,10 +6798,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912794.1676638
+      "timestamp": 1772913343.2617338
     },
     {
-      "id": "rns_5295981274",
+      "id": "rns_8334218383",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/2-h-komnatnaya-kvartira-v-zh-k-ritz-carlton-2/",
@@ -6818,10 +6818,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912794.167664
+      "timestamp": 1772913343.2617345
     },
     {
-      "id": "rns_7054224055",
+      "id": "rns_1833606391",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/4-h-komnatnaya-kvartira-v-port-baku/",
@@ -6838,10 +6838,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912794.167665
+      "timestamp": 1772913343.261735
     },
     {
-      "id": "rns_1090571751",
+      "id": "rns_2726751858",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/5-komnatnaya-kvartira-ryadom-s-elmlyar-metro/",
@@ -6858,10 +6858,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912794.1676655
+      "timestamp": 1772913343.2617354
     },
     {
-      "id": "rns_3548070713",
+      "id": "rns_915625662",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/2-h-komnatnaya-kvartira-ryadom-s-metro-kara-karaeva/",
@@ -6878,10 +6878,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912794.167666
+      "timestamp": 1772913343.2617357
     },
     {
-      "id": "rns_8681980505",
+      "id": "rns_8954704925",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/3-h-komnatnaya-kvartira-ryadom-s-metro-hatai-50/",
@@ -6898,10 +6898,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912794.1676662
+      "timestamp": 1772913343.261736
     },
     {
-      "id": "rns_2308278008",
+      "id": "rns_7004102064",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/3-h-komnatnaya-kvartira-ryadom-s-metro-hatai-55/",
@@ -6918,10 +6918,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912794.1676664
+      "timestamp": 1772913343.2617362
     },
     {
-      "id": "rns_6663035410",
+      "id": "rns_789054132",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/2-h-komnatnaya-kvartira-ryadom-s-metro-hatai-38/",
@@ -6938,10 +6938,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912794.167667
+      "timestamp": 1772913343.2617366
     },
     {
-      "id": "rns_6362972765",
+      "id": "rns_5651176042",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/3-h-komnatnaya-kvartira-v-baku-panorama/",
@@ -6958,10 +6958,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912794.167667
+      "timestamp": 1772913343.2617369
     },
     {
-      "id": "rns_6749297326",
+      "id": "rns_4183794612",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/2-h-etazhnaya-villa-v-sea-breeze/",
@@ -6978,10 +6978,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912794.1676672
+      "timestamp": 1772913343.261737
     },
     {
-      "id": "rns_793906524",
+      "id": "rns_920126198",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/6-komnatnaya-villa-v-zh-k-grand-park/",
@@ -6998,10 +6998,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912794.1676674
+      "timestamp": 1772913343.261737
     },
     {
-      "id": "rns_2868353100",
+      "id": "rns_7580854626",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/3-h-etazhnaya-villa-v-sea-breeze-2/",
@@ -7018,10 +7018,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912794.1676679
+      "timestamp": 1772913343.2617376
     },
     {
-      "id": "rns_2950207962",
+      "id": "rns_2903197236",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/6-h-komnatnyj-uyutnyj-taunhaus-v-royal-park/",
@@ -7038,10 +7038,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912794.1676679
+      "timestamp": 1772913343.2617378
     },
     {
-      "id": "rns_6398389786",
+      "id": "rns_2126020749",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/dom-v-icheri-sheher/",
@@ -7058,10 +7058,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912794.1676683
+      "timestamp": 1772913343.261738
     },
     {
-      "id": "rns_7280158365",
+      "id": "rns_4829260837",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/dom-v-royal-park/",
@@ -7078,10 +7078,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912794.1676686
+      "timestamp": 1772913343.2617383
     },
     {
-      "id": "rns_6084287732",
+      "id": "rns_4715543491",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/obekt-ryadom-s-metro-gyandzhlik/",
@@ -7098,10 +7098,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912794.167669
+      "timestamp": 1772913343.2617385
     },
     {
-      "id": "rns_9374749981",
+      "id": "rns_2205132526",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/uchastok-ploshhadyu-12-sotok-v-sea-breeze/",
@@ -7118,10 +7118,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912794.1676698
+      "timestamp": 1772913343.261739
     },
     {
-      "id": "rns_6378816500",
+      "id": "rns_6202551590",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/obekt-ryadom-s-metro-ahmedli/",
@@ -7138,7 +7138,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912794.16767
+      "timestamp": 1772913343.2617393
     },
     {
       "id": "etagi_12168671",
@@ -7158,7 +7158,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912797.5332024
+      "timestamp": 1772913345.8463333
     },
     {
       "id": "etagi_12168670",
@@ -7178,7 +7178,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912797.5332031
+      "timestamp": 1772913345.846334
     },
     {
       "id": "etagi_12168222",
@@ -7198,7 +7198,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912797.5332034
+      "timestamp": 1772913345.8463342
     },
     {
       "id": "etagi_12168041",
@@ -7218,7 +7218,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912797.5332034
+      "timestamp": 1772913345.8463345
     },
     {
       "id": "etagi_12167783",
@@ -7238,7 +7238,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912797.5332046
+      "timestamp": 1772913345.846335
     },
     {
       "id": "etagi_12167296",
@@ -7258,20 +7258,20 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1772912797.533205
+      "timestamp": 1772913345.8463354
     }
   ],
   "stats": {
     "total": 363,
-    "avg_price": 290145,
+    "avg_price": 285190,
     "by_source": {
-      "emlak": 40,
       "arenda": 8,
-      "houses": 0,
       "ev10": 0,
+      "houses": 0,
       "emlakbazari": 0,
       "tikili": 0,
       "bina": 0,
+      "emlak": 40,
       "yeniemlak": 55,
       "villa": 0,
       "binalar": 32,
@@ -7282,33 +7282,32 @@
       "etagi": 6,
       "rahatemlak": 0,
       "lalafo": 0,
-      "kub": 0,
-      "tap": 0
+      "tap": 0,
+      "kub": 0
     },
     "by_rooms": {
-      "1": 35,
-      "3": 32,
-      "2": 33,
-      "4": 16,
-      "5": 5,
+      "2": 31,
+      "3": 33,
+      "1": 34,
       "7": 5,
-      "None": 232,
-      "6": 4,
-      "10": 1
+      "4": 17,
+      "5": 4,
+      "None": 236,
+      "6": 3
     },
     "by_property_type": {
-      "ofis": 26,
+      "menzil": 236,
       "ev_villa": 57,
-      "menzil": 238,
+      "ofis": 28,
       "kommersiya": 13,
       "torpaq": 28,
       "qaraj": 1
     },
     "by_deal_type": {
-      "kiraye": 57,
-      "satis": 306
+      "kiraye": 58,
+      "satis": 305
     }
   },
-  "scan_time": "2026-03-07T19:47:30.064795+00:00",
-  "scan_timestamp": 1772912850.0648139
+  "scan_time": "2026-03-07T19:56:38.224657+00:00",
+  "scan_timestamp": 1772913398.2246766
 }
