@@ -1,35 +1,15 @@
 {
   "listings": [
     {
-      "id": "arenda_4896205041",
-      "source": "arenda",
-      "source_name": "Arenda.az",
-      "link": "https://arenda.az/satilir-6-otaqli-heyet-evi-villa-xirdalan-mesedi-ezizbeyov-kucesi-14b",
-      "price": 156500,
-      "title": "SatńĪlńĪr H…ôy…ôt evi/villa",
-      "district": "156 500 SatńĪlńĪr H…ôy…ôt evi/villa XńĪrdalan Ňü. ",
-      "rooms": 6,
-      "area": null,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://arenda.az/uploads/emlak/thumbs/homepage/a959e8ee7573b7e0271fd940084576db.jpeg",
-      "property_type": "ev_villa",
-      "deal_type": "kiraye",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1783678882.1148286
-    },
-    {
-      "id": "arenda_4934304285",
+      "id": "arenda_7814435024",
       "source": "arenda",
       "source_name": "Arenda.az",
       "link": "https://arenda.az/kiraye-gunluk-2-otaqli-yeni-tikili-nesimi-rayonu-28-may-metrosu-metro-28-may-1",
       "price": 50,
-      "title": "Kiray…ô (g√ľnl√ľk) Yeni Tikili",
-      "district": "28 May",
+      "title": "Kirayə (günlük) Yeni Tikili",
+      "district": "Nəsimi",
       "rooms": 2,
-      "area": null,
+      "area": 80.0,
       "floor": 13,
       "total_floors": 16,
       "photo": "https://arenda.az/uploads/emlak/thumbs/homepage/8f6ab4c32dd0a6f91473ced0a50151f8.jpg",
@@ -38,18 +18,18 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678882.1148295
+      "timestamp": 1783687085.677816
     },
     {
-      "id": "arenda_2974315906",
+      "id": "arenda_8495680373",
       "source": "arenda",
       "source_name": "Arenda.az",
       "link": "https://arenda.az/kiraye-gunluk-1-otaqli-kohne-tikili-sebail-rayonu-iceriseher-metrosu-nazirler-kabinetinin-yani",
       "price": 50,
-      "title": "Kiray…ô (g√ľnl√ľk) K√∂hn…ô Tikili",
-      "district": "50 Kiray…ô (g√ľnl√ľk) K√∂hn…ô Tikili ńį√ß…ôriŇü…ôh",
+      "title": "Kirayə (günlük) Köhnə Tikili",
+      "district": "Səbail",
       "rooms": 1,
-      "area": null,
+      "area": 40.0,
       "floor": 3,
       "total_floors": 5,
       "photo": "https://arenda.az/uploads/emlak/thumbs/homepage/a345b6bdaa3fc98ad5e588d908d9146c.jpg",
@@ -58,18 +38,18 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678882.1148298
+      "timestamp": 1783687085.6778173
     },
     {
-      "id": "arenda_4506472471",
+      "id": "arenda_6772540400",
       "source": "arenda",
       "source_name": "Arenda.az",
       "link": "https://arenda.az/kiraye-gunluk-3-otaqli-kohne-tikili-sebail-rayonu-28-may-metrosu-denizkenari-milli-parkin-kenari",
       "price": 70,
-      "title": "Kiray…ô (g√ľnl√ľk) K√∂hn…ô Tikili",
-      "district": "28 May",
+      "title": "Kirayə (günlük) Köhnə Tikili",
+      "district": "Səbail",
       "rooms": 3,
-      "area": null,
+      "area": 90.0,
       "floor": 5,
       "total_floors": 10,
       "photo": "https://arenda.az/uploads/emlak/thumbs/homepage/1cb7523bb10454c04e2599370a251f42.jpg",
@@ -78,18 +58,18 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678882.114832
+      "timestamp": 1783687085.6778178
     },
     {
-      "id": "arenda_3200892560",
+      "id": "arenda_8814319809",
       "source": "arenda",
       "source_name": "Arenda.az",
       "link": "https://arenda.az/kiraye-gunluk-2-otaqli-yeni-tikili-nesimi-rayonu-20-yanvar-metrosu-3-cu-mikrorayon",
       "price": 40,
-      "title": "Kiray…ô (g√ľnl√ľk) Yeni Tikili",
-      "district": "20 Yanvar",
+      "title": "Kirayə (günlük) Yeni Tikili",
+      "district": "Nəsimi",
       "rooms": 2,
-      "area": null,
+      "area": 80.0,
       "floor": 1,
       "total_floors": 22,
       "photo": "https://arenda.az/uploads/emlak/thumbs/homepage/65e0c7b61ce766bf0ef4b51f93c3b264.jpg",
@@ -98,18 +78,18 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678882.114833
+      "timestamp": 1783687085.6778207
     },
     {
-      "id": "arenda_4070638715",
+      "id": "arenda_7816104877",
       "source": "arenda",
       "source_name": "Arenda.az",
       "link": "https://arenda.az/satilir-2-otaqli-yeni-tikili-bineqedi-rayonu-dernegul-metrosunun-cixisi-cefer-xendan-kuc-west-town-yasayis-kompleksinde-4",
       "price": 53500,
-      "title": "SatńĪlńĪr Yeni Tikili",
-      "district": "53 500 SatńĪlńĪr Yeni Tikili Bin…ôq…ôdi r. 2 otaql",
+      "title": "Satılır Yeni Tikili",
+      "district": "Binəqədi",
       "rooms": 2,
-      "area": null,
+      "area": 61.0,
       "floor": 14,
       "total_floors": 15,
       "photo": "https://arenda.az/uploads/emlak/thumbs/homepage/026ed7e102f9bc7aff1f42e4e9be48fb.jpeg",
@@ -118,18 +98,18 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678882.1148334
+      "timestamp": 1783687085.6778219
     },
     {
-      "id": "arenda_5650089366",
+      "id": "arenda_110008071",
       "source": "arenda",
       "source_name": "Arenda.az",
       "link": "https://arenda.az/satilir-3-otaqli-kohne-tikili-nerimanov-rayonu-neriman-nerimanov-metrosu-montin-qes-nerimanov-rayonu-uluqbey-kucesi",
       "price": 225000,
-      "title": "SatńĪlńĪr K√∂hn…ô Tikili",
-      "district": "225 000 SatńĪlńĪr K√∂hn…ô Tikili N…ôriman N…ôriman",
+      "title": "Satılır Köhnə Tikili",
+      "district": "Nərimanov",
       "rooms": 3,
-      "area": null,
+      "area": 75.0,
       "floor": 3,
       "total_floors": 5,
       "photo": "https://arenda.az/uploads/emlak/thumbs/homepage/525979ad130886ac57d70a1dff08eb62.jpeg",
@@ -138,16 +118,16 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678882.1148336
+      "timestamp": 1783687085.6778228
     },
     {
-      "id": "arenda_3864193346",
+      "id": "arenda_1095979752",
       "source": "arenda",
       "source_name": "Arenda.az",
       "link": "https://arenda.az/kiraye-gunluk-4-otaqli-heyet-evi-villa-gence-gence-molunn-arxasi-hesenli-qardasli-23",
       "price": 60,
-      "title": "Kiray…ô (g√ľnl√ľk) H…ôy…ôt evi/villa",
-      "district": "60 Kiray…ô (g√ľnl√ľk) H…ôy…ôt evi/villa G…ônc…ô Ňü",
+      "title": "Kirayə (günlük) Həyət evi/villa",
+      "district": "60 Kirayə (günlük) Həyət evi/villa Gəncə ş. 4 otaq",
       "rooms": 4,
       "area": null,
       "floor": null,
@@ -158,18 +138,18 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678882.1148338
+      "timestamp": 1783687085.677823
     },
     {
-      "id": "arenda_934233498",
+      "id": "arenda_5273684792",
       "source": "arenda",
       "source_name": "Arenda.az",
       "link": "https://arenda.az/kiraye-gunluk-4-otaqli-heyet-evi-villa-xacmaz-nabran-nabran-selimoba-kendi",
       "price": 150,
-      "title": "Kiray…ô (g√ľnl√ľk) H…ôy…ôt evi/villa",
-      "district": "150 Kiray…ô (g√ľnl√ľk) H…ôy…ôt evi/villa Xa√ßmaz /",
+      "title": "Kirayə (günlük) Həyət evi/villa",
+      "district": "150 Kirayə (günlük) Həyət evi/villa Xaçmaz / Nabra",
       "rooms": 4,
-      "area": null,
+      "area": 200.0,
       "floor": null,
       "total_floors": null,
       "photo": "https://arenda.az/uploads/emlak/thumbs/homepage/5db652a4670bc9f236db50e88f77d900.jpeg",
@@ -178,18 +158,18 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678882.114834
+      "timestamp": 1783687085.6778235
     },
     {
-      "id": "arenda_5777539137",
+      "id": "arenda_5547715031",
       "source": "arenda",
       "source_name": "Arenda.az",
       "link": "https://arenda.az/satilir-2-otaqli-yeni-tikili-bineqedi-rayonu-dernegul-metrosu-dernegul-metrosunun-yaxinligi-10",
       "price": 45000,
-      "title": "SatńĪlńĪr Yeni Tikili",
-      "district": "45 000 SatńĪlńĪr Yeni Tikili D…ôrn…ôg√ľl m., Bin…ô",
+      "title": "Satılır Yeni Tikili",
+      "district": "Binəqədi",
       "rooms": 2,
-      "area": null,
+      "area": 63.0,
       "floor": 2,
       "total_floors": 16,
       "photo": "https://arenda.az/uploads/emlak/thumbs/homepage/bb5a88343b8ce342ecef22c957b2e4bc.jpeg",
@@ -198,18 +178,18 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678882.1148348
+      "timestamp": 1783687085.6778238
     },
     {
-      "id": "arenda_9742540602",
+      "id": "arenda_406769241",
       "source": "arenda",
       "source_name": "Arenda.az",
       "link": "https://arenda.az/kiraye-ayliq-obyekt-sumqayit-sumqayit-s-10-cu-mikrorayon",
       "price": 350,
-      "title": "Kiray…ô (aylńĪq) Obyekt",
-      "district": "350 Kiray…ô (aylńĪq) Obyekt SumqayńĪt Ňü. 80 m¬≤ 0",
+      "title": "Kirayə (aylıq) Obyekt",
+      "district": "350 Kirayə (aylıq) Obyekt Sumqayıt ş. 80 m² 04 İyu",
       "rooms": null,
-      "area": null,
+      "area": 80.0,
       "floor": null,
       "total_floors": null,
       "photo": "https://arenda.az/uploads/emlak/thumbs/homepage/9b176bc73caaeefe2a0a76a8eaaba71e.jpg",
@@ -218,18 +198,18 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678882.1148348
+      "timestamp": 1783687085.6778243
     },
     {
-      "id": "arenda_9509882693",
+      "id": "arenda_4898168957",
       "source": "arenda",
       "source_name": "Arenda.az",
       "link": "https://arenda.az/kiraye-ayliq-3-otaqli-yeni-tikili-sumqayit-sumqayit-seheri-sahil-kucesi-xezri-residence",
       "price": 900,
-      "title": "Kiray…ô (aylńĪq) Yeni Tikili",
-      "district": "900 Kiray…ô (aylńĪq) Yeni Tikili SumqayńĪt Ňü. 3 o",
+      "title": "Kirayə (aylıq) Yeni Tikili",
+      "district": "900 Kirayə (aylıq) Yeni Tikili Sumqayıt ş. 3 otaql",
       "rooms": 3,
-      "area": null,
+      "area": 93.0,
       "floor": 3,
       "total_floors": 6,
       "photo": "https://arenda.az/uploads/emlak/thumbs/homepage/df47d8128568303225d57edce4497b15.jpeg",
@@ -238,18 +218,18 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678882.114835
+      "timestamp": 1783687085.6778245
     },
     {
-      "id": "arenda_7475581292",
+      "id": "arenda_5154074507",
       "source": "arenda",
       "source_name": "Arenda.az",
       "link": "https://arenda.az/kiraye-ayliq-obyekt-nesimi-rayonu-azadliq-prospekti-77-ve-vaqif-prospekti-kesismesi",
       "price": 9000,
-      "title": "Kiray…ô (aylńĪq) Obyekt",
-      "district": "9 000 Kiray…ô (aylńĪq) Obyekt Koala parkńĪ, N…ôsim",
+      "title": "Kirayə (aylıq) Obyekt",
+      "district": "Nəsimi",
       "rooms": null,
-      "area": null,
+      "area": 300.0,
       "floor": null,
       "total_floors": null,
       "photo": "https://arenda.az/uploads/emlak/thumbs/homepage/e33fdd47051743114ae8ec672a996520.jpeg",
@@ -258,18 +238,18 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678882.1148353
+      "timestamp": 1783687085.6778247
     },
     {
-      "id": "arenda_9983361854",
+      "id": "arenda_4034095868",
       "source": "arenda",
       "source_name": "Arenda.az",
       "link": "https://arenda.az/kiraye-ayliq-2-otaqli-ofis-nerimanov-rayonu-neriman-nerimanov-metrosu-montin-qes-ehmed-recebli-156-1",
       "price": 1250,
-      "title": "Kiray…ô (aylńĪq) Ofis",
-      "district": "1 250 Kiray…ô (aylńĪq) Ofis N…ôriman N…ôrimanov m.",
+      "title": "Kirayə (aylıq) Ofis",
+      "district": "Nərimanov",
       "rooms": 2,
-      "area": null,
+      "area": 63.0,
       "floor": null,
       "total_floors": null,
       "photo": "https://arenda.az/uploads/emlak/thumbs/homepage/de2a317b05bf6b1d3a1769834571b8c7.jpeg",
@@ -278,7 +258,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678882.1148353
+      "timestamp": 1783687085.677825
     },
     {
       "id": "emlak_1315660",
@@ -298,7 +278,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.4011474
+      "timestamp": 1783687087.3273942
     },
     {
       "id": "emlak_1315655",
@@ -318,7 +298,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.401148
+      "timestamp": 1783687087.3273957
     },
     {
       "id": "emlak_1361828",
@@ -338,7 +318,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.4011483
+      "timestamp": 1783687087.327396
     },
     {
       "id": "emlak_1315629",
@@ -358,7 +338,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.4011486
+      "timestamp": 1783687087.3273964
     },
     {
       "id": "emlak_1315681",
@@ -378,7 +358,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.4011497
+      "timestamp": 1783687087.327397
     },
     {
       "id": "emlak_1315683",
@@ -398,7 +378,67 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.40115
+      "timestamp": 1783687087.3273976
+    },
+    {
+      "id": "emlak_1310170",
+      "source": "emlak",
+      "source_name": "Emlak.az",
+      "link": "https://emlak.az/1310170-icareye-verilir-1-otaqli-1000-m2-obyekt-nerimanov-r.html",
+      "price": 3000,
+      "title": "İcarəyə verilir 1 otaqlı 1000 m2 obyekt Nərimanov r.",
+      "district": "Ətraflı bax →",
+      "rooms": 1,
+      "area": 1000.0,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://emlak.az/images/announces/2026/1/1310170/emlak.az-icareye-verilir-1-otaqli-1000-msup2sup-obyekt-nerimanov-r.jpg",
+      "property_type": "kommersiya",
+      "deal_type": "kiraye",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1783687087.3273978
+    },
+    {
+      "id": "emlak_1233831",
+      "source": "emlak",
+      "source_name": "Emlak.az",
+      "link": "https://emlak.az/1233831-icareye-verilir-2-otaqli-2100-m2-obyekt-nerimanov-r.html",
+      "price": 6300,
+      "title": "İcarəyə verilir 2 otaqlı 2100 m2 obyekt Nərimanov r.",
+      "district": "Ətraflı bax →",
+      "rooms": 2,
+      "area": 2100.0,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://emlak.az/images/announces/2025/5/1233831/emlak.az-icareye-verilir-2-otaqli-2100-msup2sup-obyekt-nerimanov-r.jpg",
+      "property_type": "kommersiya",
+      "deal_type": "kiraye",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1783687087.327398
+    },
+    {
+      "id": "emlak_1358393",
+      "source": "emlak",
+      "source_name": "Emlak.az",
+      "link": "https://emlak.az/1358393-icareye-verilir-2-otaqli-65-m2-yeni-tikili-dernegul-m.html",
+      "price": 700,
+      "title": "İcarəyə verilir 2 otaqlı 65 m2 yeni tikili Dərnəgül m.",
+      "district": "Ətraflı bax →",
+      "rooms": 2,
+      "area": null,
+      "floor": 10,
+      "total_floors": 16,
+      "photo": "https://emlak.az/images/announces/2026/6/1358393/emlak.az-icareye-verilir-2-otaqli-65-msup2sup-yeni-tikili-dernegul-m.jpg",
+      "property_type": "menzil",
+      "deal_type": "kiraye",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1783687087.3273983
     },
     {
       "id": "emlak_1360442",
@@ -418,7 +458,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.40115
+      "timestamp": 1783687087.3273985
     },
     {
       "id": "emlak_1354823",
@@ -438,7 +478,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.4011502
+      "timestamp": 1783687087.3273993
     },
     {
       "id": "emlak_1354812",
@@ -458,7 +498,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.4011505
+      "timestamp": 1783687087.3273995
     },
     {
       "id": "emlak_1353921",
@@ -478,7 +518,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.4011507
+      "timestamp": 1783687087.3273997
     },
     {
       "id": "emlak_1349362",
@@ -498,7 +538,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.401151
+      "timestamp": 1783687087.3274
     },
     {
       "id": "emlak_1356392",
@@ -518,7 +558,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.4011512
+      "timestamp": 1783687087.3274002
     },
     {
       "id": "emlak_1361445",
@@ -538,147 +578,87 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.4011514
+      "timestamp": 1783687087.3274004
     },
     {
-      "id": "emlak_1362573",
+      "id": "emlak_1362617",
       "source": "emlak",
       "source_name": "Emlak.az",
-      "link": "https://emlak.az/1362573-icareye-verilir-4-otaqli-188-m2-yeni-tikili-28-may-m.html",
-      "price": 180,
-      "title": "İcarəyə verilir 4 otaqlı 188 m2 yeni tikili 28 May m.",
+      "link": "https://emlak.az/1362617-icareye-verilir-7-otaqli-250-m2-bag-evi-suvelan.html",
+      "price": 4000,
+      "title": "İcarəyə verilir 7 otaqlı 250 m2 bağ evi Şüvəlan",
       "district": "Ətraflı bax →",
-      "rooms": 4,
-      "area": null,
-      "floor": 9,
-      "total_floors": 18,
-      "photo": "https://emlak.az/images/announces/2026/7/1362573/emlak.az-icareye-verilir-4-otaqli-188-msup2sup-yeni-tikili-28-may-m.jpg",
-      "property_type": "menzil",
-      "deal_type": "kiraye",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1783678883.4011514
-    },
-    {
-      "id": "emlak_1362572",
-      "source": "emlak",
-      "source_name": "Emlak.az",
-      "link": "https://emlak.az/1362572-icareye-verilir-2-otaqli-60-m2-yeni-tikili-suraxani-r.html",
-      "price": 600,
-      "title": "İcarəyə verilir 2 otaqlı 60 m2 yeni tikili Suraxanı r.",
-      "district": "Ətraflı bax →",
-      "rooms": 2,
-      "area": null,
-      "floor": 1,
-      "total_floors": 15,
-      "photo": "https://emlak.az/images/announces/2026/7/1362572/emlak.az-icareye-verilir-2-otaqli-60-msup2sup-yeni-tikili-suraxani-r.jpg",
-      "property_type": "menzil",
-      "deal_type": "kiraye",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1783678883.4011517
-    },
-    {
-      "id": "emlak_1362570",
-      "source": "emlak",
-      "source_name": "Emlak.az",
-      "link": "https://emlak.az/1362570-icareye-verilir-2-otaqli-65-m2-yeni-tikili-8-noyabr-m.html",
-      "price": 1100,
-      "title": "İcarəyə verilir 2 otaqlı 65 m2 yeni tikili 8 Noyabr m.",
-      "district": "Ətraflı bax →",
-      "rooms": 2,
-      "area": 65.0,
-      "floor": 24,
-      "total_floors": 27,
-      "photo": "https://emlak.az/images/announces/2026/7/1362570/emlak.az-icareye-verilir-2-otaqli-65-msup2sup-yeni-tikili-8-noyabr-m.jpg",
-      "property_type": "menzil",
-      "deal_type": "kiraye",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1783678883.401152
-    },
-    {
-      "id": "emlak_1362568",
-      "source": "emlak",
-      "source_name": "Emlak.az",
-      "link": "https://emlak.az/1362568-icareye-verilir-2-otaqli-74-m2-yeni-tikili-ehmedli-m.html",
-      "price": 600,
-      "title": "İcarəyə verilir 2 otaqlı 74 m2 yeni tikili Əhmədli m.",
-      "district": "Ətraflı bax →",
-      "rooms": 2,
-      "area": null,
-      "floor": 9,
-      "total_floors": 17,
-      "photo": "https://emlak.az/images/announces/2026/7/1362568/emlak.az-icareye-verilir-2-otaqli-74-msup2sup-yeni-tikili-ehmedli-m.jpg",
-      "property_type": "menzil",
-      "deal_type": "kiraye",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1783678883.401152
-    },
-    {
-      "id": "emlak_1362563",
-      "source": "emlak",
-      "source_name": "Emlak.az",
-      "link": "https://emlak.az/1362563-icareye-verilir-1-otaqli-35-m2-obyekt-xirdalan.html",
-      "price": 550,
-      "title": "İcarəyə verilir 1 otaqlı 35 m2 obyekt Xırdalan",
-      "district": "Ətraflı bax →",
-      "rooms": 1,
+      "rooms": 7,
       "area": null,
       "floor": null,
       "total_floors": null,
-      "photo": "https://emlak.az/images/announces/2026/7/1362563/emlak.az-icareye-verilir-1-otaqli-35-msup2sup-obyekt-xirdalan.jpg",
-      "property_type": "kommersiya",
-      "deal_type": "kiraye",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1783678883.4011524
-    },
-    {
-      "id": "emlak_1362561",
-      "source": "emlak",
-      "source_name": "Emlak.az",
-      "link": "https://emlak.az/1362561-icareye-verilir-2-otaqli-76-m2-yeni-tikili-ehmedli-m.html",
-      "price": 600,
-      "title": "İcarəyə verilir 2 otaqlı 76 m2 yeni tikili Əhmədli m.",
-      "district": "Ətraflı bax →",
-      "rooms": 2,
-      "area": null,
-      "floor": 9,
-      "total_floors": 17,
-      "photo": "https://emlak.az/images/announces/2026/7/1362561/emlak.az-icareye-verilir-2-otaqli-76-msup2sup-yeni-tikili-ehmedli-m.jpg",
-      "property_type": "menzil",
-      "deal_type": "kiraye",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1783678883.4011533
-    },
-    {
-      "id": "emlak_1362560",
-      "source": "emlak",
-      "source_name": "Emlak.az",
-      "link": "https://emlak.az/1362560-icareye-verilir-2-otaqli-63-m2-yeni-tikili-qara-qarayev-m.html",
-      "price": 700,
-      "title": "İcarəyə verilir 2 otaqlı 63 m2 yeni tikili Qara Qarayev m.",
-      "district": "Ətraflı bax →",
-      "rooms": 2,
-      "area": null,
-      "floor": 10,
-      "total_floors": 16,
-      "photo": "https://emlak.az/images/announces/2026/7/1362560/emlak.az-icareye-verilir-2-otaqli-63-msup2sup-yeni-tikili-qara-qarayev-m.jpg",
+      "photo": "https://emlak.az/images/announces/2026/7/1362617/emlak.az-icareye-verilir-7-otaqli-250-msup2sup-bag-evi-suvelan.jpg",
       "property_type": "ev_villa",
       "deal_type": "kiraye",
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.4011533
+      "timestamp": 1783687087.327401
+    },
+    {
+      "id": "emlak_1362613",
+      "source": "emlak",
+      "source_name": "Emlak.az",
+      "link": "https://emlak.az/1362613-icareye-verilir-3-otaqli-80-m2-kohne-tikili-neriman-nerimanov-m.html",
+      "price": 800,
+      "title": "İcarəyə verilir 3 otaqlı 80 m2 köhnə tikili Nəriman Nərimanov m.",
+      "district": "Ətraflı bax →",
+      "rooms": 3,
+      "area": null,
+      "floor": 6,
+      "total_floors": 9,
+      "photo": "https://emlak.az/images/announces/2026/7/1362613/emlak.az-icareye-verilir-3-otaqli-80-msup2sup-kohne-tikili-neriman-nerimanov-m.jpg",
+      "property_type": "menzil",
+      "deal_type": "kiraye",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1783687087.3274012
+    },
+    {
+      "id": "emlak_1362605",
+      "source": "emlak",
+      "source_name": "Emlak.az",
+      "link": "https://emlak.az/1362605-icareye-verilir-2-otaqli-60-m2-yeni-tikili-sah-ismayil-xetai-m.html",
+      "price": 825,
+      "title": "İcarəyə verilir 2 otaqlı 60 m2 yeni tikili Şah İsmayıl Xətai m.",
+      "district": "Ətraflı bax →",
+      "rooms": 2,
+      "area": null,
+      "floor": 7,
+      "total_floors": 16,
+      "photo": "https://emlak.az/images/announces/2026/7/1362605/emlak.az-icareye-verilir-2-otaqli-60-msup2sup-yeni-tikili-sah-ismayil-xetai-m.jpg",
+      "property_type": "menzil",
+      "deal_type": "kiraye",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1783687087.3274024
+    },
+    {
+      "id": "emlak_1362599",
+      "source": "emlak",
+      "source_name": "Emlak.az",
+      "link": "https://emlak.az/1362599-icareye-verilir-3-otaqli-70-m2-yeni-tikili-sah-ismayil-xetai-m.html",
+      "price": 1200,
+      "title": "İcarəyə verilir 3 otaqlı 70 m2 yeni tikili Şah İsmayıl Xətai m.",
+      "district": "Ətraflı bax →",
+      "rooms": 3,
+      "area": 70.0,
+      "floor": 5,
+      "total_floors": 16,
+      "photo": "https://emlak.az/images/announces/2026/7/1362599/emlak.az-icareye-verilir-3-otaqli-70-msup2sup-yeni-tikili-sah-ismayil-xetai-m.jpg",
+      "property_type": "menzil",
+      "deal_type": "kiraye",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1783687087.3274026
     },
     {
       "id": "emlak_1358486",
@@ -698,7 +678,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.4011536
+      "timestamp": 1783687087.327403
     },
     {
       "id": "emlak_1283044",
@@ -718,7 +698,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.4011536
+      "timestamp": 1783687087.3274033
     },
     {
       "id": "emlak_1357656",
@@ -738,7 +718,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.4011538
+      "timestamp": 1783687087.3274035
     },
     {
       "id": "emlak_1360646",
@@ -758,7 +738,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.4011538
+      "timestamp": 1783687087.3274038
     },
     {
       "id": "emlak_1317656",
@@ -778,7 +758,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.401154
+      "timestamp": 1783687087.327404
     },
     {
       "id": "emlak_1317648",
@@ -798,7 +778,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.4011543
+      "timestamp": 1783687087.3274045
     },
     {
       "id": "emlak_1317635",
@@ -818,7 +798,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.4011543
+      "timestamp": 1783687087.3274047
     },
     {
       "id": "emlak_1353716",
@@ -838,7 +818,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.4011545
+      "timestamp": 1783687087.327405
     },
     {
       "id": "emlak_1353707",
@@ -858,7 +838,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.4011548
+      "timestamp": 1783687087.3274052
     },
     {
       "id": "emlak_1353714",
@@ -878,7 +858,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.4011548
+      "timestamp": 1783687087.3274055
     },
     {
       "id": "emlak_1012963",
@@ -898,7 +878,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.401155
+      "timestamp": 1783687087.327406
     },
     {
       "id": "emlak_1360685",
@@ -918,7 +898,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.4011552
+      "timestamp": 1783687087.3274062
     },
     {
       "id": "emlak_1358880",
@@ -938,7 +918,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.4011552
+      "timestamp": 1783687087.3274064
     },
     {
       "id": "emlak_942197",
@@ -958,7 +938,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.401156
+      "timestamp": 1783687087.3274066
     },
     {
       "id": "emlak_1325892",
@@ -978,7 +958,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.401156
+      "timestamp": 1783687087.3274071
     },
     {
       "id": "emlak_1325930",
@@ -998,7 +978,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.4011562
+      "timestamp": 1783687087.3274074
     },
     {
       "id": "emlak_1179799",
@@ -1018,7 +998,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.4011562
+      "timestamp": 1783687087.3274078
     },
     {
       "id": "emlak_1179738",
@@ -1038,7 +1018,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.4011564
+      "timestamp": 1783687087.327408
     },
     {
       "id": "emlak_1179606",
@@ -1058,7 +1038,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.4011564
+      "timestamp": 1783687087.3274083
     },
     {
       "id": "emlak_1361374",
@@ -1078,7 +1058,27 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.4011567
+      "timestamp": 1783687087.3274083
+    },
+    {
+      "id": "yeniemlak_945374",
+      "source": "yeniemlak",
+      "source_name": "YeniEmlak.az",
+      "link": "https://www.yeniemlak.az/elan/satilir-5-otaqli-bina-evi-menzil-saray-abseron-ray-saray-qes-saray-945374",
+      "price": 289000,
+      "title": "Satılır Bina evi menzil 213 m2 Abşeron, Saray",
+      "district": "Satılır Bina evi menzil 213 m2 Abşeron, Saray 2890",
+      "rooms": null,
+      "area": 213.0,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://www.yeniemlak.az/get-img/10072026W945374.jpeg",
+      "property_type": "menzil",
+      "deal_type": "satis",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1783687088.3804197
     },
     {
       "id": "yeniemlak_978874",
@@ -1098,7 +1098,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8803961
+      "timestamp": 1783687088.380421
     },
     {
       "id": "yeniemlak_113169",
@@ -1118,7 +1118,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8803968
+      "timestamp": 1783687088.3804214
     },
     {
       "id": "yeniemlak_115806",
@@ -1138,7 +1138,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8803973
+      "timestamp": 1783687088.3804216
     },
     {
       "id": "yeniemlak_130896",
@@ -1158,7 +1158,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8803973
+      "timestamp": 1783687088.3804224
     },
     {
       "id": "yeniemlak_135154",
@@ -1178,7 +1178,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8803978
+      "timestamp": 1783687088.3804226
     },
     {
       "id": "yeniemlak_135981",
@@ -1198,7 +1198,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.880398
+      "timestamp": 1783687088.3804228
     },
     {
       "id": "yeniemlak_135384",
@@ -1218,7 +1218,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8803985
+      "timestamp": 1783687088.3804233
     },
     {
       "id": "yeniemlak_121468",
@@ -1238,7 +1238,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8803985
+      "timestamp": 1783687088.3804238
     },
     {
       "id": "yeniemlak_114299",
@@ -1258,7 +1258,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8803988
+      "timestamp": 1783687088.380424
     },
     {
       "id": "yeniemlak_129482",
@@ -1278,7 +1278,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.880399
+      "timestamp": 1783687088.3804243
     },
     {
       "id": "yeniemlak_133940",
@@ -1298,7 +1298,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.880399
+      "timestamp": 1783687088.3804243
     },
     {
       "id": "yeniemlak_133172",
@@ -1318,7 +1318,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8803995
+      "timestamp": 1783687088.3804245
     },
     {
       "id": "yeniemlak_133239",
@@ -1338,7 +1338,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8803997
+      "timestamp": 1783687088.380425
     },
     {
       "id": "yeniemlak_131652",
@@ -1358,7 +1358,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8803997
+      "timestamp": 1783687088.3804252
     },
     {
       "id": "yeniemlak_102600",
@@ -1378,27 +1378,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8804
-    },
-    {
-      "id": "yeniemlak_945374",
-      "source": "yeniemlak",
-      "source_name": "YeniEmlak.az",
-      "link": "https://www.yeniemlak.az/elan/satilir-5-otaqli-bina-evi-menzil-saray-abseron-ray-saray-qes-saray-945374",
-      "price": 289000,
-      "title": "Satılır Bina evi menzil 213 m2 Abşeron, Saray",
-      "district": "Satılır Bina evi menzil 213 m2 Abşeron, Saray 2890",
-      "rooms": null,
-      "area": 213.0,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://www.yeniemlak.az/get-img/08072026W945374.jpeg",
-      "property_type": "menzil",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1783678883.8804002
+      "timestamp": 1783687088.3804255
     },
     {
       "id": "yeniemlak_992534",
@@ -1418,7 +1398,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8804004
+      "timestamp": 1783687088.3804255
     },
     {
       "id": "yeniemlak_129880",
@@ -1438,7 +1418,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8804004
+      "timestamp": 1783687088.380426
     },
     {
       "id": "yeniemlak_129279",
@@ -1458,7 +1438,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8804011
+      "timestamp": 1783687088.3804266
     },
     {
       "id": "yeniemlak_128661",
@@ -1478,7 +1458,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8804011
+      "timestamp": 1783687088.3804271
     },
     {
       "id": "yeniemlak_127469",
@@ -1498,7 +1478,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8804014
+      "timestamp": 1783687088.3804274
     },
     {
       "id": "yeniemlak_126615",
@@ -1518,7 +1498,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8804016
+      "timestamp": 1783687088.3804274
     },
     {
       "id": "yeniemlak_126660",
@@ -1538,7 +1518,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8804018
+      "timestamp": 1783687088.3804276
     },
     {
       "id": "yeniemlak_123185",
@@ -1558,7 +1538,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8804018
+      "timestamp": 1783687088.3804278
     },
     {
       "id": "yeniemlak_122430",
@@ -1578,7 +1558,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.880402
+      "timestamp": 1783687088.3804278
     },
     {
       "id": "yeniemlak_122439",
@@ -1598,7 +1578,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.880402
+      "timestamp": 1783687088.3804283
     },
     {
       "id": "yeniemlak_108767",
@@ -1618,7 +1598,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8804023
+      "timestamp": 1783687088.3804286
     },
     {
       "id": "yeniemlak_967192",
@@ -1638,7 +1618,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8804023
+      "timestamp": 1783687088.3804286
     },
     {
       "id": "yeniemlak_121146",
@@ -1658,7 +1638,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8804028
+      "timestamp": 1783687088.3804288
     },
     {
       "id": "yeniemlak_119305",
@@ -1678,7 +1658,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.880403
+      "timestamp": 1783687088.380429
     },
     {
       "id": "yeniemlak_112535",
@@ -1698,7 +1678,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.880403
+      "timestamp": 1783687088.3804293
     },
     {
       "id": "yeniemlak_114849",
@@ -1718,7 +1698,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8804033
+      "timestamp": 1783687088.3804293
     },
     {
       "id": "yeniemlak_933229",
@@ -1738,7 +1718,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8804033
+      "timestamp": 1783687088.3804295
     },
     {
       "id": "yeniemlak_980354",
@@ -1758,7 +1738,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8804035
+      "timestamp": 1783687088.3804297
     },
     {
       "id": "yeniemlak_108806",
@@ -1778,7 +1758,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8804035
+      "timestamp": 1783687088.3804297
     },
     {
       "id": "yeniemlak_117177",
@@ -1798,7 +1778,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8804038
+      "timestamp": 1783687088.38043
     },
     {
       "id": "yeniemlak_117203",
@@ -1818,7 +1798,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8804038
+      "timestamp": 1783687088.3804302
     },
     {
       "id": "yeniemlak_118618",
@@ -1838,7 +1818,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.880404
+      "timestamp": 1783687088.3804307
     },
     {
       "id": "yeniemlak_116372",
@@ -1858,7 +1838,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8804042
+      "timestamp": 1783687088.380431
     },
     {
       "id": "yeniemlak_978351",
@@ -1878,7 +1858,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8804045
+      "timestamp": 1783687088.3804312
     },
     {
       "id": "yeniemlak_987033",
@@ -1898,7 +1878,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8804045
+      "timestamp": 1783687088.3804314
     },
     {
       "id": "yeniemlak_113861",
@@ -1918,7 +1898,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8804047
+      "timestamp": 1783687088.3804317
     },
     {
       "id": "yeniemlak_113589",
@@ -1938,7 +1918,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.880405
+      "timestamp": 1783687088.380432
     },
     {
       "id": "yeniemlak_982380",
@@ -1958,7 +1938,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.880405
+      "timestamp": 1783687088.380432
     },
     {
       "id": "yeniemlak_998270",
@@ -1978,7 +1958,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8804052
+      "timestamp": 1783687088.3804321
     },
     {
       "id": "yeniemlak_888268",
@@ -1998,407 +1978,407 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8804054
+      "timestamp": 1783687088.3804324
     },
     {
-      "id": "yeniemlak_137438",
+      "id": "yeniemlak_137626",
       "source": "yeniemlak",
       "source_name": "YeniEmlak.az",
-      "link": "https://www.yeniemlak.az/elan/satilir-1-otaqli-bina-evi-menzil-12-ci-mikrorayon-sumqayit-seheri-137438",
-      "price": 23000,
-      "title": "Satılır Bina evi menzil 20 m2 Sumqayıt, 12-ci mikrorayon",
-      "district": "Satılır Bina evi menzil 20 m2 Sumqayıt, 12-ci mikr",
+      "link": "https://www.yeniemlak.az/elan/satilir-3-otaqli-bina-evi-menzil-nerimanov-rayonu-eliesref-elizade-kuce-137626",
+      "price": 425000,
+      "title": "Satılır Bina evi menzil 141 m2 Bakı, Nərimanov rayonu",
+      "district": "Nərimanov",
       "rooms": null,
-      "area": 20.0,
+      "area": 141.0,
       "floor": null,
       "total_floors": null,
-      "photo": "https://www.yeniemlak.az/get-img/10072026W137438.jpg",
+      "photo": "https://www.yeniemlak.az/get-img/10072026W137626.jpeg",
       "property_type": "menzil",
       "deal_type": "satis",
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8804054
+      "timestamp": 1783687088.3804324
     },
     {
-      "id": "yeniemlak_126743",
+      "id": "yeniemlak_137625",
       "source": "yeniemlak",
       "source_name": "YeniEmlak.az",
-      "link": "https://www.yeniemlak.az/elan/satilir-3-otaqli-bina-evi-menzil-xetai-rayonu-kohne-gunesli-qes-sixlinski-kucesi-126743",
-      "price": 169000,
-      "title": "Satılır Bina evi menzil 70 m2 Bakı, Xətai rayonu",
+      "link": "https://www.yeniemlak.az/elan/satilir-3-otaqli-bina-evi-menzil-xetai-rayonu-ehmedli-s-e-sirvani-kuc-137625",
+      "price": 340000,
+      "title": "Satılır Bina evi menzil 123 m2 Bakı, Xətai rayonu",
       "district": "Xətai",
       "rooms": null,
-      "area": 70.0,
+      "area": 123.0,
       "floor": null,
       "total_floors": null,
-      "photo": "https://www.yeniemlak.az/get-img/10072026W126743.jpeg",
+      "photo": "https://www.yeniemlak.az/get-img/10072026W137625.jpeg",
       "property_type": "menzil",
       "deal_type": "satis",
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8804057
+      "timestamp": 1783687088.3804326
     },
     {
-      "id": "yeniemlak_137441",
+      "id": "yeniemlak_137624",
       "source": "yeniemlak",
       "source_name": "YeniEmlak.az",
-      "link": "https://www.yeniemlak.az/elan/satilir-3-otaqli-bina-evi-menzil-yasamal-rayonu-yeni-yasamal-qes-yyasamal-e-ehmedov-26-137441",
-      "price": 265000,
+      "link": "https://www.yeniemlak.az/elan/satilir-2-otaqli-obyekt-sabuncu-rayonu-bakixanov-qes-sabuncu-rayonu-bakixanov-q-137624",
+      "price": 1900000,
+      "title": "Satılır Obyekt 375 m2 Bakı, Sabunçu rayonu",
+      "district": "Sabunçu",
+      "rooms": null,
+      "area": 375.0,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://www.yeniemlak.az/get-img/10072026W137624.jpg",
+      "property_type": "kommersiya",
+      "deal_type": "satis",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1783687088.3804328
+    },
+    {
+      "id": "yeniemlak_137621",
+      "source": "yeniemlak",
+      "source_name": "YeniEmlak.az",
+      "link": "https://www.yeniemlak.az/elan/satilir-3-otaqli-bina-evi-menzil-sabuncu-rayonu-bakixanov-qes-oskar-efendiyev-kuc-137621",
+      "price": 165000,
+      "title": "Satılır Bina evi menzil 100 m2 Bakı, Sabunçu rayonu",
+      "district": "Sabunçu",
+      "rooms": null,
+      "area": 100.0,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://www.yeniemlak.az/get-img/10072026W137621.jpeg",
+      "property_type": "menzil",
+      "deal_type": "satis",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1783687088.380433
+    },
+    {
+      "id": "yeniemlak_137622",
+      "source": "yeniemlak",
+      "source_name": "YeniEmlak.az",
+      "link": "https://www.yeniemlak.az/elan/satilir-4-otaqli-bina-evi-menzil-yasamal-rayonu-yeni-yasamal-qes-yasamal-rayonu-gulustan--137622",
+      "price": 234900,
       "title": "Satılır Bina evi menzil 112 m2 Bakı, Yasamal rayonu",
       "district": "Yasamal",
       "rooms": null,
       "area": 112.0,
       "floor": null,
       "total_floors": null,
-      "photo": "https://www.yeniemlak.az/get-img/10072026W137441.jfif",
+      "photo": "https://www.yeniemlak.az/get-img/10072026W137622.jpg",
       "property_type": "menzil",
       "deal_type": "satis",
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8804057
+      "timestamp": 1783687088.380433
     },
     {
-      "id": "yeniemlak_137437",
+      "id": "yeniemlak_127204",
       "source": "yeniemlak",
       "source_name": "YeniEmlak.az",
-      "link": "https://www.yeniemlak.az/elan/satilir-8-otaqli-heyet-evi-villa-sebail-rayonu-badamdar-qes-baki-seh-sebail-ray-bada-137437",
-      "price": 650000,
-      "title": "Satılır Həyət evi / Villa 360 m2 Bakı, Səbail rayonu",
-      "district": "Səbail",
-      "rooms": null,
-      "area": 360.0,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://www.yeniemlak.az/get-img/10072026W137437.jpeg",
-      "property_type": "ev_villa",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1783678883.880406
-    },
-    {
-      "id": "yeniemlak_137432",
-      "source": "yeniemlak",
-      "source_name": "YeniEmlak.az",
-      "link": "https://www.yeniemlak.az/elan/satilir-2-otaqli-bina-evi-menzil-nesimi-rayonu-dilare-eliyeva-kuc-137432",
-      "price": 205000,
-      "title": "Satılır Bina evi menzil 47 m2 Bakı, Nəsimi rayonu",
-      "district": "Nəsimi",
-      "rooms": null,
-      "area": 47.0,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://www.yeniemlak.az/get-img/10072026W137432.jpg",
-      "property_type": "menzil",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1783678883.8804064
-    },
-    {
-      "id": "yeniemlak_137433",
-      "source": "yeniemlak",
-      "source_name": "YeniEmlak.az",
-      "link": "https://www.yeniemlak.az/elan/satilir-2-otaqli-bina-evi-menzil-sumqayit-seh-sumqayit-seheri-137433",
-      "price": 77000,
-      "title": "Satılır Bina evi menzil 45 m2 Sumqayıt, Sumqayıt şəh.",
-      "district": "Satılır Bina evi menzil 45 m2 Sumqayıt, Sumqayıt ş",
-      "rooms": null,
-      "area": 45.0,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://www.yeniemlak.az/get-img/10072026W137433.jpg",
-      "property_type": "menzil",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1783678883.8804064
-    },
-    {
-      "id": "yeniemlak_137440",
-      "source": "yeniemlak",
-      "source_name": "YeniEmlak.az",
-      "link": "https://www.yeniemlak.az/elan/satilir-3-otaqli-bina-evi-menzil-nerimanov-rayonu-nerimanov-rayonu-ibrahimpas-137440",
-      "price": 470000,
-      "title": "Satılır Bina evi menzil 158 m2 Bakı, Nərimanov rayonu",
-      "district": "Nərimanov",
-      "rooms": null,
-      "area": 158.0,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://www.yeniemlak.az/get-img/10072026W137440.jpeg",
-      "property_type": "menzil",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1783678883.8804066
-    },
-    {
-      "id": "yeniemlak_125081",
-      "source": "yeniemlak",
-      "source_name": "YeniEmlak.az",
-      "link": "https://www.yeniemlak.az/elan/satilir-3-otaqli-bina-evi-menzil-10-cu-mikrorayon-sumqayit-seheri-125081",
-      "price": 107000,
-      "title": "Satılır Bina evi menzil 80 m2 Sumqayıt, 10-cu mikrorayon",
-      "district": "Satılır Bina evi menzil 80 m2 Sumqayıt, 10-cu mikr",
-      "rooms": null,
-      "area": 80.0,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://www.yeniemlak.az/get-img/10072026W125081.jpeg",
-      "property_type": "menzil",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1783678883.8804066
-    },
-    {
-      "id": "yeniemlak_137425",
-      "source": "yeniemlak",
-      "source_name": "YeniEmlak.az",
-      "link": "https://www.yeniemlak.az/elan/satilir-1-otaqli-bina-evi-menzil-suraxani-rayonu-yeni-gunesli-qes-yeni-guneslide-ab-massivin-137425",
-      "price": 108000,
-      "title": "Satılır Bina evi menzil 40 m2 Bakı, Suraxanı rayonu",
-      "district": "Suraxanı",
-      "rooms": null,
-      "area": 40.0,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://www.yeniemlak.az/get-img/10072026W137425.jpeg",
-      "property_type": "menzil",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1783678883.8804069
-    },
-    {
-      "id": "yeniemlak_985247",
-      "source": "yeniemlak",
-      "source_name": "YeniEmlak.az",
-      "link": "https://www.yeniemlak.az/elan/satilir-12-sot-torpaq-sahesi-xezer-rayonu-suvelan-suvelan-985247",
-      "price": 390000,
-      "title": "Satılır Torpaq sahəsi 12 sot Bakı, Xəzər rayonu",
-      "district": "Xəzər",
-      "rooms": null,
-      "area": null,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://www.yeniemlak.az/get-img/10072026W985247.jpg",
-      "property_type": "torpaq",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1783678883.880407
-    },
-    {
-      "id": "yeniemlak_137434",
-      "source": "yeniemlak",
-      "source_name": "YeniEmlak.az",
-      "link": "https://www.yeniemlak.az/elan/kiraye-2-otaqli-bina-evi-menzil-xetai-rayonu-xatai-rayonu-ehmedli-metrosu-137434",
-      "price": 650,
-      "title": "Kirayə Bina evi menzil 85 m2 Bakı, Xətai rayonu",
+      "link": "https://www.yeniemlak.az/elan/satilir-2-otaqli-bina-evi-menzil-xetai-rayonu-xetai-ray-xocali-pr-127204",
+      "price": 228000,
+      "title": "Satılır Bina evi menzil 76 m2 Bakı, Xətai rayonu",
       "district": "Xətai",
       "rooms": null,
-      "area": 85.0,
+      "area": 76.0,
       "floor": null,
       "total_floors": null,
-      "photo": "https://www.yeniemlak.az/get-img/10072026W137434.jpeg",
+      "photo": "https://www.yeniemlak.az/get-img/10072026W127204.jpg",
       "property_type": "menzil",
-      "deal_type": "kiraye",
+      "deal_type": "satis",
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.880407
+      "timestamp": 1783687088.3804333
     },
     {
-      "id": "yeniemlak_987497",
+      "id": "yeniemlak_113927",
       "source": "yeniemlak",
       "source_name": "YeniEmlak.az",
-      "link": "https://www.yeniemlak.az/elan/gunluk-5-otaqli-heyet-evi-villa-ismayilli-ismayilli-rayon-987497",
-      "price": 190,
-      "title": "Günlük Həyət evi / Villa 180 m2 İsmayıllı",
-      "district": "Günlük Həyət evi / Villa 180 m2 İsmayıllı 190 AZN ",
+      "link": "https://www.yeniemlak.az/elan/satilir-3-otaqli-bina-evi-menzil-sebail-rayonu-sebail-ray-bunyad-serderov-k-113927",
+      "price": 154000,
+      "title": "Satılır Bina evi menzil 70 m2 Bakı, Səbail rayonu",
+      "district": "Səbail",
       "rooms": null,
-      "area": 180.0,
+      "area": 70.0,
       "floor": null,
       "total_floors": null,
-      "photo": "https://www.yeniemlak.az/get-img/10072026W987497.jpg",
-      "property_type": "ev_villa",
-      "deal_type": "kiraye",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1783678883.8804073
-    },
-    {
-      "id": "yeniemlak_906699",
-      "source": "yeniemlak",
-      "source_name": "YeniEmlak.az",
-      "link": "https://www.yeniemlak.az/elan/gunluk-4-otaqli-heyet-evi-villa-qebele-pastar-mehellesi-906699",
-      "price": 180,
-      "title": "Günlük Həyət evi / Villa 234 m2 Qəbələ",
-      "district": "Günlük Həyət evi / Villa 234 m2 Qəbələ 180 AZN / G",
-      "rooms": null,
-      "area": 234.0,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://www.yeniemlak.az/get-img/10072026W906699.jpeg",
-      "property_type": "ev_villa",
-      "deal_type": "kiraye",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1783678883.8804076
-    },
-    {
-      "id": "yeniemlak_126605",
-      "source": "yeniemlak",
-      "source_name": "YeniEmlak.az",
-      "link": "https://www.yeniemlak.az/elan/kiraye-2-otaqli-bina-evi-menzil-yasamal-rayonu-yasamal-qes-elmler-met-musabeyov-parki-126605",
-      "price": 600,
-      "title": "Kirayə Bina evi menzil 50 m2 Bakı, Yasamal rayonu",
-      "district": "Yasamal",
-      "rooms": null,
-      "area": 50.0,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://www.yeniemlak.az/get-img/10072026W126605.jpg",
+      "photo": "https://www.yeniemlak.az/get-img/10072026W113927.jpg",
       "property_type": "menzil",
-      "deal_type": "kiraye",
+      "deal_type": "satis",
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8804076
+      "timestamp": 1783687088.3804336
     },
     {
-      "id": "yeniemlak_137431",
+      "id": "yeniemlak_137613",
       "source": "yeniemlak",
       "source_name": "YeniEmlak.az",
-      "link": "https://www.yeniemlak.az/elan/kiraye-1-otaqli-obyekt-bineqedi-rayonu-bineqeqdi-r-zengezur-rest-137431",
-      "price": 7500,
-      "title": "Kirayə Obyekt 1500 m2 Bakı, Binəqədi rayonu",
+      "link": "https://www.yeniemlak.az/elan/satilir-2-otaqli-bina-evi-menzil-nesimi-rayonu-3-cu-mikrorayon-huseyn-seyidzade-kucesi-137613",
+      "price": 157000,
+      "title": "Satılır Bina evi menzil 55 m2 Bakı, Nəsimi rayonu",
+      "district": "Nəsimi",
+      "rooms": null,
+      "area": 55.0,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://www.yeniemlak.az/get-img/10072026W137613.jpg",
+      "property_type": "menzil",
+      "deal_type": "satis",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1783687088.380434
+    },
+    {
+      "id": "yeniemlak_137614",
+      "source": "yeniemlak",
+      "source_name": "YeniEmlak.az",
+      "link": "https://www.yeniemlak.az/elan/satilir-3-otaqli-bina-evi-menzil-nesimi-rayonu-bakixanov-kuc-137614",
+      "price": 270000,
+      "title": "Satılır Bina evi menzil 105 m2 Bakı, Nəsimi rayonu",
+      "district": "Nəsimi",
+      "rooms": null,
+      "area": 105.0,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://www.yeniemlak.az/get-img/10072026W137614.jpeg",
+      "property_type": "menzil",
+      "deal_type": "satis",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1783687088.380434
+    },
+    {
+      "id": "yeniemlak_137609",
+      "source": "yeniemlak",
+      "source_name": "YeniEmlak.az",
+      "link": "https://www.yeniemlak.az/elan/satilir-3-otaqli-bina-evi-menzil-bineqedi-rayonu-7-ci-mikrorayon-cefer-xendan-137609",
+      "price": 63000,
+      "title": "Satılır Bina evi menzil 107 m2 Bakı, Binəqədi rayonu",
       "district": "Binəqədi",
       "rooms": null,
-      "area": 1500.0,
+      "area": 107.0,
       "floor": null,
       "total_floors": null,
-      "photo": "https://www.yeniemlak.az/get-img/10072026W137431.jpg",
-      "property_type": "kommersiya",
-      "deal_type": "kiraye",
+      "photo": "https://www.yeniemlak.az/get-img/10072026W137609.jpeg",
+      "property_type": "menzil",
+      "deal_type": "satis",
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8804078
+      "timestamp": 1783687088.3804343
     },
     {
-      "id": "yeniemlak_137429",
+      "id": "yeniemlak_472423",
       "source": "yeniemlak",
       "source_name": "YeniEmlak.az",
-      "link": "https://www.yeniemlak.az/elan/kiraye-3-otaqli-bina-evi-menzil-nesimi-rayonu-tibb-universiteti-137429",
-      "price": 1000,
-      "title": "Kirayə Bina evi menzil 80 m2 Bakı, Nəsimi rayonu",
+      "link": "https://www.yeniemlak.az/elan/gunluk-2-otaqli-bina-evi-menzil-nesimi-rayonu-salatin-esgerova-kucesi-472423",
+      "price": 50,
+      "title": "Günlük Bina evi menzil 80 m2 Bakı, Nəsimi rayonu",
       "district": "Nəsimi",
       "rooms": null,
       "area": 80.0,
       "floor": null,
       "total_floors": null,
-      "photo": "https://www.yeniemlak.az/get-img/10072026W137429.jpg",
+      "photo": "https://www.yeniemlak.az/get-img/10072026W472423.jpg",
       "property_type": "menzil",
       "deal_type": "kiraye",
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8804078
+      "timestamp": 1783687088.3804345
     },
     {
-      "id": "yeniemlak_137418",
+      "id": "yeniemlak_137620",
       "source": "yeniemlak",
       "source_name": "YeniEmlak.az",
-      "link": "https://www.yeniemlak.az/elan/kiraye-2-otaqli-bina-evi-menzil-bineqedi-rayonu-8-ci-mikrorayon-baki-s-bineqedi-r-8-ci-mkr-137418",
-      "price": 600,
-      "title": "Kirayə Bina evi menzil 65 m2 Bakı, Binəqədi rayonu",
-      "district": "Binəqədi",
-      "rooms": null,
-      "area": 65.0,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://www.yeniemlak.az/get-img/10072026W137418.jpeg",
-      "property_type": "menzil",
-      "deal_type": "kiraye",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1783678883.880408
-    },
-    {
-      "id": "yeniemlak_137413",
-      "source": "yeniemlak",
-      "source_name": "YeniEmlak.az",
-      "link": "https://www.yeniemlak.az/elan/kiraye-2-otaqli-bina-evi-menzil-yasamal-rayonu---137413",
-      "price": 1100,
-      "title": "Kirayə Bina evi menzil 65 m2 Bakı, Yasamal rayonu",
+      "link": "https://www.yeniemlak.az/elan/satilir-1-otaqli-bina-evi-menzil-yasamal-rayonu-hesenbey-zerdabi-kucesi-137620",
+      "price": 500,
+      "title": "Kirayə Bina evi menzil 30 m2 Bakı, Yasamal rayonu",
       "district": "Yasamal",
       "rooms": null,
-      "area": 65.0,
+      "area": 30.0,
       "floor": null,
       "total_floors": null,
-      "photo": "https://www.yeniemlak.az/get-img/10072026W137413.jpg",
+      "photo": "https://www.yeniemlak.az/get-img/10072026W137620.jpeg",
       "property_type": "menzil",
       "deal_type": "kiraye",
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.880408
+      "timestamp": 1783687088.3804345
     },
     {
-      "id": "yeniemlak_137410",
+      "id": "yeniemlak_137618",
       "source": "yeniemlak",
       "source_name": "YeniEmlak.az",
-      "link": "https://www.yeniemlak.az/elan/kiraye-2-otaqli-bina-evi-menzil-sumqayit-bulvari-sumqayit-seher-bulvar-er-137410",
-      "price": 450,
-      "title": "Kirayə Bina evi menzil 95 m2 Sumqayıt, Sumqayıt Bulvarı",
-      "district": "Kirayə Bina evi menzil 95 m2 Sumqayıt, Sumqayıt Bu",
+      "link": "https://www.yeniemlak.az/elan/kiraye-1-otaqli-bina-evi-menzil-yasamal-rayonu-hesen-bey-zerdabi-prospekt-137618",
+      "price": 500,
+      "title": "Kirayə Bina evi menzil 36 m2 Bakı, Yasamal rayonu",
+      "district": "Yasamal",
       "rooms": null,
-      "area": 95.0,
+      "area": 36.0,
       "floor": null,
       "total_floors": null,
-      "photo": "https://www.yeniemlak.az/get-img/10072026W137410.jpg",
+      "photo": "https://www.yeniemlak.az/get-img/10072026W137618.jpg",
       "property_type": "menzil",
       "deal_type": "kiraye",
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8804083
+      "timestamp": 1783687088.380435
     },
     {
-      "id": "yeniemlak_752216",
+      "id": "yeniemlak_137617",
       "source": "yeniemlak",
       "source_name": "YeniEmlak.az",
-      "link": "https://www.yeniemlak.az/elan/gunluk-5-otaqli-heyet-evi-villa-qebele-h-eliyev-pr-kanat-ve-tufand-752216",
-      "price": 200,
-      "title": "Günlük Həyət evi / Villa 300 m2 Qəbələ",
-      "district": "Günlük Həyət evi / Villa 300 m2 Qəbələ 200 AZN / G",
+      "link": "https://www.yeniemlak.az/elan/kiraye-2-otaqli-bina-evi-menzil-nizami-rayonu-baki-seheri-ozbekistan-137617",
+      "price": 800,
+      "title": "Kirayə Bina evi menzil 70 m2 Bakı, Nizami rayonu",
+      "district": "Nizami",
       "rooms": null,
-      "area": 300.0,
+      "area": 70.0,
       "floor": null,
       "total_floors": null,
-      "photo": "https://www.yeniemlak.az/get-img/10072026W752216.jpeg",
+      "photo": "https://www.yeniemlak.az/get-img/10072026W137617.jpg",
+      "property_type": "menzil",
+      "deal_type": "kiraye",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1783687088.3804352
+    },
+    {
+      "id": "yeniemlak_136206",
+      "source": "yeniemlak",
+      "source_name": "YeniEmlak.az",
+      "link": "https://www.yeniemlak.az/elan/gunluk-4-otaqli-heyet-evi-villa-qebele-qebele-seheri-136206",
+      "price": 180,
+      "title": "Günlük Həyət evi / Villa 120 m2 Qəbələ",
+      "district": "Günlük Həyət evi / Villa 120 m2 Qəbələ 180 AZN / G",
+      "rooms": null,
+      "area": 120.0,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://www.yeniemlak.az/get-img/10072026W136206.jpg",
       "property_type": "ev_villa",
       "deal_type": "kiraye",
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678883.8804083
+      "timestamp": 1783687088.3804352
+    },
+    {
+      "id": "yeniemlak_135808",
+      "source": "yeniemlak",
+      "source_name": "YeniEmlak.az",
+      "link": "https://www.yeniemlak.az/elan/gunluk-5-otaqli-heyet-evi-villa-qebele-qebele-seheri-135808",
+      "price": 180,
+      "title": "Günlük Həyət evi / Villa 135 m2 Qəbələ",
+      "district": "Günlük Həyət evi / Villa 135 m2 Qəbələ 180 AZN / G",
+      "rooms": null,
+      "area": 135.0,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://www.yeniemlak.az/get-img/10072026W135808.jpg",
+      "property_type": "ev_villa",
+      "deal_type": "kiraye",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1783687088.3804355
+    },
+    {
+      "id": "yeniemlak_137600",
+      "source": "yeniemlak",
+      "source_name": "YeniEmlak.az",
+      "link": "https://www.yeniemlak.az/elan/kiraye-2-otaqli-bina-evi-menzil-nesimi-rayonu-20-yanvar-137600",
+      "price": 275000,
+      "title": "Kirayə Bina evi menzil 93 m2 Bakı, Nəsimi rayonu",
+      "district": "Nəsimi",
+      "rooms": null,
+      "area": 93.0,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://www.yeniemlak.az/get-img/10072026W137600.jpg",
+      "property_type": "menzil",
+      "deal_type": "kiraye",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1783687088.3804357
+    },
+    {
+      "id": "yeniemlak_137602",
+      "source": "yeniemlak",
+      "source_name": "YeniEmlak.az",
+      "link": "https://www.yeniemlak.az/elan/kiraye-3-otaqli-bina-evi-menzil-nesimi-rayonu-olimpik-star-uzbe-uz-137602",
+      "price": 1200,
+      "title": "Kirayə Bina evi menzil 70 m2 Bakı, Nəsimi rayonu",
+      "district": "Nəsimi",
+      "rooms": null,
+      "area": 70.0,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://www.yeniemlak.az/get-img/10072026W137602.jpg",
+      "property_type": "menzil",
+      "deal_type": "kiraye",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1783687088.380436
+    },
+    {
+      "id": "yeniemlak_137589",
+      "source": "yeniemlak",
+      "source_name": "YeniEmlak.az",
+      "link": "https://www.yeniemlak.az/elan/kiraye-2-otaqli-bina-evi-menzil-18-ci-mikrorayon-sumqayit-seher-18-ci-mikr-137589",
+      "price": 300,
+      "title": "Kirayə Bina evi menzil 56 m2 Sumqayıt, 18-ci mikrorayon",
+      "district": "Kirayə Bina evi menzil 56 m2 Sumqayıt, 18-ci mikro",
+      "rooms": null,
+      "area": 56.0,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://www.yeniemlak.az/get-img/10072026W137589.jpg",
+      "property_type": "menzil",
+      "deal_type": "kiraye",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1783687088.3804362
+    },
+    {
+      "id": "yeniemlak_134468",
+      "source": "yeniemlak",
+      "source_name": "YeniEmlak.az",
+      "link": "https://www.yeniemlak.az/elan/kiraye-2-otaqli-bina-evi-menzil-nizami-rayonu-qara-qarayev-metro-134468",
+      "price": 550,
+      "title": "Kirayə Bina evi menzil 49 m2 Bakı, Nizami rayonu",
+      "district": "Nizami",
+      "rooms": null,
+      "area": 49.0,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://www.yeniemlak.az/get-img/10072026W134468.jpeg",
+      "property_type": "menzil",
+      "deal_type": "kiraye",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1783687088.3804364
     },
     {
       "id": "vipemlak_796010",
@@ -2418,7 +2398,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750378
+      "timestamp": 1783687091.850424
     },
     {
       "id": "vipemlak_790515",
@@ -2438,7 +2418,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750385
+      "timestamp": 1783687091.8504248
     },
     {
       "id": "vipemlak_795283",
@@ -2458,7 +2438,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750388
+      "timestamp": 1783687091.8504252
     },
     {
       "id": "vipemlak_792171",
@@ -2478,7 +2458,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.975039
+      "timestamp": 1783687091.8504255
     },
     {
       "id": "vipemlak_792739",
@@ -2498,7 +2478,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750397
+      "timestamp": 1783687091.8504264
     },
     {
       "id": "vipemlak_791976",
@@ -2518,7 +2498,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.97504
+      "timestamp": 1783687091.8504267
     },
     {
       "id": "vipemlak_791802",
@@ -2538,7 +2518,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750402
+      "timestamp": 1783687091.850427
     },
     {
       "id": "vipemlak_788653",
@@ -2558,7 +2538,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750404
+      "timestamp": 1783687091.8504272
     },
     {
       "id": "vipemlak_793152",
@@ -2578,7 +2558,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750404
+      "timestamp": 1783687091.8504274
     },
     {
       "id": "vipemlak_790738",
@@ -2598,7 +2578,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750407
+      "timestamp": 1783687091.8504276
     },
     {
       "id": "vipemlak_791491",
@@ -2618,7 +2598,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.975041
+      "timestamp": 1783687091.8504279
     },
     {
       "id": "vipemlak_791331",
@@ -2638,7 +2618,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.975041
+      "timestamp": 1783687091.8504279
     },
     {
       "id": "vipemlak_788003",
@@ -2658,7 +2638,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750414
+      "timestamp": 1783687091.8504283
     },
     {
       "id": "vipemlak_788277",
@@ -2678,7 +2658,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750416
+      "timestamp": 1783687091.8504286
     },
     {
       "id": "vipemlak_789340",
@@ -2698,7 +2678,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750416
+      "timestamp": 1783687091.8504286
     },
     {
       "id": "vipemlak_788894",
@@ -2718,7 +2698,187 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750419
+      "timestamp": 1783687091.8504288
+    },
+    {
+      "id": "vipemlak_796110",
+      "source": "vipemlak",
+      "source_name": "VipEmlak.az",
+      "link": "https://vipemlak.az/tebriz-kuc-796110.html",
+      "price": 240000,
+      "title": "Nərimanov rayonu , Nəriman Nərimanov m., 2 otaq",
+      "district": "Nərimanov",
+      "rooms": 2,
+      "area": 66.0,
+      "floor": 16,
+      "total_floors": 10,
+      "photo": "https://vipemlak.az/uploads/news/homeobject_7961102866886882.jpg",
+      "property_type": "menzil",
+      "deal_type": "satis",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1783687091.8504293
+    },
+    {
+      "id": "vipemlak_796105",
+      "source": "vipemlak",
+      "source_name": "VipEmlak.az",
+      "link": "https://vipemlak.az/yeni-yasamal-esed-ehmedov-kucesi-796105.html",
+      "price": 230000,
+      "title": "Yasamal rayonu , Yeni Yasamal qəs., 3 otaq",
+      "district": "Yasamal",
+      "rooms": 3,
+      "area": null,
+      "floor": 20,
+      "total_floors": 21,
+      "photo": "https://vipemlak.az/uploads/news/homeobject_796105939644873.jpg",
+      "property_type": "menzil",
+      "deal_type": "satis",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1783687091.8504295
+    },
+    {
+      "id": "vipemlak_796104",
+      "source": "vipemlak",
+      "source_name": "VipEmlak.az",
+      "link": "https://vipemlak.az/tbilisi-pr-796104.html",
+      "price": 700,
+      "title": "Yasamal rayonu , Nizami m., 3 otaq",
+      "district": "Nizami",
+      "rooms": 3,
+      "area": 85.0,
+      "floor": 5,
+      "total_floors": 3,
+      "photo": "https://vipemlak.az/uploads/news/homeobject_7961041919708009.jpg",
+      "property_type": "menzil",
+      "deal_type": "satis",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1783687091.8504307
+    },
+    {
+      "id": "vipemlak_796101",
+      "source": "vipemlak",
+      "source_name": "VipEmlak.az",
+      "link": "https://vipemlak.az/gence-prospekti-796101.html",
+      "price": 214000,
+      "title": "Xətai rayonu , Əhmədli qəs., 3 otaq",
+      "district": "Xətai",
+      "rooms": 3,
+      "area": null,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://vipemlak.az/uploads/news/homeobject_796101950634416.jpg",
+      "property_type": "menzil",
+      "deal_type": "satis",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1783687091.850431
+    },
+    {
+      "id": "vipemlak_796097",
+      "source": "vipemlak",
+      "source_name": "VipEmlak.az",
+      "link": "https://vipemlak.az/sest-tosn-yasayis-kompleksi-796097.html",
+      "price": 63000,
+      "title": "Binəqədi rayonu , 7-ci mikrorayon qəs., 2 otaq",
+      "district": "Binəqədi",
+      "rooms": 2,
+      "area": null,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://vipemlak.az/uploads/news/homeobject_7960973940781306.jpg",
+      "property_type": "menzil",
+      "deal_type": "satis",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1783687091.8504312
+    },
+    {
+      "id": "vipemlak_796096",
+      "source": "vipemlak",
+      "source_name": "VipEmlak.az",
+      "link": "https://vipemlak.az/28-may-kuc-33-796096.html",
+      "price": 180,
+      "title": "Nəsimi rayonu , 28 May m., 4 otaq",
+      "district": "Nəsimi",
+      "rooms": 4,
+      "area": null,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://vipemlak.az/uploads/news/homeobject_7960963636448591.jpg",
+      "property_type": "menzil",
+      "deal_type": "kiraye",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1783687091.8504312
+    },
+    {
+      "id": "vipemlak_796094",
+      "source": "vipemlak",
+      "source_name": "VipEmlak.az",
+      "link": "https://vipemlak.az/azadliq-pros-796094.html",
+      "price": 330000,
+      "title": "Nəsimi rayonu , 2 otaq",
+      "district": "Nəsimi",
+      "rooms": 2,
+      "area": 107.0,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://vipemlak.az/uploads/news/homeobject_7960942928977817.jpg",
+      "property_type": "menzil",
+      "deal_type": "satis",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1783687091.8504314
+    },
+    {
+      "id": "vipemlak_796087",
+      "source": "vipemlak",
+      "source_name": "VipEmlak.az",
+      "link": "https://vipemlak.az/nerimanov-rayonu-koroglu-rehimov-kucesi-796087.html",
+      "price": 399000,
+      "title": "Abşeron rayonu , Masazır qəs., 2 otaq",
+      "district": "Nərimanov",
+      "rooms": 2,
+      "area": null,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://vipemlak.az/uploads/news/homeobject_7960873240693300.jpg",
+      "property_type": "menzil",
+      "deal_type": "satis",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1783687091.8504317
+    },
+    {
+      "id": "vipemlak_796086",
+      "source": "vipemlak",
+      "source_name": "VipEmlak.az",
+      "link": "https://vipemlak.az/sest-tosn-yasayis-kompleksi-796086.html",
+      "price": 54000,
+      "title": "Binəqədi rayonu , 7-ci mikrorayon qəs., 2 otaq",
+      "district": "Binəqədi",
+      "rooms": 2,
+      "area": null,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://vipemlak.az/uploads/news/homeobject_7960863875012473.jpg",
+      "property_type": "menzil",
+      "deal_type": "satis",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1783687091.8504317
     },
     {
       "id": "vipemlak_796082",
@@ -2738,7 +2898,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.975042
+      "timestamp": 1783687091.850432
     },
     {
       "id": "vipemlak_796081",
@@ -2758,7 +2918,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750423
+      "timestamp": 1783687091.8504322
     },
     {
       "id": "vipemlak_796080",
@@ -2778,187 +2938,67 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750428
+      "timestamp": 1783687091.8504324
     },
     {
-      "id": "vipemlak_796079",
+      "id": "vipemlak_796114",
       "source": "vipemlak",
       "source_name": "VipEmlak.az",
-      "link": "https://vipemlak.az/bileceri-dairesi-kristal-a-mtk-796079.html",
-      "price": 240000,
-      "title": "Binəqədi rayonu , Biləcəri qəs., 3 otaq",
-      "district": "Binəqədi",
-      "rooms": 3,
-      "area": null,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://vipemlak.az/uploads/news/homeobject_7960791977165419.jpg",
-      "property_type": "menzil",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1783678886.975043
-    },
-    {
-      "id": "vipemlak_796077",
-      "source": "vipemlak",
-      "source_name": "VipEmlak.az",
-      "link": "https://vipemlak.az/qaracuxur-q-796077.html",
-      "price": 265000,
-      "title": "Suraxanı rayonu , Qaraçuxur qəs., 5 otaq",
+      "link": "https://vipemlak.az/yeni-gunesli-qesebesi-796114.html",
+      "price": 130000,
+      "title": "Suraxanı rayonu , Yeni Günəşli qəs., 2 otaq",
       "district": "Suraxanı",
-      "rooms": 5,
-      "area": 200.0,
+      "rooms": 2,
+      "area": 50.0,
       "floor": null,
       "total_floors": null,
-      "photo": "https://vipemlak.az/uploads/news/homeobject_796077408917848.jpg",
+      "photo": "https://vipemlak.az/uploads/news/homeobject_7961143519567752.jpg",
       "property_type": "ev_villa",
       "deal_type": "satis",
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.975043
+      "timestamp": 1783687091.8504324
     },
     {
-      "id": "vipemlak_796076",
+      "id": "vipemlak_796111",
       "source": "vipemlak",
       "source_name": "VipEmlak.az",
-      "link": "https://vipemlak.az/dernegul-vest-tovn-796076.html",
-      "price": 65000,
-      "title": "Binəqədi rayonu , 7-ci mikrorayon qəs., 3 otaq",
-      "district": "Binəqədi",
-      "rooms": 3,
-      "area": null,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://vipemlak.az/uploads/news/homeobject_7960763866420733.jpg",
-      "property_type": "menzil",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1783678886.9750433
-    },
-    {
-      "id": "vipemlak_796073",
-      "source": "vipemlak",
-      "source_name": "VipEmlak.az",
-      "link": "https://vipemlak.az/baki-seheri-bineqedi-rayonu-796073.html",
-      "price": 65000,
-      "title": "Binəqədi rayonu , 7-ci mikrorayon qəs., 3 otaq",
-      "district": "Binəqədi",
-      "rooms": 3,
-      "area": null,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://vipemlak.az/uploads/news/homeobject_796073744922999.jpg",
-      "property_type": "menzil",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1783678886.9750433
-    },
-    {
-      "id": "vipemlak_796072",
-      "source": "vipemlak",
-      "source_name": "VipEmlak.az",
-      "link": "https://vipemlak.az/hezi-aslanov-metrosunun-yaxinligi-796072.html",
-      "price": 580,
-      "title": "Xətai rayonu , Həzi Aslanov qəs., 1 otaq",
-      "district": "Xətai",
+      "link": "https://vipemlak.az/mireli-seyidov-kucesi-796111.html",
+      "price": 400,
+      "title": "Yasamal rayonu , Yasamal qəs., 1 otaq",
+      "district": "Yasamal",
       "rooms": 1,
       "area": null,
       "floor": null,
       "total_floors": null,
-      "photo": "https://vipemlak.az/uploads/news/homeobject_796072815646638.jpg",
-      "property_type": "ev_villa",
+      "photo": "https://vipemlak.az/uploads/news/homeobject_7961112704865965.jpg",
+      "property_type": "menzil",
       "deal_type": "kiraye",
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750435
+      "timestamp": 1783687091.8504329
     },
     {
-      "id": "vipemlak_796071",
+      "id": "vipemlak_796088",
       "source": "vipemlak",
       "source_name": "VipEmlak.az",
-      "link": "https://vipemlak.az/abseron-rayonu-greenville-residence-796071.html",
-      "price": 185000,
-      "title": "Abşeron rayonu , 2 otaq",
-      "district": "Abşeron rayonu , 2 otaq MÖHTƏŞƏM TƏKLİF! 185.000 M",
-      "rooms": 2,
-      "area": null,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://vipemlak.az/uploads/news/homeobject_796071203604133.jpg",
-      "property_type": "menzil",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1783678886.9750438
-    },
-    {
-      "id": "vipemlak_796066",
-      "source": "vipemlak",
-      "source_name": "VipEmlak.az",
-      "link": "https://vipemlak.az/yeni-yasamal-qesebesi-796066.html",
-      "price": 185000,
-      "title": "Yasamal rayonu , Yeni Yasamal qəs., 3 otaq",
+      "link": "https://vipemlak.az/akim-abbasov-kucesi-796088.html",
+      "price": 250000,
+      "title": "Yasamal rayonu , Yasamal qəs., 3 otaq",
       "district": "Yasamal",
       "rooms": 3,
       "area": null,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://vipemlak.az/uploads/news/homeobject_7960662882339462.jpg",
-      "property_type": "menzil",
+      "floor": 9,
+      "total_floors": 7,
+      "photo": "https://vipemlak.az/uploads/news/homeobject_796088637755672.jpg",
+      "property_type": "ev_villa",
       "deal_type": "satis",
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750438
-    },
-    {
-      "id": "vipemlak_796064",
-      "source": "vipemlak",
-      "source_name": "VipEmlak.az",
-      "link": "https://vipemlak.az/neftciler-m-st-796064.html",
-      "price": 252000,
-      "title": "Nizami rayonu , 8-ci kilometr qəs., 2 otaq",
-      "district": "Nizami",
-      "rooms": 2,
-      "area": null,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://vipemlak.az/uploads/news/homeobject_7960641291984969.jpg",
-      "property_type": "menzil",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1783678886.975044
-    },
-    {
-      "id": "vipemlak_796063",
-      "source": "vipemlak",
-      "source_name": "VipEmlak.az",
-      "link": "https://vipemlak.az/lake-city.-koroglu-metrosunun-yaniziya-bunyadov-796063.html",
-      "price": 1500,
-      "title": "Nizami rayonu , Koroğlu m., 3 otaq",
-      "district": "Nizami",
-      "rooms": 3,
-      "area": 105.0,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://vipemlak.az/uploads/news/homeobject_796063151256236.jpg",
-      "property_type": "menzil",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1783678886.975044
+      "timestamp": 1783687091.850433
     },
     {
       "id": "vipemlak_796074",
@@ -2978,7 +3018,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750443
+      "timestamp": 1783687091.8504333
     },
     {
       "id": "vipemlak_796069",
@@ -2998,7 +3038,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750445
+      "timestamp": 1783687091.8504333
     },
     {
       "id": "vipemlak_796068",
@@ -3018,7 +3058,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750445
+      "timestamp": 1783687091.8504338
     },
     {
       "id": "vipemlak_796060",
@@ -3038,7 +3078,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.975045
+      "timestamp": 1783687091.8504338
     },
     {
       "id": "vipemlak_796055",
@@ -3058,7 +3098,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750452
+      "timestamp": 1783687091.850434
     },
     {
       "id": "vipemlak_796052",
@@ -3078,7 +3118,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750452
+      "timestamp": 1783687091.8504343
     },
     {
       "id": "vipemlak_796051",
@@ -3098,7 +3138,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750454
+      "timestamp": 1783687091.8504345
     },
     {
       "id": "vipemlak_796050",
@@ -3118,7 +3158,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750454
+      "timestamp": 1783687091.8504348
     },
     {
       "id": "vipemlak_796049",
@@ -3138,67 +3178,87 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750457
+      "timestamp": 1783687091.8504348
     },
     {
-      "id": "vipemlak_796035",
+      "id": "vipemlak_796112",
       "source": "vipemlak",
       "source_name": "VipEmlak.az",
-      "link": "https://vipemlak.az/qacaq-nebi-kucesi-796035.html",
-      "price": 190000,
-      "title": "Xətai rayonu , Əhmədli qəs., 3 otaq",
-      "district": "Xətai",
-      "rooms": 3,
+      "link": "https://vipemlak.az/frhg7g3-baki-azerbaycan-796112.html",
+      "price": 42000,
+      "title": "Binəqədi rayonu , Binəqədi qəs., 4 otaq",
+      "district": "Binəqədi",
+      "rooms": 4,
       "area": null,
       "floor": null,
       "total_floors": null,
-      "photo": "https://vipemlak.az/uploads/news/homeobject_7960351266993632.jpg",
+      "photo": "https://vipemlak.az/uploads/news/homeobject_7961122631165625.jpg",
       "property_type": "ev_villa",
       "deal_type": "satis",
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750457
+      "timestamp": 1783687091.850435
     },
     {
-      "id": "vipemlak_796034",
+      "id": "vipemlak_796099",
       "source": "vipemlak",
       "source_name": "VipEmlak.az",
-      "link": "https://vipemlak.az/lutfizade-kucesi-796034.html",
-      "price": 145000,
-      "title": "Xətai rayonu , Əhmədli qəs., 2 otaq",
-      "district": "Xətai",
-      "rooms": 2,
-      "area": null,
+      "link": "https://vipemlak.az/buzovna-qesebesi-796099.html",
+      "price": 195000,
+      "title": "Xəzər rayonu , Buzovna qəs., 5 otaq",
+      "district": "Xəzər",
+      "rooms": 5,
+      "area": 200.0,
       "floor": null,
       "total_floors": null,
-      "photo": "https://vipemlak.az/uploads/news/homeobject_7960341791275649.jpg",
-      "property_type": "kommersiya",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1783678886.975046
-    },
-    {
-      "id": "vipemlak_796023",
-      "source": "vipemlak",
-      "source_name": "VipEmlak.az",
-      "link": "https://vipemlak.az/qara-qarayev-prospekti-796023.html",
-      "price": 177000,
-      "title": "Nizami rayonu , Qara Qarayev m., 3 otaq",
-      "district": "Nizami",
-      "rooms": 3,
-      "area": null,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://vipemlak.az/uploads/news/homeobject_796023915188333.jpg",
+      "photo": "https://vipemlak.az/uploads/news/homeobject_7960991543484075.jpg",
       "property_type": "ev_villa",
       "deal_type": "satis",
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750462
+      "timestamp": 1783687091.8504353
+    },
+    {
+      "id": "vipemlak_796098",
+      "source": "vipemlak",
+      "source_name": "VipEmlak.az",
+      "link": "https://vipemlak.az/sabuncu-rayon-mastaga-qesebesi-796098.html",
+      "price": 52000,
+      "title": "Sabunçu rayonu , Maştağa qəs., 3 otaq",
+      "district": "Sabunçu",
+      "rooms": 3,
+      "area": null,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://vipemlak.az/uploads/news/homeobject_79609861583142.jpg",
+      "property_type": "ev_villa",
+      "deal_type": "satis",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1783687091.8504355
+    },
+    {
+      "id": "vipemlak_796089",
+      "source": "vipemlak",
+      "source_name": "VipEmlak.az",
+      "link": "https://vipemlak.az/sagan-qesebesi-796089.html",
+      "price": 690000,
+      "title": "Xəzər rayonu , Şağan qəs., 4 otaq",
+      "district": "Xəzər",
+      "rooms": 4,
+      "area": null,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://vipemlak.az/uploads/news/homeobject_7960892921501384.jpg",
+      "property_type": "ev_villa",
+      "deal_type": "satis",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1783687091.8504357
     },
     {
       "id": "vipemlak_796084",
@@ -3218,7 +3278,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750464
+      "timestamp": 1783687091.8504362
     },
     {
       "id": "vipemlak_796083",
@@ -3238,7 +3298,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750464
+      "timestamp": 1783687091.8504364
     },
     {
       "id": "vipemlak_796075",
@@ -3258,7 +3318,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750466
+      "timestamp": 1783687091.8504367
     },
     {
       "id": "vipemlak_796070",
@@ -3278,7 +3338,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750466
+      "timestamp": 1783687091.850437
     },
     {
       "id": "vipemlak_796067",
@@ -3298,7 +3358,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750469
+      "timestamp": 1783687091.8504372
     },
     {
       "id": "vipemlak_796065",
@@ -3318,7 +3378,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750469
+      "timestamp": 1783687091.8504372
     },
     {
       "id": "vipemlak_796061",
@@ -3338,7 +3398,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.975047
+      "timestamp": 1783687091.8504374
     },
     {
       "id": "vipemlak_796056",
@@ -3358,87 +3418,27 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.975047
+      "timestamp": 1783687091.8504376
     },
     {
-      "id": "vipemlak_779954",
+      "id": "vipemlak_796093",
       "source": "vipemlak",
       "source_name": "VipEmlak.az",
-      "link": "https://vipemlak.az/masazir-q-779954.html",
-      "price": 87000,
-      "title": "Abşeron rayonu , Masazır qəs., 5 otaq",
-      "district": "Abşeron rayonu , Masazır qəs., 5 otaq Masazır qəsə",
-      "rooms": 5,
+      "link": "https://vipemlak.az/baki-seheri-4-cu-mikrorayon-796093.html",
+      "price": 265000,
+      "title": "Binəqədi rayonu , 4-cü mikrorayon qəs., 2 otaq",
+      "district": "Binəqədi",
+      "rooms": 2,
       "area": null,
       "floor": null,
       "total_floors": null,
-      "photo": "https://vipemlak.az/uploads/news/homeobject_7799543498186936.jpg",
-      "property_type": "ev_villa",
+      "photo": "https://vipemlak.az/uploads/news/homeobject_7960933089503904.jpg",
+      "property_type": "kommersiya",
       "deal_type": "satis",
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750473
-    },
-    {
-      "id": "vipemlak_796046",
-      "source": "vipemlak",
-      "source_name": "VipEmlak.az",
-      "link": "https://vipemlak.az/xaver-veliyev-kucesi-796046.html",
-      "price": 150000,
-      "title": "Sabunçu rayonu , Zabrat qəs., 5 otaq",
-      "district": "Sabunçu",
-      "rooms": 5,
-      "area": null,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://vipemlak.az/uploads/news/homeobject_7960462413209734.jpg",
-      "property_type": "ev_villa",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1783678886.9750476
-    },
-    {
-      "id": "vipemlak_796044",
-      "source": "vipemlak",
-      "source_name": "VipEmlak.az",
-      "link": "https://vipemlak.az/azerbaycan-qadini-kucesi-796044.html",
-      "price": 95000,
-      "title": "Sabunçu rayonu , Bilgəh qəs., 5 otaq",
-      "district": "Sabunçu",
-      "rooms": 5,
-      "area": null,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://vipemlak.az/uploads/news/homeobject_796044726455392.jpg",
-      "property_type": "ev_villa",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1783678886.9750478
-    },
-    {
-      "id": "vipemlak_796043",
-      "source": "vipemlak",
-      "source_name": "VipEmlak.az",
-      "link": "https://vipemlak.az/s.esgerova-kuc-796043.html",
-      "price": 78000,
-      "title": "Yasamal rayonu , Nizami m., 3 otaq",
-      "district": "Nizami",
-      "rooms": 3,
-      "area": null,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://vipemlak.az/uploads/news/homeobject_7960433625961353.jpg",
-      "property_type": "torpaq",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1783678886.9750483
+      "timestamp": 1783687091.8504379
     },
     {
       "id": "vipemlak_796057",
@@ -3458,7 +3458,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750483
+      "timestamp": 1783687091.850438
     },
     {
       "id": "vipemlak_796045",
@@ -3478,7 +3478,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750485
+      "timestamp": 1783687091.8504384
     },
     {
       "id": "vipemlak_796022",
@@ -3498,7 +3498,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750488
+      "timestamp": 1783687091.8504384
     },
     {
       "id": "vipemlak_791378",
@@ -3518,7 +3518,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750488
+      "timestamp": 1783687091.8504386
     },
     {
       "id": "vipemlak_791383",
@@ -3538,7 +3538,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.975049
+      "timestamp": 1783687091.8504388
     },
     {
       "id": "vipemlak_791385",
@@ -3558,7 +3558,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.975049
+      "timestamp": 1783687091.8504388
     },
     {
       "id": "vipemlak_791388",
@@ -3578,7 +3578,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750493
+      "timestamp": 1783687091.850439
     },
     {
       "id": "vipemlak_791392",
@@ -3598,7 +3598,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750493
+      "timestamp": 1783687091.8504393
     },
     {
       "id": "vipemlak_792983",
@@ -3618,7 +3618,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750495
+      "timestamp": 1783687091.8504393
     },
     {
       "id": "vipemlak_792992",
@@ -3638,7 +3638,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750497
+      "timestamp": 1783687091.8504398
     },
     {
       "id": "vipemlak_795989",
@@ -3658,27 +3658,67 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750497
+      "timestamp": 1783687091.85044
     },
     {
-      "id": "vipemlak_787983",
+      "id": "vipemlak_796113",
       "source": "vipemlak",
       "source_name": "VipEmlak.az",
-      "link": "https://vipemlak.az/mirqasimov-kuc-787983.html",
-      "price": 650,
-      "title": "Nəsimi rayonu , 28 May m., 4 otaq",
-      "district": "Nəsimi",
-      "rooms": 4,
+      "link": "https://vipemlak.az/bahar-qesebesi-796113.html",
+      "price": 35000,
+      "title": "Suraxanı rayonu , Bahar, 3 sot",
+      "district": "Suraxanı",
+      "rooms": null,
       "area": null,
       "floor": null,
       "total_floors": null,
-      "photo": "https://vipemlak.az/uploads/news/homeobject_7879833680390105.jpg",
-      "property_type": "ofis",
+      "photo": "https://vipemlak.az/uploads/news/homeobject_7961131373571782.jpg",
+      "property_type": "torpaq",
       "deal_type": "satis",
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750497
+      "timestamp": 1783687091.8504403
+    },
+    {
+      "id": "vipemlak_796106",
+      "source": "vipemlak",
+      "source_name": "VipEmlak.az",
+      "link": "https://vipemlak.az/albaliliq-m.namazov-kuc-796106.html",
+      "price": 25000,
+      "title": "Xəzər rayonu , Buzovna qəs., 4 otaq",
+      "district": "Xəzər",
+      "rooms": 4,
+      "area": null,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://vipemlak.az/uploads/news/homeobject_7961064193423183.jpg",
+      "property_type": "menzil",
+      "deal_type": "satis",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1783687091.8504405
+    },
+    {
+      "id": "vipemlak_796092",
+      "source": "vipemlak",
+      "source_name": "VipEmlak.az",
+      "link": "https://vipemlak.az/dubendi-baglari-796092.html",
+      "price": 175000,
+      "title": "Xəzər rayonu , Dübəndi qəs., 10 sot",
+      "district": "Xəzər",
+      "rooms": null,
+      "area": 400.0,
+      "floor": null,
+      "total_floors": null,
+      "photo": "https://vipemlak.az/uploads/news/homeobject_796092167714085.jpg",
+      "property_type": "ev_villa",
+      "deal_type": "satis",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1783687091.8504405
     },
     {
       "id": "vipemlak_796033",
@@ -3698,7 +3738,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.97505
+      "timestamp": 1783687091.8504407
     },
     {
       "id": "vipemlak_796028",
@@ -3718,7 +3758,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750502
+      "timestamp": 1783687091.850441
     },
     {
       "id": "vipemlak_791389",
@@ -3738,7 +3778,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750502
+      "timestamp": 1783687091.8504412
     },
     {
       "id": "vipemlak_795904",
@@ -3758,7 +3798,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750504
+      "timestamp": 1783687091.8504412
     },
     {
       "id": "vipemlak_795847",
@@ -3778,7 +3818,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750504
+      "timestamp": 1783687091.8504415
     },
     {
       "id": "vipemlak_772266",
@@ -3798,7 +3838,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750507
+      "timestamp": 1783687091.8504417
     },
     {
       "id": "vipemlak_795804",
@@ -3818,7 +3858,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.9750507
+      "timestamp": 1783687091.8504417
     },
     {
       "id": "vipemlak_795761",
@@ -3838,7 +3878,7 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.975051
+      "timestamp": 1783687091.850442
     },
     {
       "id": "vipemlak_795742",
@@ -3858,70 +3898,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678886.975051
+      "timestamp": 1783687091.8504422
     },
     {
-      "id": "vipemlak_795729",
-      "source": "vipemlak",
-      "source_name": "VipEmlak.az",
-      "link": "https://vipemlak.az/nardaran-qesebesi-enver-arazov-kucesi-795729.html",
-      "price": 168000,
-      "title": "Sabunçu rayonu , Nardaran qəs., 1 otaq",
-      "district": "Sabunçu",
-      "rooms": 1,
-      "area": null,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://vipemlak.az/uploads/news/homeobject_795729885444547.jpg",
-      "property_type": "ofis",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1783678886.9750512
-    },
-    {
-      "id": "vipemlak_795713",
-      "source": "vipemlak",
-      "source_name": "VipEmlak.az",
-      "link": "https://vipemlak.az/buzovna-qes-795713.html",
-      "price": 95000,
-      "title": "Xəzər rayonu , Buzovna qəs., 5 sot",
-      "district": "Xəzər",
-      "rooms": null,
-      "area": null,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://vipemlak.az/uploads/news/homeobject_7957131303582754.jpg",
-      "property_type": "torpaq",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1783678886.9750514
-    },
-    {
-      "id": "vipemlak_795707",
-      "source": "vipemlak",
-      "source_name": "VipEmlak.az",
-      "link": "https://vipemlak.az/nardaran-qesebesi-enver-arazov-kucesi-795707.html",
-      "price": 336000,
-      "title": "Sabunçu rayonu , Nardaran qəs., 1 otaq",
-      "district": "Sabunçu",
-      "rooms": 1,
-      "area": null,
-      "floor": null,
-      "total_floors": null,
-      "photo": "https://vipemlak.az/uploads/news/homeobject_7957071352852037.jpg",
-      "property_type": "torpaq",
-      "deal_type": "satis",
-      "contact_name": "",
-      "contact_phone": "",
-      "is_new": true,
-      "timestamp": 1783678886.9750514
-    },
-    {
-      "id": "rns_6167731095",
+      "id": "rns_3237668578",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/4-komnatnaya-kvartira-v-sabah-residence-s-panoramnym-vidom-na-more/",
@@ -3938,10 +3918,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678934.8531604
+      "timestamp": 1783687138.0675547
     },
     {
-      "id": "rns_8464143910",
+      "id": "rns_3392238017",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/2-h-etazhnaya-dacha-v-poselke-vishnevka/",
@@ -3958,10 +3938,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678934.8531618
+      "timestamp": 1783687138.0675564
     },
     {
-      "id": "rns_1310925592",
+      "id": "rns_7279078993",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/3-h-komnatnaya-kvartira-ryadom-s-metro-sahil-3/",
@@ -3978,10 +3958,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678934.8531623
+      "timestamp": 1783687138.0675569
     },
     {
-      "id": "rns_9161015837",
+      "id": "rns_4334277496",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/2-h-komnatnaya-kvartira-v-zh-k-ritz-carlton-2/",
@@ -3998,10 +3978,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678934.8531628
+      "timestamp": 1783687138.067557
     },
     {
-      "id": "rns_5409600394",
+      "id": "rns_9189093026",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/4-h-komnatnaya-kvartira-v-port-baku/",
@@ -4018,10 +3998,30 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678934.8531635
+      "timestamp": 1783687138.0675583
     },
     {
-      "id": "rns_1130900500",
+      "id": "rns_5365803003",
+      "source": "rns",
+      "source_name": "RNS.az",
+      "link": "https://rns.az/property/odnokomnatnaya-kvartira-s-vidom-na-sad-v-marina-village/",
+      "price": 288915,
+      "title": "Однокомнатная квартира с видом на сад в Marina Village",
+      "district": "Однокомнатная квартира с видом на сад в Marina Vil",
+      "rooms": null,
+      "area": null,
+      "floor": 3,
+      "total_floors": 4,
+      "photo": "",
+      "property_type": "ev_villa",
+      "deal_type": "satis",
+      "contact_name": "",
+      "contact_phone": "",
+      "is_new": true,
+      "timestamp": 1783687138.0675588
+    },
+    {
+      "id": "rns_3742271579",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/odnokomnatnaya-kvartira-v-marina-village/",
@@ -4038,10 +4038,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678934.8531637
+      "timestamp": 1783687138.067559
     },
     {
-      "id": "rns_4292024904",
+      "id": "rns_7841940517",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/2-komnatnaya-kvartira-v-marina-village/",
@@ -4058,10 +4058,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678934.853164
+      "timestamp": 1783687138.0675592
     },
     {
-      "id": "rns_8599653099",
+      "id": "rns_9130685335",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/3-komnatnaya-kvartira-po-ul-rashida-bejbutova/",
@@ -4078,10 +4078,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678934.8531642
+      "timestamp": 1783687138.0675595
     },
     {
-      "id": "rns_9516012918",
+      "id": "rns_5573166846",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/ancora-residence-white-city/",
@@ -4098,10 +4098,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678934.8531644
+      "timestamp": 1783687138.06756
     },
     {
-      "id": "rns_2732914088",
+      "id": "rns_1436387381",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/2-h-komnatnaya-kvartira-okolo-metro-hatai-24/",
@@ -4118,10 +4118,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678934.853165
+      "timestamp": 1783687138.0675602
     },
     {
-      "id": "rns_7192186379",
+      "id": "rns_7131250168",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/2-h-etazhnaya-villa-v-mardakyanah/",
@@ -4138,10 +4138,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678934.853165
+      "timestamp": 1783687138.0675604
     },
     {
-      "id": "rns_7260585192",
+      "id": "rns_3159743670",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/studiya-v-zhilom-komplekse-white-villas-2/",
@@ -4158,10 +4158,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678934.8531651
+      "timestamp": 1783687138.0675607
     },
     {
-      "id": "rns_8958345103",
+      "id": "rns_9860352025",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/dom-v-lehich-bagah/",
@@ -4178,10 +4178,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678934.8531654
+      "timestamp": 1783687138.0675611
     },
     {
-      "id": "rns_9193268858",
+      "id": "rns_9728197850",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/dacha-v-mardakyanah/",
@@ -4198,10 +4198,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678934.8531654
+      "timestamp": 1783687138.0675611
     },
     {
-      "id": "rns_3490464574",
+      "id": "rns_6192004078",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/dacha-v-shuvelane/",
@@ -4218,10 +4218,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678934.8531656
+      "timestamp": 1783687138.0675614
     },
     {
-      "id": "rns_7370377579",
+      "id": "rns_577639997",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/3-h-etazhnaya-villa-v-sea-breeze/",
@@ -4238,10 +4238,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678934.8531656
+      "timestamp": 1783687138.0675616
     },
     {
-      "id": "rns_4865097514",
+      "id": "rns_4683002963",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/obekt-v-belom-gorode/",
@@ -4258,10 +4258,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678934.8531659
+      "timestamp": 1783687138.0675623
     },
     {
-      "id": "rns_2559588031",
+      "id": "rns_3263195943",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/zemelnyj-uchastok-v-badamdare/",
@@ -4278,10 +4278,10 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678934.853166
+      "timestamp": 1783687138.067563
     },
     {
-      "id": "rns_6940247963",
+      "id": "rns_7904260787",
       "source": "rns",
       "source_name": "RNS.az",
       "link": "https://rns.az/property/zemelnyj-uchastok-v-lokbatane-2/",
@@ -4298,27 +4298,27 @@
       "contact_name": "",
       "contact_phone": "",
       "is_new": true,
-      "timestamp": 1783678934.8531666
+      "timestamp": 1783687138.0675633
     }
   ],
   "stats": {
     "total": 215,
-    "avg_price": 223874,
+    "avg_price": 235528,
     "by_source": {
-      "arenda": 14,
+      "arenda": 13,
       "ev10": 0,
       "houses": 0,
-      "bina": 0,
       "emlakbazari": 0,
       "tikili": 0,
       "emlak": 40,
+      "bina": 0,
       "yeniemlak": 66,
       "villa": 0,
       "vipemlak": 76,
       "rahatemlak": 0,
       "binatap": 0,
       "yekemlak": 0,
-      "rns": 19,
+      "rns": 20,
       "lalafo": 0,
       "tap": 0,
       "kub": 0,
@@ -4326,30 +4326,29 @@
       "etagi": 0
     },
     "by_rooms": {
-      "6": 1,
-      "2": 31,
-      "1": 16,
-      "3": 38,
-      "4": 23,
-      "None": 94,
-      "5": 9,
+      "2": 33,
+      "1": 14,
+      "3": 37,
+      "4": 25,
+      "None": 96,
+      "5": 6,
+      "7": 2,
       "20": 1,
-      "9": 1,
-      "7": 1
+      "9": 1
     },
     "by_property_type": {
-      "ev_villa": 61,
-      "menzil": 109,
-      "kommersiya": 16,
-      "ofis": 10,
+      "menzil": 115,
+      "ev_villa": 59,
+      "kommersiya": 17,
+      "ofis": 8,
       "qaraj": 1,
-      "torpaq": 18
+      "torpaq": 15
     },
     "by_deal_type": {
       "kiraye": 77,
       "satis": 138
     }
   },
-  "scan_time": "2026-07-10T10:22:51.744869+00:00",
-  "scan_timestamp": 1783678971.744906
+  "scan_time": "2026-07-10T12:39:36.127836+00:00",
+  "scan_timestamp": 1783687176.1278539
 }
